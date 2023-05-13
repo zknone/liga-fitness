@@ -19,9 +19,199 @@
         </div>
       </header>
       <main>
+        <h1 class="visually-hidden">Фитнес-центр SuperGym</h1>
         <section class="intro">
-          <div class="intro__container container"></div>
+          <div class="intro__container container">
+            <div class="intro__info-wrapper">
+              <span>Омск</span>
+              <h2>Фитнес центр</h2>
+              <ul class="intro__services-list">
+                <li>Тренажёрный зал</li>
+                <li>Групповые занятия</li>
+                <li>Кардио-зона</li>
+              </ul>
+              <a href="#offers" class="intro__button btn">Купить абонемент</a>
+            </div>
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="./img/intro-photo.webp 1x, ./img/intro-photo@2x.webp 2x" width="500" height="556"/>
+              <img class="intro__image" src="./img/intro-photo-tab.webp" srcset="./img/intro-photo-tab@2x.webp" alt="Лучший спортивный зал в Омске" width="324" height="390">
+            </picture>
+          </div>
         </section>
+        <section class="about container">
+          <h2>Тренажёрный зал</h2>
+          <span>Просторный зал площадью 900 кв/м</span>
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
+          <div class="about__media-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="./img/about-photo-desk.webp 1x, ./img/about-photo-desk@2x.webp 2x" width="660" height="401">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./img/about-photo-tab.webp 1x, ./img/about-photo-tab@2x.webp 2x" width="678" height="345">
+              <img class="about__image" src="./img/about-photo-mob.webp" srcset="./img/about-photo-mob@2x.webp 2x" alt="Взгляните на наш тренажерный зал." width="320" height="313">
+            </picture>
+          </div>
+        </section>
+        <section class="tarifs">
+          <div class="tarifs__container container">
+            <h2>Абонементы</h2>
+            <ul class="tarifs__duration-list">
+              <li>
+                <a class="is-activate" href="#" data-duration="1">1 месяц</a>
+              </li>
+              <li>
+                <a class="is-activate" href="#" data-duration="6">6 месяцев</a>
+              </li>
+              <li>
+                <a class="is-activate" href="#" data-duration="12">12 месяцев</a>
+              </li>
+            </ul>
+            <ul class="tarifs__variants-list">
+              <li class="tarifs__card-item" data-tarif="trainer">
+                <h3>С тренером</h3>
+                <span>12 занятий</span>
+                <p>5000</p>
+                <a href="#" class="btn">купить абонемент</a>
+              </li>
+              <li class="tarifs__card-item" data-tarif="dayman">
+                <h3>Дневной</h3>
+                <span>с 8:00 до 17:00</span>
+                <p>1700</p>
+                <a href="#" class="btn">купить абонемент</a>
+              </li>
+              <li class="tarifs__card-item" data-tarif="allday">
+                <h3>Полный день</h3>
+                <span>с 8:00 до 22:00</span>
+                <p>2700</p>
+                <a href="#" class="btn">купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="event container">
+          <div class="event__info-wrapper">
+            <h2>Super games</h2>
+            <dl>
+              <dt>Дата</dt>
+              <dd>
+                <span data-date="day">7</span>
+                <span data-date="month">Марта</span>
+                <span data-date="year">2019</span>
+              </dd>
+              <dt>Время</dt>
+              <dd>
+                <span data-date="time">12:00</span>
+              </dd>
+            </dl>
+            <p>Ежегодные соревнования по CrossFit</p>
+            <a href="#" class="btn">заполнить заявку</a>
+          </div>
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="./img/contest-desk.webp 1x, ./img/contest-desk@2x.webp 2x" width="660px" height="500">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./img/contest-tab.webp 1x, ./img/contest-tab@2x.webp" width="386" height="292">
+            <img src="./img/contest-mob.webp" srcset="./img/contest-mob@2x.webp" alt="Наши соревнования." width="290" height="292">
+          </picture>
+        </section>
+        <section class="trainers">
+          <div class="trainers__container container">
+            <h2>Тренеры</h2>
+            <button data-button="left"></button>
+            <ul class="trainers__list">
+              <li class="trainers__card">
+                <h3>Анна Павлова</h3>
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" width="268" height="294">
+                  <img src="./img/trener-1-desk.webp" srcset="./img/trener-1-desk@2x.webp" alt="Анна Павлова." width="226" height="274">
+                </picture>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </li>
+              <li class="trainers__card">
+                <h3>Алексей Лавров</h3>
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" width="268" height="294">
+                  <img src="./img/trener-2-desk.webp" srcset="./img/trener-2-desk@2x.webp" alt="Анна Павлова." width="226" height="274">
+                </picture>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </li>
+              <li class="trainers__card">
+                <h3>Александр Пашков</h3>
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" width="268" height="294">
+                  <img src="./img/trener-3-desk.webp" srcset="./img/trener-3-desk@2x.webp" alt="Анна Павлова." width="226" height="274">
+                </picture>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </li>
+              <li class="trainers__card">
+                <h3>Мария Кетова</h3>
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" width="268" height="294">
+                  <img src="./img/trener-4-desk.webp" srcset="./img/trener-4-desk@2x.webp" alt="Анна Павлова." width="226" height="274">
+                </picture>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </li>
+          </ul>
+          <button data-button="right"></button>
+          </div>
+
+        </section>
+        <section class="advantages container">
+          <ul class="advantages__list">
+            <li class="advantages__item" data-advantages="regular">
+              <p>900<span>кв/м</span></p>
+              <dl>
+                <dt>Площадь</dt>
+                <dd>Занимайтесь без очередей и толпучки</dd>
+              </dl>
+            </li>
+            <li class="advantages__item" data-advantages="regular">
+              <p>350<span>мест</span></p>
+              <dl>
+                <dt>Комфорт</dt>
+                <dd>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</dd>
+              </dl>
+            </li>
+            <li class="advantages__item" data-advantages="regular">
+              <p>70<span>машин</span></p>
+              <dl>
+                <dt>Собственная парковка</dt>
+                <dd>Вы всегда найдете место для своей машины на нашей парковке</dd>
+              </dl>
+            </li>
+            <li class="advantages__item" data-advantages="regular">
+              <p>5+<span>лет</span></p>
+              <dl>
+                <dt>Тренерский опыт</dt>
+                <dd>Добивайтесь своих целей быстрее с профессиональным тренером</dd>
+              </dl>
+            </li>
+            <li class="advantages__item" data-advantages="featured">
+              <dl>
+                <dt>100 Тренажеров</dt>
+                <dd>Современные тренажеры на все группы мышц</dd>
+              </dl>
+            </li>
+          </ul>
+        </section>
+        
       </main>
       <footer>
         <div class="container"></div>
