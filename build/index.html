@@ -211,10 +211,136 @@
             </li>
           </ul>
         </section>
-        
+        <section class="promotions container">
+          <h2>Акции</h2>
+          <div class="promotions__featured-item">
+            <dl>
+              <dt>Год</dt>
+              <dd>4999</dd>
+            </dl>
+            <span>Безлимитный абонемент в тренажерный зал</span>
+            <a href="#">Подробнее</a>
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="./img/offer-desk.webp 1x, ./img/offer-desk@2x.webp 2x" width="280" height="462">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./img/offer-tab.webp 1x, ./img/offer-tab@2x.webp 2x" width="399" height="462">
+              <img class="promotions__img" src="./img/offer-mob.webp" srcset="./img/offer-mob@2x.webp 2x" alt="Специальная годовая цена." width="290" height="299">
+            </picture>
+          </div>
+          <div class="promotions__item">
+            <h3>Месяц бесплатно</h3>
+            <p>Приведи друга, получи абонемент в подарок</p>
+            <a href="#">Подробнее</a>
+          </div>
+          <div class="promotions__item">
+            <h3>Скидка 20%</h3>
+            <p>Корпоративный фитнес  с командой</p>
+            <a href="#">Подробнее</a>
+          </div>
+        </section>
+        <section class="reviews">
+          <h2>Отзывы</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <picture>
+                <img class="reviews__image" src="./img/review.webp 1x" srcset="./img/review@2x.webp 2x" alt="Анна Орлова" width="80" height="80">
+              </picture>
+              <h3 class="">Анна Орлова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </li>
+            <li class="reviews__item">
+              <picture>
+                <img class="reviews__image" src="./img/review.webp 1x" srcset="./img/review@2x.webp 2x" alt="Анна Орлова" width="80" height="80">
+              </picture>
+              <h3 class="">Анна Орлова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </li>
+            <li class="reviews__item">
+              <picture>
+                <img class="reviews__image" src="./img/review.webp 1x" srcset="./img/review@2x.webp 2x" alt="Анна Орлова" width="80" height="80">
+              </picture>
+              <h3 class="">Анна Орлова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </li>
+          </ul>
+        </section>
+        <section class="contact-us">
+          <div class="contact-us__container container">
+            <div class="contact-us__form">
+              <h2>Бесплатное занятие </h2>
+              <form action="">
+                <label>
+                  <input type="text">
+                  Имя
+                </label>
+                <label>
+                  <input type="text">
+                  Телефон
+                </label>
+                <button type="submit">отправить</button>
+              </form>
+            </div>
+            <div class="contact-us__info">
+              <h2>Контакты</h2>
+              <dl>
+                <dt>Адрес:</dt>
+                <dd>г. Омск, ул. 60 лет Октября, 7</dd>
+                <dt>График работы:</dt>
+                <dd>Пн-Вс: с 8:00 до 22:00</dd>
+                <dt>Телефон:</dt>
+                <dd><a href="tel:8-800-555-55-55">8-800-555-55-55</a></dd>
+                <dt>Email:</dt>
+                <dd><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></dd>
+              </dl>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="container">
+          <a href="#" class="navigation__logo-link">
+            <img src="./img/svg/logo.svg" width="122" height="44" alt="Фитнес-центр SuperGym." class="navigation__logo">
+          </a>
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Услуги</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Абонементы</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Акции</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Тренеры</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Расписание</a>
+            </li>
+          </ul>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-icon" aria-label="Лого Вк." width="25" height="25">
+                  <use xlink:href="./img/sprite.svg#vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-icon" aria-label="Лого ОК." width="25" height="25">
+                  <use xlink:href="./img/sprite.svg#ok-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-icon" aria-label="Лого Reddit." width="25" height="25">
+                  <use xlink:href="./img/sprite.svg#reddit-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
 
