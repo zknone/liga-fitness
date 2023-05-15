@@ -1,4 +1,11 @@
 .navigation {
-  position: fixed;
+  position: relative;
+}
+
+.navigation__container {
+  top: 0;
+  left:0;
+  position: sticky;
+  z-index: 3;
   padding-top: 30px;
 }

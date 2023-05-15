@@ -330,6 +330,7 @@ template {
 
 html,
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -1225,11 +1226,22 @@ button,
 }
 
 .navigation {
-  position: fixed;
+  position: relative;
+}
+
+.navigation__container {
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 3;
   padding-top: 30px;
 }
 
 .intro {
+  position: relative;
+  display: block;
+  top: -80px;
+  padding-top: 180px;
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   min-height: 658px;
 }
