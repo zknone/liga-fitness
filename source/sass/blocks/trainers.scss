@@ -6,6 +6,7 @@
 
 
 .trainers__card {
+  text-align: left;
   h3 {
     @include card-header;
   }
@@ -15,4 +16,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
 }

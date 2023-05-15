@@ -1,11 +1,10 @@
 .navigation {
-  position: relative;
-}
-
-.navigation__container {
+  position: absolute;
   top: 0;
   left:0;
-  position: sticky;
   z-index: 3;
   padding-top: 30px;
+
+  display: flex;
+  justify-content: space-between;
 }

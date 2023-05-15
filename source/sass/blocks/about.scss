@@ -1,5 +1,9 @@
 .about {
+  display: flex;
+  column-gap: 85px;
+
   h2 {
     @include header-2-text;
   }
 }
+

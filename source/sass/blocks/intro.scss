@@ -20,17 +20,43 @@
 
   h2 {
     @include header-alumni;
+    max-width: 300px;
+    text-align: right;
   }
 
   span {
     @include header-2-white;
+    max-width: 133px;
+
+    grid-column: 1/-1;
+    justify-self: end;
   }
 }
 
+.intro__container {
+  display: flex;
+  column-gap: 65px;
+}
+
+.intro__info-wrapper {
+  display: grid;
+  width: 34%;
+  grid-template-columns: repeat(2, min-content);
+}
 
 .intro__services-list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+
+  width: 115px;
+  word-wrap: normal;
+  align-self: end;
 }
 
+.intro__button {
+  grid-column: 1/-1;
+  justify-self: end;
+  min-width: 230px;
+}

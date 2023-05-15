@@ -1,5 +1,25 @@
 .event {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   h2 {
     @include event-header;
+
+    max-width: 200px;
+  }
+
+  img {
+    grid-column: 2/-1;
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
+
+.event__info-wrapper {
+  width: 100%;
+  display: block;
+  background-color: $color-background-red;
+  grid-column: 1/1;
+}
+
