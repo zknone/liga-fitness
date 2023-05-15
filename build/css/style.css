@@ -315,11 +315,31 @@ template {
 }
 
 @font-face {
-  font-style: normal;
+  font-style: regular;
   font-weight: 400;
-  font-family: "";
+  font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed-regular.woff2") format("woff2");
+}
+@font-face {
+  font-style: light;
+  font-weight: 300;
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/roboto-condensed-light.woff2") format("woff2");
+}
+@font-face {
+  font-style: bold;
+  font-weight: 700;
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/roboto-condensed-bold.woff2") format("woff2");
+}
+@font-face {
+  font-weight: 600;
+  font-family: "Alumni Sans";
+  font-display: swap;
+  src: url("../fonts/alumni-sans-semibold.woff2") format("woff2");
 }
 *,
 *::before,
