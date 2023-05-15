@@ -1,0 +1,20 @@
+.footer {
+  background-color: $color-default-black;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

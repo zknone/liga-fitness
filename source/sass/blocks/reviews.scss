@@ -1,0 +1,11 @@
+.reviews {
+  h2 {
+    @include header-2;
+  }
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

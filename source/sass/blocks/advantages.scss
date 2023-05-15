@@ -1,0 +1,17 @@
+.advantages {
+  h2 {
+    @include header-2;
+  }
+}
+
+.advantages__item {
+  dt {
+    @include advantage-header;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

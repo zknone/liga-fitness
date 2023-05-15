@@ -1,0 +1,17 @@
+.tarifs {
+  h2 {
+    @include header-2;
+  }
+}
+
+.tarifs__duration-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarifs__variants-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

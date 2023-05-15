@@ -341,6 +341,19 @@ template {
   font-display: swap;
   src: url("../fonts/alumni-sans-semibold.woff2") format("woff2");
 }
+@font-face {
+  font-style: bold;
+  font-weight: 700;
+  font-family: "Alumni Sans";
+  font-display: swap;
+  src: url("../fonts/alumni-sans-bold.woff2") format("woff2");
+}
+@font-face {
+  font-weight: 600;
+  font-family: "Alumni Sans";
+  font-display: swap;
+  src: url("../fonts/alumni-sans-extrabold.woff2") format("woff2");
+}
 *,
 *::before,
 *::after {
@@ -361,8 +374,8 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Placeholder", "Arial", sans-serif;
-  color: #000000;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #102654;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -375,7 +388,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #102654;
   text-decoration: none;
 }
 
@@ -393,7 +406,7 @@ textarea {
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
           box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+  -webkit-text-fill-color: #102654;
 }
 
 input,
@@ -575,7 +588,7 @@ button,
   display: inline-flex;
   padding: 10px 20px;
   color: #ffffff;
-  background-color: #2c39f2;
+  background-color: #102654;
   border: none;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
@@ -583,7 +596,7 @@ button,
   transition: opacity 0.3s ease;
 }
 .btn--red {
-  background-color: #ff1553;
+  background-color: #E8E8E8;
 }
 .btn:disabled {
   opacity: 0.5;
@@ -614,7 +627,7 @@ button,
           flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(16, 38, 84, 0.8);
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
@@ -1264,6 +1277,276 @@ button,
   padding-top: 180px;
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   min-height: 658px;
+}
+.intro h2 {
+  margin-top: 0;
+  margin-bottom: 110px;
+  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 5%;
+  font-size: 92px;
+  line-height: 110px;
+  color: #ffffff;
+}
+.intro span {
+  margin-top: 0;
+  margin-bottom: 110px;
+  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 5%;
+  font-size: 92px;
+  line-height: 110px;
+  color: #ffffff;
+  font-size: 48px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.intro__services-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about h2 {
+  margin-top: 0;
+  margin-bottom: 110px;
+  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 5%;
+  font-size: 92px;
+  line-height: 110px;
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 3%;
+  margin-bottom: 25px;
+  color: #102654;
+}
+
+.advantages h2 {
+  margin-top: 0;
+  margin-bottom: 110px;
+  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 5%;
+  font-size: 92px;
+  line-height: 110px;
+  color: #ffffff;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 3%;
+  margin-bottom: 25px;
+  color: #102654;
+}
+
+.advantages__item dt {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  color: #102654;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 20px;
+  color: #102654;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-us__form h2 {
+  margin-top: 0;
+  margin-bottom: 110px;
+  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 5%;
+  font-size: 92px;
+  line-height: 110px;
+  color: #ffffff;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 82px;
+  letter-spacing: 3%;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.contact-us__info h2 {
+  margin-top: 0;
+  margin-bottom: 110px;
+  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 5%;
+  font-size: 92px;
+  line-height: 110px;
+  color: #ffffff;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 3%;
+  color: #102654;
+}
+
+.event h2 {
+  margin-top: 0;
+  margin-bottom: 110px;
+  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 5%;
+  font-size: 92px;
+  line-height: 110px;
+  color: #ffffff;
+  font-size: 82px;
+  line-height: 78px;
+  letter-spacing: 3%;
+  margin-bottom: 35px;
+}
+
+.promotions h2 {
+  margin-top: 0;
+  margin-bottom: 110px;
+  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 5%;
+  font-size: 92px;
+  line-height: 110px;
+  color: #ffffff;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 3%;
+  margin-bottom: 25px;
+  color: #102654;
+}
+
+.promotions__item h3 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  color: #102654;
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  color: #102654;
+}
+
+.reviews h2 {
+  margin-top: 0;
+  margin-bottom: 110px;
+  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 5%;
+  font-size: 92px;
+  line-height: 110px;
+  color: #ffffff;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 3%;
+  margin-bottom: 25px;
+  color: #102654;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarifs h2 {
+  margin-top: 0;
+  margin-bottom: 110px;
+  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 5%;
+  font-size: 92px;
+  line-height: 110px;
+  color: #ffffff;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 3%;
+  margin-bottom: 25px;
+  color: #102654;
+}
+
+.tarifs__duration-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarifs__variants-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trainers h2 {
+  margin-top: 0;
+  margin-bottom: 110px;
+  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 5%;
+  font-size: 92px;
+  line-height: 110px;
+  color: #ffffff;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 3%;
+  margin-bottom: 25px;
+  color: #102654;
+}
+
+.trainers__card h3 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  color: #102654;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.trainers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer {
+  background-color: #102654;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* @mixin hover-focus {

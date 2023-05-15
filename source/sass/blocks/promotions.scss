@@ -1,0 +1,12 @@
+.promotions {
+  h2 {
+    @include header-2;
+  }
+}
+
+
+.promotions__item {
+  h3 {
+    @include offer-header;
+  }
+}

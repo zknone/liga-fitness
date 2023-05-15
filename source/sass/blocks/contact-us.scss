@@ -1,0 +1,15 @@
+.contact-us {
+
+}
+
+.contact-us__form {
+  h2 {
+    @include form-header;
+  }
+}
+
+.contact-us__info {
+  h2 {
+    @include contact-header;
+  }
+}

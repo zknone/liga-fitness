@@ -1,0 +1,18 @@
+.trainers {
+  h2 {
+    @include header-2;
+  }
+}
+
+
+.trainers__card {
+  h3 {
+    @include card-header;
+  }
+}
+
+.trainers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
