@@ -2,13 +2,20 @@
 
 }
 
+.contact-us__container {
+  display: flex;
+}
+
 .contact-us__form {
+  width: 50%;
+  background-color: $color-default-black;
   h2 {
     @include form-header;
   }
 }
 
 .contact-us__info {
+  width: 50%;
   h2 {
     @include contact-header;
   }

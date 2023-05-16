@@ -5,16 +5,30 @@
 .footer__container {
   display: flex;
   justify-content: space-between;
+
+  padding: 40px 0 20px;
 }
 
 .footer__navigation-list {
-  margin: 0;
+  margin: 0 0 15px 0;
   padding: 0;
   list-style: none;
+
+  display: flex;
+  column-gap: 40px;
+  max-width: 500px;
+}
+
+.footer__navigation-item {
+  padding: 5px 0;
 }
 
 .footer__social-list {
-  margin: 0;
+  margin: auto 0;
   padding: 0;
   list-style: none;
+
+  max-width: 200px;
+  display: flex;
+  column-gap: 10px;
 }

@@ -1,6 +1,16 @@
 .event {
   display: grid;
   grid-template-columns: repeat(2, auto);
+
+  @include vp-1200() {
+
+  }
+
+  @include vp-767() {
+    display: flex;
+    flex-direction: column;
+  }
+
   h2 {
     @include event-header;
 
@@ -18,8 +28,14 @@
 
 .event__info-wrapper {
   width: 100%;
+
+  padding: 85px 78px;
   display: block;
   background-color: $color-background-red;
   grid-column: 1/1;
+
+  @include vp-1200() {
+    padding: 51px 45px;
+  }
 }
 

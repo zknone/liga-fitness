@@ -2,8 +2,73 @@
   display: flex;
   column-gap: 85px;
 
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  @include vp-1200() {
+    flex-direction: column;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 185px;
+  }
+
+  @include vp-767() {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
   h2 {
     @include header-2-text;
+
+    @include vp-1200() {
+      text-align: center;
+    }
+
+    @include vp-767() {
+      text-align: left;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  h3 {
+    @include vp-1200() {
+      text-align: center;
+    }
+
+    @include vp-767() {
+      text-align: left;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  p {
+    @include vp-1200() {
+      text-align: center;
+    }
+
+    @include vp-767() {
+      text-align: left;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  img {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
+.about__info-wrapper {
+  max-width: 360px;
+
+  @include vp-1200() {
+    max-width: none;
+  }
+}

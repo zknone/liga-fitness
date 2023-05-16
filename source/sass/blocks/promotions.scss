@@ -1,12 +1,25 @@
 .promotions {
   h2 {
     @include header-2;
+    text-align: center;
   }
 }
 
+.promotions__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 40px;
+}
 
 .promotions__item {
   h3 {
     @include offer-header;
   }
 }
+
+.promotions__featured-item {
+  grid-row: 1/-1;
+}
+

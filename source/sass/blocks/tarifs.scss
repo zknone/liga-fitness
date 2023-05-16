@@ -1,4 +1,6 @@
 .tarifs {
+  padding: 120px 0;
+  background-color: $color-background-grey;
   h2 {
     @include header-2;
     text-align: center;
@@ -23,4 +25,10 @@
   display: flex;
   justify-content: space-between;
   column-gap: 40px;
+}
+
+.tarifs__card-item {
+  padding: 68px 77px;
+
+  background-color: $color-default-white;
 }
