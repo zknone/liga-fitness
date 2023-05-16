@@ -1,21 +1,50 @@
 .contact-us {
+  background: linear-gradient(90deg, $color-default-black 50%, $color-default-white 50%);
 
+  @include vp-1200() {
+    background: linear-gradient(180deg, $color-default-black 45%, $color-default-white 40%);
+  }
 }
 
 .contact-us__container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include vp-1200() {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .contact-us__form {
-  width: 50%;
-  background-color: $color-default-black;
+  padding-top: 55px;
+  padding-bottom: 70px;
+  width: 70%;
+  margin-right: auto;
+
   h2 {
     @include form-header;
+  }
+
+  @include vp-1200() {
+    padding: 70px 88px;
+    width: 100%;
+    margin: 0;
   }
 }
 
 .contact-us__info {
-  width: 50%;
+  padding-top: 55px;
+  padding-bottom: 70px;
+  width: 70%;
+
+  margin-left: auto;
+
+  @include vp-1200() {
+    padding: 70px 88px;
+    width: 100%;
+    margin: 0;
+  }
   h2 {
     @include contact-header;
   }

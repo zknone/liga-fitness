@@ -1,4 +1,15 @@
 .promotions {
+  padding-top: 100px;
+  padding-bottom: 75px;
+
+  @include vp-1200() {
+    padding-bottom: 55px;
+  }
+
+  @include vp-767() {
+    padding-bottom: 40px;
+  }
+
   h2 {
     @include header-2;
     text-align: center;
@@ -7,10 +18,20 @@
 
 .promotions__wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   column-gap: 40px;
   row-gap: 40px;
+
+  @include vp-1200() {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @include vp-767() {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .promotions__item {
@@ -19,7 +40,31 @@
   }
 }
 
-.promotions__featured-item {
-  grid-row: 1/-1;
+.promotions__item[data-promotions="first"] {
+  grid-column: 3/5;
+  grid-row: 1/2;
+
+  @include vp-1200() {
+    grid-column: 1/2;
+    grid-row: 3/-1;
+  }
 }
 
+.promotions__item[data-promotions="second"] {
+  grid-column: 3/5;
+  grid-row: 2/-1;
+
+  @include vp-1200() {
+    grid-column: 2/-1;
+    grid-row: 3/-1;
+  }
+}
+
+.promotions__featured-item {
+  grid-column: 1/3;
+  grid-row: 1/-1;
+  @include vp-1200() {
+    grid-column: 1/-1;
+    grid-row: 1/3;
+  }
+}

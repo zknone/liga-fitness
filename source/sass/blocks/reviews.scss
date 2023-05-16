@@ -1,19 +1,35 @@
 .reviews {
+  padding-top: 40px;
+  padding-bottom: 120px;
   h2 {
     @include header-2;
     text-align: center;
   }
 }
 
-.reviews__list {
+.reviews__swiper-wrapper {
   margin: 0 auto;
-  padding: 0;
-  list-style: none;
+  max-width: 680px;
 
   display: flex;
 }
 
+.reviews__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
 .reviews__item {
+  padding: 62px;
   background-color: $color-default-black;
-  max-width: 560px;
+  max-width: 566px;
+
+  @include vp-1200() {
+    padding: 62px 65px;
+  }
+
+  @include vp-767() {
+    padding: 41px 25px;
+  }
 }

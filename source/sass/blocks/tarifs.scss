@@ -25,6 +25,11 @@
   display: flex;
   justify-content: space-between;
   column-gap: 40px;
+
+  @include vp-1200() {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .tarifs__card-item {
