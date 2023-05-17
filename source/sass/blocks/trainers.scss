@@ -1,5 +1,4 @@
 .trainers {
-
   padding-top: 35px;
   padding-bottom: 140px;
   h2 {
@@ -7,13 +6,11 @@
   }
 }
 
-.trainers__swiper-container {
-  display: flex;
-}
-
 .trainers__card {
   text-align: left;
 
+
+  max-width: 290px;
   display: grid;
   grid-template-rows: 10px min-content min-content 1fr 10px;
   grid-template-columns: 25px 1fr 25px;
@@ -97,8 +94,21 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
-  display: flex;
   justify-content: space-between;
-  column-gap: 40px;
+}
+
+.trainers__container {
+  position: relative;
+}
+
+.trainers__button-prev {
+  position: absolute;
+  top: 252px;
+  left: -10px;
+}
+
+.trainers__button-next {
+  position: absolute;
+  top: 252px;
+  left: calc(100% - 10px);
 }
