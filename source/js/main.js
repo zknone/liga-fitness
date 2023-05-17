@@ -42,6 +42,19 @@ window.addEventListener('DOMContentLoaded', () => {
         prevEl: '.trainers__button-next',
       },
     });
+
+    const reviewsSwiper = new Swiper ('.reviews__swiper-wrapper', {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.reviews__left-button',
+        prevEl: '.reviews__right-button',
+      },
+    });
+
+
+
   });
 });
 

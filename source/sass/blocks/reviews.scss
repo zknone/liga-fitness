@@ -7,23 +7,19 @@
   }
 }
 
-.reviews__swiper-wrapper {
-  margin: 0 auto;
-  max-width: 680px;
-
-  display: flex;
-}
-
-.reviews__list {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-
 .reviews__item {
   padding: 62px;
   background-color: $color-default-black;
-  max-width: 566px;
+
+  h3 {
+    @include review-header;
+  }
+
+  p {
+    @include white-text;
+    font-size: 16px;
+    line-height: 22px;
+  }
 
   @include vp-1200() {
     padding: 62px 65px;

@@ -333,7 +333,7 @@ template {
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #a7a7a7;
 }
 
 .swiper {
@@ -2735,24 +2735,31 @@ button,
   text-align: center;
 }
 
-.reviews__swiper-wrapper {
-  margin: 0 auto;
-  max-width: 680px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.reviews__list {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-
 .reviews__item {
   padding: 62px;
   background-color: #102654;
-  max-width: 566px;
+}
+.reviews__item h3 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  color: #102654;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  color: #FFF;
+}
+.reviews__item p {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 22px;
 }
 @media (max-width: 1023px) {
   .reviews__item {
@@ -2960,7 +2967,7 @@ button,
   margin-bottom: 0;
   color: #FFF;
   z-index: 3;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .trainers__card span {
   -ms-grid-column: 2;
@@ -2978,7 +2985,7 @@ button,
   font-size: 16px;
   line-height: 24px;
   color: #B6BDCC;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .trainers__card ul {
   -ms-grid-column: 2;
@@ -3018,46 +3025,24 @@ button,
      object-fit: cover;
 }
 
-.trainers__container {
+.trainers__buttons-wrapper {
   position: relative;
 }
 
-@media (max-width: 767px) {
-  .trainers__swiper-container {
-    width: calc(100% - 64px);
-  }
+.trainers__swiper-container {
+  width: calc(100% - 70px);
 }
 
 .trainers__button-prev {
-  position: absolute;
-  top: 240px;
-  left: 8px;
-}
-@media (max-width: 1023px) {
-  .trainers__button-prev {
-    top: 360px;
-  }
-}
-@media (max-width: 767px) {
-  .trainers__button-prev {
-    top: 420px;
-  }
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .trainers__button-next {
-  position: absolute;
-  top: 240px;
-  left: calc(100% - 32px);
-}
-@media (max-width: 1023px) {
-  .trainers__button-next {
-    top: 360px;
-  }
-}
-@media (max-width: 767px) {
-  .trainers__button-next {
-    top: 420px;
-  }
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .footer {
