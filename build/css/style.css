@@ -2850,7 +2850,6 @@ button,
 
 .trainers__card {
   text-align: left;
-  max-width: 290px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 10px -webkit-min-content -webkit-min-content 1fr 10px;
@@ -3019,29 +3018,46 @@ button,
      object-fit: cover;
 }
 
-.trainers__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .trainers__container {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .trainers__swiper-container {
+    width: calc(100% - 64px);
+  }
+}
+
 .trainers__button-prev {
   position: absolute;
-  top: 252px;
-  left: -10px;
+  top: 240px;
+  left: 8px;
+}
+@media (max-width: 1023px) {
+  .trainers__button-prev {
+    top: 360px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers__button-prev {
+    top: 420px;
+  }
 }
 
 .trainers__button-next {
   position: absolute;
-  top: 252px;
-  left: calc(100% - 10px);
+  top: 240px;
+  left: calc(100% - 32px);
+}
+@media (max-width: 1023px) {
+  .trainers__button-next {
+    top: 360px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers__button-next {
+    top: 420px;
+  }
 }
 
 .footer {

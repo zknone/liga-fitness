@@ -8,15 +8,11 @@
 
 .trainers__card {
   text-align: left;
-
-
-  max-width: 290px;
   display: grid;
   grid-template-rows: 10px min-content min-content 1fr 10px;
   grid-template-columns: 25px 1fr 25px;
   row-gap: 15px;
   aspect-ratio: 260/294;
-
 
   @include hover-focus {
     h3 {
@@ -55,7 +51,7 @@
     @include white-text;
     font-size: 16px;
     line-height: 24px;
-    color:$color-spindle;
+    color: $color-spindle;
     overflow-y: scroll;
   }
 
@@ -64,7 +60,7 @@
     grid-row: 1/2;
     margin: 0;
     padding: 0;
-    list-style:disc;
+    list-style: disc;
     color: $color-default-white;
     z-index: -1;
     overflow-y: scroll;
@@ -90,25 +86,41 @@
   }
 }
 
-.trainers__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  justify-content: space-between;
-}
-
 .trainers__container {
   position: relative;
 }
 
+.trainers__swiper-container {
+
+  @include vp-767 {
+    width: calc(100% - 64px);
+  }
+}
+
 .trainers__button-prev {
   position: absolute;
-  top: 252px;
-  left: -10px;
+  top: 240px;
+  left: 8px;
+
+  @include vp-1200 {
+    top: 360px;
+  }
+
+  @include vp-767() {
+    top: 420px;
+  }
 }
 
 .trainers__button-next {
   position: absolute;
-  top: 252px;
-  left: calc(100% - 10px);
+  top: 240px;
+  left: calc(100% - 32px);
+
+  @include vp-1200 {
+    top: 360px;
+  }
+
+  @include vp-767() {
+    top: 420px;
+  }
 }

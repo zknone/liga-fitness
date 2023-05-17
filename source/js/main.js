@@ -22,14 +22,14 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
 
-    const trainersSwiper = new Swiper('.swiper__trainers', {
+    const trainersSwiper = new Swiper('.trainers__swiper-container', {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 30,
       breakpoints: {
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 30,
         },
         1200: {
