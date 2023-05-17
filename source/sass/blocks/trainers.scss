@@ -13,8 +13,83 @@
 
 .trainers__card {
   text-align: left;
+
+  display: grid;
+  grid-template-rows: 10px min-content min-content 1fr 10px;
+  grid-template-columns: 25px 1fr 25px;
+  row-gap: 15px;
+  aspect-ratio: 260/294;
+
+
+  @include hover-focus {
+    h3 {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      @include card-header;
+      z-index: 3;
+    }
+
+    span {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      z-index: 3;
+    }
+
+    ul {
+      grid-column: 2/3;
+      grid-row: 4/5;
+      z-index: 3;
+    }
+  }
+
   h3 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    align-self: end;
     @include card-header;
+    z-index: 3;
+    overflow-y: scroll;
+  }
+
+  span {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    z-index: -1;
+    @include white-text;
+    font-size: 16px;
+    line-height: 24px;
+    color:$color-spindle;
+    overflow-y: scroll;
+  }
+
+  ul {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+    list-style:disc;
+    color: $color-default-white;
+    z-index: -1;
+    overflow-y: scroll;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
+  li {
+    @include white-text;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  picture {
+    grid-column: 1/-1;
+    grid-row: 1/6;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 

@@ -67,6 +67,12 @@
   width: 115px;
   word-wrap: normal;
   align-self: end;
+
+  li {
+    @include white-text;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .intro__button {

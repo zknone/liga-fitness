@@ -43,5 +43,22 @@
   @include vp-1200() {
     padding: 51px 45px;
   }
+
+  dl {
+    @include white-text;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    @include white-text;
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 

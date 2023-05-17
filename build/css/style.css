@@ -1368,6 +1368,15 @@ button,
       -ms-grid-row-align: end;
       align-self: end;
 }
+.intro__services-list li {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 21px;
+}
 
 .intro__button {
   grid-column: 1/-1;
@@ -1710,6 +1719,28 @@ button,
     padding: 51px 45px;
   }
 }
+.event__info-wrapper dl {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 21px;
+}
+.event__info-wrapper dd {
+  margin: 0;
+  padding: 0;
+}
+.event__info-wrapper p {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 27px;
+}
 
 .promotions {
   padding-top: 100px;
@@ -1971,8 +2002,64 @@ button,
 
 .trainers__card {
   text-align: left;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10px -webkit-min-content -webkit-min-content 1fr 10px;
+  -ms-grid-rows: 10px min-content min-content 1fr 10px;
+  grid-template-rows: 10px -webkit-min-content -webkit-min-content 1fr 10px;
+  grid-template-rows: 10px min-content min-content 1fr 10px;
+  -ms-grid-columns: 25px 1fr 25px;
+  grid-template-columns: 25px 1fr 25px;
+  row-gap: 15px;
+  aspect-ratio: 260/294;
 }
-.trainers__card h3 {
+@media (hover: hover) {
+  .trainers__card:hover:not(.focus-visible) h3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 28px;
+    color: #102654;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 0;
+    color: #FFF;
+    z-index: 3;
+  }
+  .trainers__card:hover:not(.focus-visible) span {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    z-index: 3;
+  }
+  .trainers__card:hover:not(.focus-visible) ul {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    z-index: 3;
+  }
+}
+.trainers__card.focus-visible:focus h3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
   margin-top: 0;
   margin-bottom: 22px;
   font-family: "Roboto", Arial, sans-serif;
@@ -1984,6 +2071,103 @@ button,
   line-height: 27px;
   margin-bottom: 0;
   color: #FFF;
+  z-index: 3;
+}
+.trainers__card.focus-visible:focus span {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  z-index: 3;
+}
+.trainers__card.focus-visible:focus ul {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  z-index: 3;
+}
+.trainers__card h3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-row-align: end;
+      align-self: end;
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  color: #102654;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 0;
+  color: #FFF;
+  z-index: 3;
+  overflow-y: scroll;
+}
+.trainers__card span {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  z-index: -1;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 24px;
+  color: #B6BDCC;
+  overflow-y: scroll;
+}
+.trainers__card ul {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin: 0;
+  padding: 0;
+  list-style: disc;
+  color: #FFF;
+  z-index: -1;
+  overflow-y: scroll;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.trainers__card li {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 21px;
+}
+.trainers__card picture {
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
+}
+.trainers__card picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .trainers__list {
