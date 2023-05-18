@@ -1,5 +1,4 @@
 .advantages {
-
   padding-top: 95px;
   padding-bottom: 140px;
   background-color: $color-background-grey;
@@ -16,15 +15,16 @@
 }
 
 .advantages__list {
-  margin: 0 6%;
+  margin: 0 5%;
   padding: 0;
   list-style: none;
 
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: 32% 24% 32%;
   justify-content: space-between;
   grid-template-rows: repeat(2, 1fr);
-  column-gap: 60px;
+  column-gap: 6%;
+  row-gap: 120px;
   justify-self: center;
 
   @include vp-1200() {
@@ -37,9 +37,15 @@
   grid-row: 1/-1;
   padding: 65px 35px;
   margin: auto 0;
-
+  height: 100%;
+  display: flex;
   background-color: $color-default-black;
   color: $color-default-white;
+
+  dl {
+    align-self: center;
+    margin: auto 0;
+  }
 
   dt {
     margin: 0;
@@ -48,7 +54,6 @@
   }
 
   span {
-
   }
 
   dd {
@@ -58,26 +63,68 @@
   }
 }
 
-
 .advantages__item[data-advantages="regular"] {
-  padding: 0 0 85px 20px;
+  padding: 0;
   width: 100%;
   display: flex;
+  column-gap: 30px;
 
-  dt {
-    @include advantage-header;
-    font-size: 22px;
-    line-height: 33px;
-    margin: 0 0 20px;
-    padding: 0;
+  dl[data-points="points"] {
+    margin: 0;
+    dt {
+      @include advantage-header;
+      font-size: 22px;
+      line-height: 33px;
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+      font-size: 71px;
+      line-height: 71px;
+
+      background: -webkit-linear-gradient(
+        92.51deg,
+        #d10a42 30%,
+        #0041ca 87.33%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    dd {
+      @include text;
+      font-size: 16px;
+      line-height: 22px;
+      margin: 0;
+      padding: 0;
+      background: -webkit-linear-gradient(
+        92.51deg,
+        #d10a42 30%,
+        #0041ca 87.33%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
-  dd {
+  dl[data-points="description"] {
     margin: 0;
-    padding: 0;
-    @include text;
-    font-size: 16px;
-    line-height: 22px;
-    max-width: 180px;
+    dt {
+      @include advantage-header;
+      font-size: 22px;
+      line-height: 33px;
+      width: auto;
+      margin: 0 0 20px;
+      padding: 0;
+    }
+
+    dd {
+      @include text;
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 240px;
+      width: auto;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
+
