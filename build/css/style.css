@@ -2444,6 +2444,13 @@ button,
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .advantages__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .advantages__item dt {
   margin-top: 0;
   margin-bottom: 22px;
