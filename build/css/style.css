@@ -2507,14 +2507,34 @@ button,
 .advantages__item[data-advantages=regular] {
   padding: 0 0 85px 20px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .advantages__item[data-advantages=regular] dt {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  color: #102654;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 20px;
+  color: #102654;
+  font-size: 22px;
+  line-height: 33px;
+  margin: 0 0 20px;
   padding: 0;
 }
 .advantages__item[data-advantages=regular] dd {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 180px;
 }
 
 .contact-us {

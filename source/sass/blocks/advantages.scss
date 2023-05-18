@@ -62,17 +62,22 @@
 .advantages__item[data-advantages="regular"] {
   padding: 0 0 85px 20px;
   width: 100%;
+  display: flex;
+
   dt {
-    margin: 0;
+    @include advantage-header;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 0 0 20px;
     padding: 0;
-  }
-
-  span {
-
   }
 
   dd {
     margin: 0;
     padding: 0;
+    @include text;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 180px;
   }
 }
