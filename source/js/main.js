@@ -38,8 +38,8 @@ window.addEventListener('DOMContentLoaded', () => {
         },
       },
       navigation: {
-        nextEl: '.trainers__button-prev',
-        prevEl: '.trainers__button-next',
+        nextEl: '.trainers__button-next',
+        prevEl: '.trainers__button-prev',
       },
     });
 
@@ -48,8 +48,8 @@ window.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 1,
       spaceBetween: 50,
       navigation: {
-        nextEl: '.reviews__left-button',
-        prevEl: '.reviews__right-button',
+        nextEl: '.reviews__right-button',
+        prevEl: '.reviews__left-button',
       },
     });
 
