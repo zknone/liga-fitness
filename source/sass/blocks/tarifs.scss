@@ -36,10 +36,28 @@
 
 .tarifs__card-item {
   padding: 68px 77px;
+  border: 7px solid $color-default-white;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $color-default-white;
+
+  @include hover-focus {
+    border: 7px solid;
+    border-image-slice: 1;
+    border-width: 7px;
+    border-image-source: $border-gradient;
+
+    a {
+      background: $button-background-gradient;
+      border: 4px solid;
+      color: $color-default-white;
+      border-width: 4px;
+      border-image-slice: 1;
+      border-image-source: $button-background-gradient;
+    }
+  }
 
   h3 {
     @include header-roboto;
@@ -76,5 +94,10 @@
     border-color: $color-default-black;
     color: $color-default-black;
     margin: 0;
+
+    @include header-roboto;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
   }
 }

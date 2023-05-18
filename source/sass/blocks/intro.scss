@@ -3,6 +3,7 @@
 .intro {
   display: block;
   padding-top: 180px;
+  padding-bottom: 50px;
 
   background: conic-gradient(
     from 150.87deg at 16.03% 39.06%,
@@ -14,6 +15,10 @@
 
   min-height: 658px;
 
+  @include vp-1200 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
   h2 {
     @include header-alumni;
@@ -32,6 +37,8 @@
   }
 
   img {
+    width: 100%;
+    height: auto;
     @include vp-767() {
       display: none;
     }
@@ -51,7 +58,7 @@
 .intro__info-wrapper {
   display: grid;
   grid-template-columns: repeat(2, min-content);
-  grid-template-rows:  repeat(3, min-content);
+  grid-template-rows: repeat(3, min-content);
 
   @include vp-767() {
     width: 100%;

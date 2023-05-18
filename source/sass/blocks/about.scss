@@ -65,6 +65,12 @@
   }
 }
 
+.about p[data-about="second-p"] {
+  @include vp-1200 {
+    display: none;
+  }
+}
+
 .about__info-wrapper {
   max-width: 360px;
 
