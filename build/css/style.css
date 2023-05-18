@@ -337,14 +337,20 @@ template {
 }
 
 .swiper {
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   overflow: hidden;
   list-style: none;
   padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
+}
+.swiper--trainers {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.swiper--reviews {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .swiper-vertical > .swiper-wrapper {
@@ -2770,6 +2776,11 @@ button,
   .reviews__item {
     padding: 41px 25px;
   }
+}
+
+.reviews__swiper-wrapper {
+  width: 560px;
+  margin: 0 auto;
 }
 
 .tarifs {

@@ -116,7 +116,7 @@
         <div class="trainers__container container">
           <h2>Тренеры</h2>
           <div class="trainers__buttons-wrapper">
-            <div class="trainers__swiper-container swiper">
+            <div class="trainers__swiper-container swiper swiper--trainers">
               <div class="swiper-wrapper">
                 <div class="trainers__card swiper-slide">
                   <h3>Анна Павлова</h3>
@@ -167,11 +167,11 @@
                   </ul>
                 </li>
               </div>
+              <div class="trainers__button-prev swiper-button-prev"></div>
+              <div class="trainers__button-next swiper-button-next"></div>
             </div>
-            <div class="trainers__button-prev swiper-button-prev"></div>
-            <div class="trainers__button-next swiper-button-next"></div>
-          </div>
 
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -246,25 +246,24 @@
       <section class="reviews container">
         <h2>Отзывы</h2>
         <div class="reviews__buttons-wrapper">
-          <div class="reviews__swiper-wrapper swiper">
-            <div class="reviews__left-button swiper-button-prev"></div>
-            <div class="reviews__right-button swiper-button-next"></div>
+
+          <div class="reviews__swiper-wrapper swiper swiper--reviews">
             <div class="reviews__list swiper-wrapper">
-              <div class="reviews__item swiper-slide">
+              <div class="reviews__item swiper-slide swiper-slide--reviews">
                 <picture>
                   <img class="reviews__image" src="./img/review.webp" srcset="./img/review@2x.webp 2x" alt="Анна Орлова" width="80" height="80">
                 </picture>
                 <h3>Анна Орлова</h3>
                 <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
-              <div class="reviews__item swiper-slide">
+              <div class="reviews__item swiper-slide swiper-slide--reviews">
                 <picture>
                   <img class="reviews__image" src="./img/review.webp" srcset="./img/review@2x.webp 2x" alt="Анна Орлова" width="80" height="80">
                 </picture>
                 <h3>Анна Орлова</h3>
                 <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
-              <div class="reviews__item swiper-slide">
+              <div class="reviews__item swiper-slide swiper-slide--reviews">
                 <picture>
                   <img class="reviews__image" src="./img/review.webp" srcset="./img/review@2x.webp 2x" alt="Анна Орлова" width="80" height="80">
                 </picture>
@@ -272,6 +271,8 @@
                 <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
             </div>
+            <div class="reviews__left-button swiper-button-prev"></div>
+            <div class="reviews__right-button swiper-button-next"></div>
           </div>
         </div>
 
