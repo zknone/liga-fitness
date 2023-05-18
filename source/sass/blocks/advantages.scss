@@ -20,7 +20,7 @@
   list-style: none;
 
   display: grid;
-  grid-template-columns: 32% 24% 32%;
+  grid-template-columns: 32% auto 32%;
   justify-content: space-between;
   grid-template-rows: repeat(2, 1fr);
   column-gap: 6%;
@@ -29,6 +29,15 @@
 
   @include vp-1200() {
     margin: 0;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 25% auto 25%;
+    row-gap: 7%;
+  }
+
+  @include vp-767() {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -53,13 +62,24 @@
     color: $color-default-white;
   }
 
-  span {
-  }
-
   dd {
     margin: 0;
     padding: 0;
     color: $color-default-white;
+  }
+
+  @include vp-1200() {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    flex-direction: column;
+    justify-self: center;
+    min-height: 240px;
+    max-width: 440px;
+  }
+
+  @include vp-767 {
+    padding: 50px;
+    max-width: none;
   }
 }
 
@@ -125,6 +145,12 @@
       margin: 0;
       padding: 0;
     }
+  }
+
+  @include vp-767 {
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
