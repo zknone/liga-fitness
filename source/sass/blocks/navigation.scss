@@ -17,3 +17,10 @@
 .navigation__link {
   @include white-link;
 }
+
+.navigation__logo-link {
+  @include hover-focus {
+    opacity: 0.8;
+    transition: opacity, 6ms, ease-in;
+  }
+}
