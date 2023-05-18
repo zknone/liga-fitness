@@ -1233,8 +1233,15 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  margin-bottom: 40px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0 auto 40px auto;
+  padding: 0;
+  -webkit-column-gap: 46px;
+     -moz-column-gap: 46px;
+          column-gap: 46px;
+  border-bottom: 3px solid rgba(120, 120, 120, 0.2);
 }
 @media screen and (max-width: 767px) {
   .tabs__controls {
@@ -1244,32 +1251,33 @@ button.swiper-pagination-bullet {
 }
 
 .tabs__control {
-  text-transform: uppercase;
   cursor: pointer;
-  margin: 0 20px;
-  opacity: 0.5;
-  min-width: auto;
+  padding: 0 0 20px;
+  margin: 0;
+  min-width: 80px;
+  width: auto;
+  border: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 25%;
-}
-@media screen and (max-width: 1023px) {
-  .tabs__control {
-    margin: 0 10px;
-    padding: 15px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .tabs__control {
-    margin: 10px 2% 0;
-    padding: 10px;
-    width: 45%;
-  }
+  background-color: transparent;
 }
 .tabs__control.is-active {
+  position: relative;
   opacity: 1;
   pointer-events: none;
+}
+.tabs__control.is-active::after {
+  position: relative;
+  display: block;
+  content: "";
+  top: 100%;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+  height: 2px;
+  background-color: #D10A42;
 }
 
 .tabs__content {
@@ -1293,18 +1301,6 @@ button.swiper-pagination-bullet {
 }
 .tabs__element p:not(:last-child) {
   margin: 0 0 20px 0;
-}
-.tabs__element:nth-child(1) {
-  background-color: rgb(250, 235, 215);
-}
-.tabs__element:nth-child(2) {
-  background-color: rgb(229, 250, 215);
-}
-.tabs__element:nth-child(3) {
-  background-color: rgb(180, 188, 233);
-}
-.tabs__element:nth-child(4) {
-  background-color: rgb(255, 187, 204);
 }
 
 .tabs--unset .tabs__content {

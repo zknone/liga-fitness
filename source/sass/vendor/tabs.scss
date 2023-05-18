@@ -1,3 +1,6 @@
+@import "../mixins";
+@import "../variables.scss";
+
 .tabs {
   max-width: 100%;
 }
@@ -5,8 +8,12 @@
 .tabs__controls {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 40px;
+  width: min-content;
+
+  margin: 0 auto 40px auto;
+  padding: 0;
+  column-gap: 46px;
+  border-bottom: 3px solid $color-transparent-grey;
 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
@@ -14,28 +21,39 @@
 }
 
 .tabs__control {
-  text-transform: uppercase;
   cursor: pointer;
-  margin: 0 20px;
-  opacity: 0.5;
-  min-width: auto;
-  justify-content: center;
-  width: 25%;
+  padding: 0 0 20px;
+  margin: 0;
+  min-width: 80px;
+  width: auto;
 
-  @media screen and (max-width: 1023px) {
-    margin: 0 10px;
-    padding: 15px;
+  border: none;
+  justify-content: center;
+  background-color: transparent;
+
+  @include vp-1200() {
+
   }
 
-  @media screen and (max-width: 767px) {
-    margin: 10px 2% 0;
-    padding: 10px;
-    width: 45%;
+  @include vp-767() {
+
   }
 
   &.is-active {
+    position: relative;
     opacity: 1;
     pointer-events: none;
+
+    &::after {
+      position: relative;
+      display: block;
+      content: '';
+      top: 100%;
+      transform: translateY(100%);
+      width: 100%;
+      height: 2px;
+      background-color:$color-crimson;
+    }
   }
 }
 
@@ -59,22 +77,6 @@
     &:not(:last-child) {
       margin: 0 0 20px 0;
     }
-  }
-
-  &:nth-child(1) {
-    background-color: rgb(250, 235, 215);
-  }
-
-  &:nth-child(2) {
-    background-color: rgb(229, 250, 215);
-  }
-
-  &:nth-child(3) {
-    background-color: rgb(180, 188, 233);
-  }
-
-  &:nth-child(4) {
-    background-color: rgb(255, 187, 204);
   }
 }
 
