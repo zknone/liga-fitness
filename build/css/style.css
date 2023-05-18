@@ -2991,7 +2991,8 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 0 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .footer__navigation-list {
@@ -3098,6 +3099,21 @@ button,
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+}
+
+@media (hover: hover) {
+  .footer__social-link:hover:not(.focus-visible) {
+    opacity: 0.8;
+    -webkit-transition: opacity, 6ms, ease-in;
+    -o-transition: opacity, 6ms, ease-in;
+    transition: opacity, 6ms, ease-in;
+  }
+}
+.footer__social-link.focus-visible:focus {
+  opacity: 0.8;
+  -webkit-transition: opacity, 6ms, ease-in;
+  -o-transition: opacity, 6ms, ease-in;
+  transition: opacity, 6ms, ease-in;
 }
 
 /* @mixin hover-focus {
