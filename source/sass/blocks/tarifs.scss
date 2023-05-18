@@ -24,7 +24,9 @@
 
   display: flex;
   justify-content: space-between;
+  width: 100%;
   column-gap: 40px;
+  row-gap: 40px;
 
   @include vp-1200() {
     display: flex;
@@ -34,6 +36,45 @@
 
 .tarifs__card-item {
   padding: 68px 77px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $color-default-white;
+
+  h3 {
+    @include header-roboto;
+    margin-bottom: 22px;
+  }
+
+  span {
+    margin-bottom: 95px;
+  }
+
+  p {
+    display: block;
+    position: relative;
+    @include header-roboto;
+    font-size: 60px;
+    line-height: 90px;
+    margin-bottom: 60px;
+    color: $color-egyptian-blue;
+
+    z-index: 2;
+    &::after {
+      display: block;
+      position: absolute;
+      top: -20px;
+      content: '2000';
+      color: $color-default-grey;
+
+      z-index: 1;
+    }
+
+  }
+
+  a {
+    border-color: $color-default-black;
+    color: $color-default-black;
+    margin: 0;
+  }
 }

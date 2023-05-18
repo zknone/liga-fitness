@@ -1237,6 +1237,7 @@ button.swiper-pagination-bullet {
   width: -moz-min-content;
   width: min-content;
   margin: 0 auto 40px auto;
+  min-width: 345px;
   padding: 0;
   -webkit-column-gap: 46px;
      -moz-column-gap: 46px;
@@ -1281,10 +1282,15 @@ button.swiper-pagination-bullet {
 }
 
 .tabs__content {
-  margin-bottom: 40px;
   -webkit-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s;
+}
+@media (max-width: 1023px) {
+  .tabs__content {
+    margin: 0 auto;
+    max-width: 442px;
+  }
 }
 
 .tabs__element {
@@ -2888,9 +2894,11 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
+  row-gap: 40px;
 }
 @media (max-width: 1023px) {
   .tarifs__variants-list {
@@ -2906,7 +2914,59 @@ button,
 
 .tarifs__card-item {
   padding: 68px 77px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #FFF;
+}
+.tarifs__card-item h3 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  color: #102654;
+  margin-bottom: 22px;
+}
+.tarifs__card-item span {
+  margin-bottom: 95px;
+}
+.tarifs__card-item p {
+  display: block;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  color: #102654;
+  font-size: 60px;
+  line-height: 90px;
+  margin-bottom: 60px;
+  color: #103AAE;
+  z-index: 2;
+}
+.tarifs__card-item p::after {
+  display: block;
+  position: absolute;
+  top: -20px;
+  content: "2000";
+  color: #E8E8E8;
+  z-index: 1;
+}
+.tarifs__card-item a {
+  border-color: #102654;
+  color: #102654;
+  margin: 0;
 }
 
 .trainers {

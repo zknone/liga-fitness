@@ -11,6 +11,7 @@
   width: min-content;
 
   margin: 0 auto 40px auto;
+  min-width: 345px;
   padding: 0;
   column-gap: 46px;
   border-bottom: 3px solid $color-transparent-grey;
@@ -58,9 +59,12 @@
 }
 
 .tabs__content {
-  margin-bottom: 40px;
-
   transition: height 0.3s;
+
+  @include vp-1200 {
+    margin: 0 auto;
+    max-width: 442px;
+  }
 }
 
 .tabs__element {
