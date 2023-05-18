@@ -12,3 +12,8 @@
   align-items: center;
   padding-top: 30px;
 }
+
+
+.navigation__link {
+  @include white-link;
+}

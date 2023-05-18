@@ -61,9 +61,8 @@
   color: $color-default-black;
 }
 
-
 @mixin header-roboto {
-  margin-top: 0;;
+  margin-top: 0;
   margin-bottom: 22px;
 
   font-family: $ff-roboto;
@@ -71,10 +70,8 @@
   font-size: 26px;
   line-height: 28px;
 
-
   color: $color-default-black;
 }
-
 
 @mixin card-header {
   @include header-roboto();
@@ -131,6 +128,18 @@
   line-height: 25px;
   font-weight: 400;
   color: $color-default-white;
+}
+
+@mixin white-link {
+  @include white-text();
+
+  @include hover() {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 @mixin retina {
@@ -190,7 +199,6 @@
     @content;
   }
 }
-
 
 @mixin vp-1200 {
   @media (max-width: ($vp-1200 - 1px)) {
