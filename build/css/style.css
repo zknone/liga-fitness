@@ -3042,6 +3042,10 @@ button,
   font-size: 28px;
   line-height: 44px;
   color: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 200px;
 }
 .promotions__featured-item dd {
   margin: 0;
@@ -3050,6 +3054,10 @@ button,
   font-size: 70px;
   line-height: 89px;
   color: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 200px;
 }
 .promotions__featured-item p {
   margin: 0;
@@ -3059,6 +3067,9 @@ button,
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   max-width: 200px;
   font-family: "Roboto", Arial, sans-serif;
   color: #fff;
@@ -3070,6 +3081,33 @@ button,
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/6;
+  display: inline-block;
+  padding-bottom: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  border-bottom: 2px solid #fff;
+}
+@media (hover: hover) {
+  .promotions__featured-item a:hover:not(.focus-visible) {
+    padding-bottom: 3px;
+    opacity: 0.8;
+  }
+}
+.promotions__featured-item a.focus-visible:focus {
+  padding-bottom: 3px;
+  opacity: 0.8;
 }
 .promotions__featured-item picture {
   grid-column: 3/-1;

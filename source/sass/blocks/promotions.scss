@@ -85,6 +85,8 @@
     font-size: 28px;
     line-height: 44px;
     color: $color-default-white;
+    width: max-content;
+    max-width: 200px;
   }
 
   dd{
@@ -94,13 +96,15 @@
     font-size: 70px;
     line-height: 89px;
     color: $color-default-white;
+    width: max-content;
+    max-width: 200px;
   }
 
   p {
     margin: 0;
     grid-column: 2/3;
     grid-row: 3/4;
-
+    width: max-content;
     max-width: 200px;
 
     @include text;
@@ -110,6 +114,25 @@
   a {
     grid-column: 2/3;
     grid-row: 5/6;
+
+    display: inline-block;
+    padding-bottom: 5px;
+    width: max-content;
+
+    @include white-promo-link;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+
+    position: relative;
+    z-index: 1;
+
+    border-bottom: 2px solid $color-default-white;
+
+    @include hover-focus {
+      padding-bottom: 3px;
+      opacity: 0.8;
+    }
   }
 
   picture {

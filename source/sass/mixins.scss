@@ -142,6 +142,11 @@
   }
 }
 
+@mixin white-promo-link {
+  @include white-text();
+  text-transform: uppercase;
+}
+
 @mixin retina {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     @content;
