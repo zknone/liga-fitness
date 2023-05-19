@@ -3017,7 +3017,15 @@ button,
   }
 }
 
+.promotions__item {
+  padding: 35px;
+  border: 7px solid;
+  border-width: 7px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+}
 .promotions__item h3 {
+  margin: 0 0 20px;
   margin-top: 0;
   margin-bottom: 22px;
   font-family: "Roboto", Arial, sans-serif;
@@ -3029,6 +3037,10 @@ button,
   line-height: 32px;
   margin-bottom: 20px;
   color: #102654;
+}
+.promotions__item p {
+  margin: 0;
+  min-height: 60px;
 }
 .promotions__item[data-promotions=first] {
   -ms-grid-column: 3;
@@ -3066,12 +3078,18 @@ button,
   grid-row: 1/-1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 45px (auto)[2] 45px;
-  grid-template-columns: 45px repeat(2, auto) 45px;
+  -ms-grid-columns: 45px auto 280px;
+  grid-template-columns: 45px auto 280px;
   -ms-grid-rows: 45px (auto)[4] 45px;
   grid-template-rows: 45px repeat(4, auto) 45px;
   background-color: #ed0233;
   height: 100%;
+}
+@media (max-width: 1199px) {
+  .promotions__featured-item {
+    -ms-grid-columns: 45px auto 20px auto;
+    grid-template-columns: 45px auto 20px auto;
+  }
 }
 @media (max-width: 767px) {
   .promotions__featured-item {
@@ -3194,10 +3212,27 @@ button,
   }
 }
 .promotions__featured-item img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 280px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1199px) {
+  .promotions__featured-item img {
+    margin-left: auto;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 767px) {
+  .promotions__featured-item img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 }
 @media (max-width: 1199px) {
   .promotions__featured-item {
@@ -3356,8 +3391,8 @@ button,
   .tarifs__card-item:hover:not(.focus-visible) a {
     background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
     background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-    border: 4px solid;
     color: #fff;
+    border: 4px solid;
     border-width: 4px;
     border-image-slice: 1;
     border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
@@ -3372,8 +3407,8 @@ button,
 .tarifs__card-item.focus-visible:focus a {
   background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  border: 4px solid;
   color: #fff;
+  border: 4px solid;
   border-width: 4px;
   border-image-slice: 1;
   border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
