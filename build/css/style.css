@@ -3299,6 +3299,23 @@ button,
 .reviews__item {
   padding: 62px;
   background-color: #1c3374;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (auto)[2];
+  grid-template-rows: repeat(2, auto);
+  -webkit-column-gap: 28px;
+     -moz-column-gap: 28px;
+          column-gap: 28px;
+}
+.reviews__item picture {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 .reviews__item h3 {
   margin-top: 0;
@@ -3312,8 +3329,14 @@ button,
   line-height: 30px;
   margin-bottom: 25px;
   color: #fff;
+  margin: 0;
+  grid-column: 2/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 .reviews__item p {
+  margin: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
@@ -3321,6 +3344,8 @@ button,
   color: #fff;
   font-size: 16px;
   line-height: 22px;
+  grid-column: 2/-1;
+  grid-row: 2/-1;
 }
 @media (max-width: 1199px) {
   .reviews__item {

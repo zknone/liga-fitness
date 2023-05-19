@@ -11,14 +11,30 @@
   padding: 62px;
   background-color: $color-resolution-blue;
 
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 28px;
+
+  picture {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
   h3 {
     @include review-header;
+    margin: 0;
+    grid-column: 2/-1;
+    grid-row: 1/2;
   }
 
   p {
+    margin: 0;
     @include white-text;
     font-size: 16px;
     line-height: 22px;
+    grid-column: 2/-1;
+    grid-row: 2/-1;
   }
 
   @include vp-1200() {
