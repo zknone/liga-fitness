@@ -3282,6 +3282,7 @@ button,
 }
 
 .trainers__card {
+  position: relative;
   text-align: left;
   display: -ms-grid;
   display: grid;
@@ -3295,6 +3296,14 @@ button,
   aspect-ratio: 260/294;
 }
 @media (hover: hover) {
+  .trainers__card:hover:not(.focus-visible)::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: rgba(16, 38, 84, 0.89);
+    width: 100%;
+    height: 100%;
+  }
   .trainers__card:hover:not(.focus-visible) h3 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -3333,6 +3342,14 @@ button,
     grid-row: 4/5;
     z-index: 3;
   }
+}
+.trainers__card.focus-visible:focus::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: rgba(16, 38, 84, 0.89);
+  width: 100%;
+  height: 100%;
 }
 .trainers__card.focus-visible:focus h3 {
   -ms-grid-column: 2;

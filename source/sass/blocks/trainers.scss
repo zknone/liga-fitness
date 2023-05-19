@@ -7,6 +7,7 @@
 }
 
 .trainers__card {
+  position: relative;
   text-align: left;
   display: grid;
   grid-template-rows: 10px min-content min-content 1fr 10px;
@@ -15,6 +16,15 @@
   aspect-ratio: 260/294;
 
   @include hover-focus {
+    &::after {
+      position: absolute;
+      content:'';
+      display: block;
+      background-color: rgba(16, 38, 84, 0.89);
+      width: 100%;
+      height: 100%;
+    }
+
     h3 {
       grid-column: 2/3;
       grid-row: 2/3;
