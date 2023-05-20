@@ -2786,8 +2786,7 @@ button,
 .contact-us__info {
   padding-top: 55px;
   padding-bottom: 70px;
-  width: 70%;
-  margin-left: auto;
+  margin-left: 120px;
 }
 @media (max-width: 1199px) {
   .contact-us__info {
@@ -2806,6 +2805,28 @@ button,
   font-size: 54px;
   line-height: 65px;
   color: #102654;
+}
+
+.contact-us__info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-us__info-wrapper dl:nth-child(1) {
+  border-right: 1px solid #102654;
+  padding-right: 60px;
+}
+.contact-us__info-wrapper dt {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.contact-us__info-wrapper dd {
+  margin: 0;
 }
 
 .event {

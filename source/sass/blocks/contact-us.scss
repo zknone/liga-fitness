@@ -60,9 +60,8 @@
 .contact-us__info {
   padding-top: 55px;
   padding-bottom: 70px;
-  width: 70%;
 
-  margin-left: auto;
+  margin-left: 120px;
 
   @include vp-1200() {
     padding: 70px 88px;
@@ -70,5 +69,30 @@
   }
   h2 {
     @include contact-header;
+  }
+
+
+}
+
+.contact-us__info-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  dl {
+    &:nth-child(1) {
+      border-right: 1px solid $color-default-black;
+      padding-right: 60px;
+    }
+  }
+
+  dt {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  dd {
+    margin:0;
   }
 }
