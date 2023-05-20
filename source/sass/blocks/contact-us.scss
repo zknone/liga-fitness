@@ -17,18 +17,42 @@
 }
 
 .contact-us__form {
-  padding-top: 55px;
-  padding-bottom: 70px;
-  width: 70%;
+  padding: 55px 88px 60px;
   margin-right: auto;
 
   h2 {
     @include form-header;
   }
 
-  @include vp-1200() {
-    padding: 70px 88px;
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 30px;
+    column-gap: 30px;
+
+    @include vp-767 {
+      row-gap: 40px;
+    }
+  }
+  label {
     width: 100%;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-slate-grey;
+    background-color: transparent;
+  }
+
+  button {
+    grid-column: 1/-1;
+    padding: 20px;
+  }
+
+  @include vp-1200() {
+    align-self: start;
     margin: 0;
   }
 }
@@ -42,7 +66,6 @@
 
   @include vp-1200() {
     padding: 70px 88px;
-    width: 100%;
     margin: 0;
   }
   h2 {

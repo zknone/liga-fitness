@@ -5,6 +5,11 @@
     @include header-2;
     text-align: center;
   }
+
+  @include vp-767 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .reviews__item {

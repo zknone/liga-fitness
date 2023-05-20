@@ -2727,9 +2727,7 @@ button,
 }
 
 .contact-us__form {
-  padding-top: 55px;
-  padding-bottom: 70px;
-  width: 70%;
+  padding: 55px 88px 60px;
   margin-right: auto;
 }
 .contact-us__form h2 {
@@ -2746,10 +2744,41 @@ button,
   margin-bottom: 25px;
   color: #fff;
 }
+.contact-us__form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (auto)[2];
+  grid-template-rows: repeat(2, auto);
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+@media (max-width: 767px) {
+  .contact-us__form form {
+    row-gap: 40px;
+  }
+}
+.contact-us__form label {
+  width: 100%;
+}
+.contact-us__form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #74819C;
+  background-color: transparent;
+}
+.contact-us__form button {
+  grid-column: 1/-1;
+  padding: 20px;
+}
 @media (max-width: 1199px) {
   .contact-us__form {
-    padding: 70px 88px;
-    width: 100%;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     margin: 0;
   }
 }
@@ -2763,7 +2792,6 @@ button,
 @media (max-width: 1199px) {
   .contact-us__info {
     padding: 70px 88px;
-    width: 100%;
     margin: 0;
   }
 }
@@ -3294,6 +3322,12 @@ button,
   margin-bottom: 25px;
   color: #102654;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .reviews {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .reviews__item {
