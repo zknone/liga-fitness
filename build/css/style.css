@@ -2476,12 +2476,11 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-grid-rows: (1fr)[2];
-  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2] auto;
+  grid-template-rows: repeat(2, 1fr) auto;
   -webkit-column-gap: 6%;
      -moz-column-gap: 6%;
           column-gap: 6%;
-  row-gap: 160px;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -2583,7 +2582,7 @@ button,
 }
 
 .advantages__item[data-advantages=regular] {
-  padding: 0;
+  padding: 80px 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2661,6 +2660,24 @@ button,
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+}
+.advantages__item[data-advantages=regular]:nth-of-type(1) {
+  padding-bottom: 85px;
+  padding-top: 0;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+}
+.advantages__item[data-advantages=regular]:nth-of-type(2) {
+  padding-top: 0;
+  padding-bottom: 85px;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+}
+.advantages__item[data-advantages=regular]:nth-of-type(3) {
+  padding-top: 85px;
+  padding-bottom: 0;
+}
+.advantages__item[data-advantages=regular]:nth-of-type(4) {
+  padding-top: 85px;
+  padding-bottom: 0;
 }
 @media (max-width: 767px) {
   .advantages__item[data-advantages=regular] {
@@ -2769,6 +2786,7 @@ button,
   border: none;
   border-bottom: 1px solid #74819C;
   background-color: transparent;
+  color: #fff;
 }
 .contact-us__form button {
   grid-column: 1/-1;

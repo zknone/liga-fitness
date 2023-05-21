@@ -331,13 +331,13 @@
       </section>
       <section class="contact-us">
         <div class="contact-us__container container">
-          <div class="contact-us__form">
+          <div class="contact-us__form" data-form-validate data-callback="base">
             <h2>Бесплатное занятие </h2>
             <form action="https://echo.htmlacademy.ru/" method="post" class="form__form">
-              <label>
-                <input type="text" aria-label="Имя" placeholder="Имя">
+              <label data-form="name" data-validate-type="text" data-limitation="name" data-message-base="Не забудьте ввести имя" data-message-extra="Проверьте имя" data-required>
+                <input type="text" aria-label="Имя." placeholder="Имя" required>
               </label>
-              <label>
+              <label data-form="phone" data-validate-type="phone" data-message-base="Не забудьте ввести телефон" data-message-extra="Проверьте телефон" data-required>
                 <input type="text" type="text" aria-label="Телефон" placeholder="+ 7 (929) 13 12">
               </label>
               <button class="btn" type="submit">отправить</button>
