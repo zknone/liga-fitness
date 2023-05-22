@@ -2719,9 +2719,9 @@ button,
 }
 @media (max-width: 1199px) {
   .contact-us {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, #102654), color-stop(40%, #fff));
-    background: -o-linear-gradient(top, #102654 45%, #fff 40%);
-    background: linear-gradient(180deg, #102654 45%, #fff 40%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(53%, #102654), color-stop(40%, #fff));
+    background: -o-linear-gradient(top, #102654 53%, #fff 40%);
+    background: linear-gradient(180deg, #102654 53%, #fff 40%);
   }
 }
 
@@ -2780,6 +2780,7 @@ button,
 }
 .contact-us__form label {
   width: 100%;
+  color: #fff;
 }
 .contact-us__form input {
   width: 100%;

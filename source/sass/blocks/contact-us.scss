@@ -2,7 +2,7 @@
   background: linear-gradient(90deg, $color-default-black 50%, $color-default-white 50%);
 
   @include vp-1200() {
-    background: linear-gradient(180deg, $color-default-black 45%, $color-default-white 40%);
+    background: linear-gradient(180deg, $color-default-black 53%, $color-default-white 40%);
   }
 }
 
@@ -37,6 +37,7 @@
   }
   label {
     width: 100%;
+    color: $color-default-white;
   }
 
   input {
