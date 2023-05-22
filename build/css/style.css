@@ -2724,6 +2724,11 @@ button,
     background: linear-gradient(180deg, #102654 50%, #fff 50%);
   }
 }
+@media (max-width: 1199px) and (max-width: 767px) {
+  .contact-us {
+    background: none;
+  }
+}
 .contact-us .contact-us__container {
   display: -ms-grid;
   display: grid;
@@ -2758,6 +2763,18 @@ button,
 @media (max-width: 767px) {
   .contact-us .contact-us__form {
     padding: 0;
+    position: relative;
+  }
+  .contact-us .contact-us__form::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: -15px;
+    width: calc(100% + 30px);
+    height: 100%;
+    z-index: -1;
+    background-color: #102654;
   }
 }
 .contact-us .contact-us__form h2 {

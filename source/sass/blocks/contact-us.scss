@@ -11,6 +11,10 @@
       $color-default-black 50%,
       $color-default-white 50%
     );
+
+  @include vp-767 {
+    background: none;
+  }
   }
 
   .contact-us__container {
@@ -38,6 +42,19 @@
 
     @include vp-767 {
       padding: 0;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: '';
+        top: 0;
+        left: -15px;
+        width: calc(100% + 30px);
+        height: 100%;
+        z-index: -1;
+        background-color: $color-default-black;
+      }
     }
     h2 {
       @include form-header;
