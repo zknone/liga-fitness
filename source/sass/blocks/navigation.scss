@@ -15,7 +15,19 @@
 
 
 .navigation__link {
-  @include white-link;
+  font-family: $ff-roboto;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: $color-default-white;
+
+  @include hover() {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .navigation__logo-link {

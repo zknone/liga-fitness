@@ -4,7 +4,15 @@
   background-color: $color-background-grey;
 
   h2 {
-    @include header-2;
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+
+    color: $color-default-black;
     text-align: center;
   }
 }
@@ -18,7 +26,15 @@
 
 .advantages__item {
   dt {
-    @include advantage-header;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: $color-default-black;
   }
 }
 
@@ -116,12 +132,16 @@
     margin: 0;
 
     dt {
-      @include advantage-header;
       margin: 0;
       padding: 0;
+
+      font-family: $ff-roboto;
       font-weight: 700;
       font-size: 71px;
       line-height: 71px;
+
+      color: $color-default-black;
+
       text-align: center;
       /* stylelint-disable */
       background: -webkit-linear-gradient(
@@ -135,7 +155,7 @@
     }
 
     dd {
-      @include text;
+      font-family: $ff-roboto;
       font-size: 16px;
       line-height: 22px;
       margin: 0;
@@ -161,9 +181,15 @@
       margin: 0 0 20px;
       padding: 0;
 
-      @include advantage-header;
+      margin-top: 0;
+      margin-bottom: 20px;
+
+      font-family: $ff-roboto;
+      font-weight: 700;
       font-size: 22px;
       line-height: 33px;
+
+      color: $color-default-black;
       text-align: center;
     }
 
@@ -173,7 +199,7 @@
       margin: 0;
       padding: 0;
 
-      @include text;
+      font-family: $ff-roboto;
       font-size: 16px;
       line-height: 22px;
       text-align: center;

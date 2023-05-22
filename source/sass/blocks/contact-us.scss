@@ -58,7 +58,15 @@
     }
 
     h2 {
-      @include form-header;
+      margin-top: 0;
+      margin-bottom: 25px;
+
+      font-family: $ff-alumni;
+      font-weight: 800;
+      font-size: 54px;
+      line-height: 82px;
+
+      color: $color-default-white;
 
       @include vp-767 {
         margin-top: 70px;
@@ -118,7 +126,15 @@
     }
 
     h2 {
-      @include contact-header;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      font-family: $ff-alumni;
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 65px;
+
+      color: $color-default-black;
 
       @include vp-1200 {
         padding-left: 48px;

@@ -21,11 +21,17 @@
   }
 
   h2 {
-    @include header-alumni;
+    margin-top: 0;
+    margin-bottom: 80px;
+
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 92px;
+    line-height: 110px;
+
+    color: $color-default-white;
     max-width: 300px;
     text-align: right;
-
-    margin-bottom: 80px;
 
     @include vp-767 {
       font-size: 72px;
@@ -34,7 +40,15 @@
   }
 
   span {
-    @include header-2-white;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 48px;
+
+    color: $color-default-white;
+    text-transform: uppercase;
     max-width: 133px;
 
     grid-column: 1/-1;
@@ -94,9 +108,11 @@
   justify-self: end;
 
   li {
-    @include white-text;
+    font-family: $ff-roboto;
     font-size: 14px;
     line-height: 21px;
+    font-weight: 400;
+    color: $color-default-white;
   }
 
   @include vp-767 {

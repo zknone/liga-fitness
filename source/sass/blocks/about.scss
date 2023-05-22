@@ -18,7 +18,15 @@
   }
 
   h2 {
-    @include header-2-text;
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+
+    color: $color-default-black;
 
     @include vp-1200() {
       text-align: center;

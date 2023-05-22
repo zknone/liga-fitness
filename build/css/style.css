@@ -2213,7 +2213,7 @@ button,
 }
 .intro h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 80px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
@@ -2221,7 +2221,6 @@ button,
   color: #ffffff;
   max-width: 300px;
   text-align: right;
-  margin-bottom: 80px;
 }
 @media (max-width: 767px) {
   .intro h2 {
@@ -2235,10 +2234,8 @@ button,
   margin-bottom: 0;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
-  font-size: 92px;
-  line-height: 110px;
-  color: #ffffff;
   font-size: 48px;
+  color: #ffffff;
   text-transform: uppercase;
   max-width: 133px;
   grid-column: 1/-1;
@@ -2328,12 +2325,10 @@ button,
 }
 .intro__services-list li {
   font-family: "Roboto", arial, sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #ffffff;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .intro__services-list {
@@ -2385,15 +2380,11 @@ button,
 }
 .about h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
-  font-size: 92px;
-  line-height: 110px;
-  color: #ffffff;
   font-size: 48px;
   line-height: 58px;
-  margin-bottom: 25px;
   color: #102654;
 }
 @media (max-width: 1199px) {
@@ -2547,15 +2538,11 @@ button,
 }
 .advantages h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
-  font-size: 92px;
-  line-height: 110px;
-  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
-  margin-bottom: 25px;
   color: #102654;
   text-align: center;
 }
@@ -2569,15 +2556,11 @@ button,
 
 .advantages__item dt {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 28px;
-  color: #102654;
   font-size: 22px;
   line-height: 33px;
-  margin-bottom: 20px;
   color: #102654;
 }
 
@@ -2710,22 +2693,13 @@ button,
   margin: 0;
 }
 .advantages__item[data-advantages=regular] dl[data-points=points] dt {
-  margin-top: 0;
-  margin-bottom: 22px;
-  font-family: "Roboto", arial, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 28px;
-  color: #102654;
-  font-size: 22px;
-  line-height: 33px;
-  margin-bottom: 20px;
-  color: #102654;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 71px;
   line-height: 71px;
+  color: #102654;
   text-align: center;
   /* stylelint-disable */
   background: -webkit-linear-gradient(92.51deg, #d10a42 30%, #0041ca 87.33%);
@@ -2756,18 +2730,12 @@ button,
   margin: 0 0 20px;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 28px;
-  color: #102654;
   font-size: 22px;
   line-height: 33px;
-  margin-bottom: 20px;
   color: #102654;
-  font-size: 22px;
-  line-height: 33px;
   text-align: center;
 }
 .advantages__item[data-advantages=regular] dl[data-points=description] dd {
@@ -2900,16 +2868,11 @@ button,
 }
 .contact-us .contact-us__form h2 {
   margin-top: 0;
-  margin-bottom: 0;
-  font-family: "Alumni Sans", helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 92px;
-  line-height: 110px;
-  color: #ffffff;
-  font-size: 54px;
-  font-weight: 800;
-  line-height: 82px;
   margin-bottom: 25px;
+  font-family: "Alumni Sans", helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 82px;
   color: #ffffff;
 }
 @media (max-width: 767px) {
@@ -2979,9 +2942,6 @@ button,
   margin-bottom: 0;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
-  font-size: 92px;
-  line-height: 110px;
-  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
   color: #102654;
@@ -3106,15 +3066,12 @@ button,
 }
 .event h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 35px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
-  font-size: 92px;
-  line-height: 110px;
-  color: #ffffff;
   font-size: 82px;
   line-height: 78px;
-  margin-bottom: 35px;
+  color: #ffffff;
   max-width: 200px;
 }
 @media (max-width: 767px) {
@@ -3168,12 +3125,10 @@ button,
 .event__info-wrapper dl {
   margin: 0;
   font-family: "Roboto", arial, sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #ffffff;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3246,11 +3201,9 @@ button,
   grid-row: 3/4;
   font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 27px;
   font-weight: 400;
   color: #ffffff;
-  font-size: 18px;
-  line-height: 27px;
 }
 .event__info-wrapper a {
   grid-column: 1/-1;
@@ -3284,15 +3237,11 @@ button,
 }
 .promotions h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
-  font-size: 92px;
-  line-height: 110px;
-  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
-  margin-bottom: 25px;
   color: #102654;
   text-align: center;
 }
@@ -3337,18 +3286,12 @@ button,
   border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
 .promotions__item h3 {
-  margin-top: 0;
-  margin-bottom: 22px;
+  margin: 0 0 20px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 28px;
-  color: #102654;
-  font-size: 26px;
   line-height: 32px;
-  margin-bottom: 20px;
   color: #102654;
-  margin: 0 0 20px;
 }
 .promotions__item p {
   margin: 0;
@@ -3364,15 +3307,11 @@ button,
   width: -moz-max-content;
   width: max-content;
   font-family: "Roboto", arial, sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #ffffff;
-  text-transform: uppercase;
-  color: #102654;
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
+  text-transform: uppercase;
+  color: #102654;
   position: relative;
   z-index: 1;
   border-bottom: 2px solid #102654;
@@ -3522,14 +3461,11 @@ button,
   width: -moz-max-content;
   width: max-content;
   font-family: "Roboto", arial, sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #ffffff;
-  text-transform: uppercase;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
   position: relative;
   z-index: 1;
   border-bottom: 2px solid #ffffff;
@@ -3595,15 +3531,11 @@ button,
 }
 .reviews h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
-  font-size: 92px;
-  line-height: 110px;
-  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
-  margin-bottom: 25px;
   color: #102654;
   text-align: center;
 }
@@ -3636,18 +3568,12 @@ button,
   grid-row: 1/4;
 }
 .reviews__item h3 {
-  margin-top: 0;
-  margin-bottom: 22px;
+  margin: 0 0 20px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 28px;
-  color: #102654;
   font-size: 20px;
   line-height: 30px;
-  margin-bottom: 25px;
   color: #ffffff;
-  margin: 0 0 20px;
   grid-column: 3/-1;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -3656,12 +3582,10 @@ button,
 .reviews__item p {
   margin: 0;
   font-family: "Roboto", arial, sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #ffffff;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
   grid-column: 3/-1;
   grid-row: 2/-1;
 }
@@ -3686,15 +3610,11 @@ button,
 }
 .tarifs h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
-  font-size: 92px;
-  line-height: 110px;
-  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
-  margin-bottom: 25px;
   color: #102654;
   text-align: center;
 }
@@ -3803,7 +3723,6 @@ button,
   font-size: 26px;
   line-height: 28px;
   color: #102654;
-  margin-bottom: 22px;
 }
 .tarifs__card-item span {
   margin-bottom: 95px;
@@ -3813,15 +3732,11 @@ button,
   position: relative;
   z-index: 2;
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 60px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 28px;
-  color: #102654;
   font-size: 60px;
   line-height: 90px;
-  margin-bottom: 60px;
   color: #103aae;
 }
 .tarifs__card-item p::before {
@@ -3843,18 +3758,14 @@ button,
   left: calc(100% + 14px);
 }
 .tarifs__card-item a {
-  border-color: #102654;
-  color: #102654;
-  margin: 0;
   margin-top: 0;
   margin-bottom: 22px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 28px;
-  color: #102654;
   font-size: 12px;
   line-height: 14px;
+  border-color: #102654;
+  color: #102654;
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
@@ -3872,15 +3783,11 @@ button,
 }
 .trainers h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
-  font-size: 92px;
-  line-height: 110px;
-  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
-  margin-bottom: 25px;
   color: #102654;
 }
 
@@ -3914,15 +3821,11 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 0;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 28px;
-  color: #102654;
   font-size: 18px;
   line-height: 27px;
-  margin-bottom: 0;
   color: #ffffff;
   z-index: 3;
 }
@@ -3960,15 +3863,11 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 0;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 28px;
-  color: #102654;
   font-size: 18px;
   line-height: 27px;
-  margin-bottom: 0;
   color: #ffffff;
   z-index: 3;
 }
@@ -4000,15 +3899,11 @@ button,
   -ms-grid-row-align: end;
       align-self: end;
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 0;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 28px;
-  color: #102654;
   font-size: 18px;
   line-height: 27px;
-  margin-bottom: 0;
   color: #ffffff;
   z-index: 3;
   overflow-y: auto;
@@ -4022,12 +3917,9 @@ button,
   grid-row: 3/4;
   z-index: -1;
   font-family: "Roboto", arial, sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #ffffff;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
   color: #b6bdcc;
   overflow-y: auto;
 }
@@ -4048,12 +3940,9 @@ button,
 }
 .trainers__card li {
   font-family: "Roboto", arial, sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #ffffff;
   font-size: 14px;
   line-height: 21px;
+  color: #ffffff;
 }
 .trainers__card picture {
   grid-column: 1/-1;
@@ -4175,12 +4064,10 @@ button,
 
 .footer__navigation-link {
   font-family: "Roboto", arial, sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #ffffff;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
 }
 @media (hover: hover) {
   .footer__navigation-link:hover:not(.focus-visible) {

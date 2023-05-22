@@ -3,7 +3,15 @@
   padding-bottom: 120px;
 
   h2 {
-    @include header-2;
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+
+    color: $color-default-black;
     text-align: center;
   }
 
@@ -28,8 +36,15 @@
   }
 
   h3 {
-    @include review-header;
     margin: 0 0 20px;
+
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: $color-default-white;
+
     grid-column: 3/-1;
     grid-row: 1/2;
   }
@@ -37,9 +52,12 @@
   p {
     margin: 0;
 
-    @include white-text;
+    font-family: $ff-roboto;
     font-size: 16px;
     line-height: 22px;
+    font-weight: 400;
+    color: $color-default-white;
+
     grid-column: 3/-1;
     grid-row: 2/-1;
   }

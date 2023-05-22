@@ -17,7 +17,15 @@
   }
 
   h2 {
-    @include event-header;
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 82px;
+    line-height: 78px;
+
+    color: $color-default-white;
 
     max-width: 200px;
 
@@ -65,9 +73,12 @@
   dl {
     margin: 0;
 
-    @include white-text;
+    font-family: $ff-roboto;
     font-size: 14px;
     line-height: 21px;
+    font-weight: 400;
+    color: $color-default-white;
+
 
     display: flex;
     flex-direction: column;
@@ -89,7 +100,7 @@
     margin: 0;
     padding: 0;
 
-    @include text;
+    font-family: $ff-roboto;
 
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -131,9 +142,11 @@
     grid-column: 1/-1;
     grid-row: 3/4;
 
-    @include white-text;
+    font-family: $ff-roboto;
     font-size: 18px;
     line-height: 27px;
+    font-weight: 400;
+    color: $color-default-white;
   }
 
   a {

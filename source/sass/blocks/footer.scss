@@ -54,9 +54,20 @@
 }
 
 .footer__navigation-link {
-  @include white-link;
+  font-family: $ff-roboto;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 400;
+  color: $color-default-white;
+
+  @include hover() {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: underline;
+  }
+
 
   @include vp-767() {
     line-height: 19px;
