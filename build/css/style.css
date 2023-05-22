@@ -1248,11 +1248,10 @@ button.swiper-pagination-bullet {
   .tabs__controls {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    min-width: 100px;
+    min-width: 320px;
     -webkit-column-gap: 0;
        -moz-column-gap: 0;
             column-gap: 0;
-    width: 100%;
   }
 }
 
@@ -2236,6 +2235,8 @@ button,
 @media (max-width: 767px) {
   .intro h2 {
     font-size: 72px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 .intro span {
@@ -2252,6 +2253,7 @@ button,
   grid-column: 1/-1;
   -ms-grid-column-align: end;
       justify-self: end;
+  align-self: flex-end;
 }
 .intro img {
   width: 100%;
@@ -2346,7 +2348,7 @@ button,
   .intro__services-list {
     margin: 0;
     position: absolute;
-    left: 0;
+    left: 5%;
     top: 50%;
   }
 }
@@ -3036,6 +3038,13 @@ button,
   margin-bottom: 35px;
   max-width: 200px;
 }
+@media (max-width: 767px) {
+  .event h2 {
+    font-size: 48px;
+    line-height: 46px;
+    font-weight: 600;
+  }
+}
 .event img {
   grid-column: 2/-1;
   background-color: #00014e;
@@ -3061,6 +3070,11 @@ button,
 @media (max-width: 1199px) {
   .event__info-wrapper {
     padding: 51px 45px;
+  }
+}
+@media (max-width: 767px) {
+  .event__info-wrapper {
+    padding: 50px 44px;
   }
 }
 .event__info-wrapper h2 {

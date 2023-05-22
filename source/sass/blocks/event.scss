@@ -20,6 +20,12 @@
     @include event-header;
 
     max-width: 200px;
+
+    @include vp-767 {
+      font-size: 48px;
+      line-height: 46px;
+      font-weight: 600;
+    }
   }
 
   img {
@@ -44,6 +50,10 @@
 
   @include vp-1200() {
     padding: 51px 45px;
+  }
+
+  @include vp-767 {
+    padding: 50px 44px;
   }
 
   h2 {
