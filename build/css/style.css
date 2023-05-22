@@ -2207,7 +2207,13 @@ button,
 }
 @media (max-width: 1199px) {
   .intro {
-    padding-top: 80px;
+    padding-top: 195px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 1199px) {
+  .intro {
+    padding-top: 160px;
     padding-bottom: 80px;
   }
 }
@@ -2242,6 +2248,18 @@ button,
   -ms-grid-column-align: end;
       justify-self: end;
   align-self: flex-end;
+}
+@media (max-width: 1199px) {
+  .intro span {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .intro span {
+    font-size: 28px;
+    line-height: 34px;
+  }
 }
 .intro img {
   width: 100%;
