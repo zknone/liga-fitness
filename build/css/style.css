@@ -3043,32 +3043,28 @@ button,
   color: #fff;
   font-size: 14px;
   line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .event__info-wrapper dl[data-feature=date] {
   grid-column: 2/-1;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 .event__info-wrapper dl[data-feature=time] {
   grid-column: 2/-1;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 .event__info-wrapper dd {
   margin: 0;
@@ -3080,6 +3076,10 @@ button,
   grid-template-columns: repeat(2, auto);
   -ms-grid-rows: (auto)[2];
   grid-template-rows: repeat(2, auto);
+  border-top: 1px solid #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .event__info-wrapper dd span[data-date=day] {
   font-size: 40px;
@@ -3089,6 +3089,9 @@ button,
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   grid-row: 1/-1;
+  margin-right: 7px;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 .event__info-wrapper dd span[data-date=month] {
   grid-column: 2/-1;

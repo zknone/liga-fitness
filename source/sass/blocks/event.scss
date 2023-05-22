@@ -58,20 +58,19 @@
     font-size: 14px;
     line-height: 21px;
 
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
     &[data-feature="date"] {
       grid-column: 2/-1;
       grid-row: 1/2;
-
-      display: flex;
-      flex-direction: column;
     }
 
     &[data-feature="time"] {
       grid-column: 2/-1;
       grid-row: 2/3;
-
-      display: flex;
-      flex-direction: column;
     }
   }
 
@@ -84,6 +83,9 @@
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
 
+    border-top: 1px solid $color-default-white;
+    width: fit-content;
+
     span[data-date="day"] {
       font-size: 40px;
       line-height: 40px;
@@ -91,6 +93,9 @@
 
       grid-column: 1/2;
       grid-row: 1/-1;
+
+      margin-right: 7px;
+      align-self: center;
     }
 
     span[data-date="month"] {
