@@ -3,8 +3,6 @@ import { initModals } from './modules/modals/init-modals';
 import { Form } from './modules/form-validate/form';
 import { initTabs } from './vendor/init-tabs';
 
-// ---------------------------------
-
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
@@ -44,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
       },
     });
 
-    const reviewsSwiper = new Swiper ('.reviews__swiper-wrapper', {
+    const reviewsSwiper = new Swiper('.reviews__swiper-wrapper', {
       direction: 'horizontal',
       slidesPerView: 1,
       spaceBetween: 50,
@@ -53,6 +51,13 @@ window.addEventListener('DOMContentLoaded', () => {
         prevEl: '.reviews__left-button',
       },
     });
+
+    setInterval(function () {
+      if (document.activeElement instanceof HTMLIFrameElement) {
+        document.getElementById('cover').style.opacity = 0;
+        document.getElementById('player').style.opacity = 1;
+      }
+    }, 50);
   });
 });
 
