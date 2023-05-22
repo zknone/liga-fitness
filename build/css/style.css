@@ -3625,6 +3625,7 @@ button,
 .tarifs {
   padding: 120px 0;
   background-color: #f8f9fc;
+  position: relative;
 }
 .tarifs h2 {
   margin-top: 0;
@@ -3635,6 +3636,20 @@ button,
   line-height: 65px;
   color: #102654;
   text-align: center;
+}
+
+.tarifs__background-img {
+  position: absolute;
+  width: 321px;
+  height: 384px;
+  top: calc(100% - 240px);
+  left: 50%;
+  z-index: 0;
+}
+@media (max-width: 1199px) {
+  .tarifs__background-img {
+    left: calc(100% - 240px);
+  }
 }
 
 .tarifs__duration-list {
