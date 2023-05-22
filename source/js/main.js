@@ -56,8 +56,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     setInterval(function () {
       if (document.activeElement instanceof HTMLIFrameElement) {
-        document.getElementById('cover').style.opacity = 0;
-        document.getElementById('player').style.opacity = 1;
+        document.querySelector('[data-media="cover"]').style.opacity = 0;
+        document.querySelector('[data-media="background"]').style.opacity = 0;
+        document.querySelector('[data-media="player"]').style.opacity = 1;
       }
     }, 50);
   });
