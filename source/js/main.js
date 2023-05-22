@@ -1,7 +1,7 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
-import { initTabs } from './vendor/init-tabs';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
+import {initTabs} from './vendor/init-tabs';
 
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
 
+    // eslint-disable-next-line no-unused-vars, no-undef
     const trainersSwiper = new Swiper('.trainers__swiper-container', {
       direction: 'horizontal',
       loop: true,
@@ -42,6 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
       },
     });
 
+    // eslint-disable-next-line no-unused-vars, no-undef
     const reviewsSwiper = new Swiper('.reviews__swiper-wrapper', {
       direction: 'horizontal',
       slidesPerView: 1,

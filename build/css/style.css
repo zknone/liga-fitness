@@ -1242,7 +1242,7 @@ button.swiper-pagination-bullet {
   -webkit-column-gap: 46px;
      -moz-column-gap: 46px;
           column-gap: 46px;
-  border-bottom: 3px solid rgba(120, 120, 120, 0.2);
+  border-bottom: 3px solid #787878;
 }
 @media (max-width: 767px) {
   .tabs__controls {
@@ -1391,7 +1391,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   color: #102654;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1401,7 +1401,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 a {
@@ -1421,8 +1421,8 @@ textarea {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px #fff;
-          box-shadow: inset 0 0 0 1000px #fff;
+  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
+          box-shadow: inset 0 0 0 1000px #ffffff;
   -webkit-text-fill-color: #102654;
 }
 
@@ -1604,9 +1604,9 @@ button,
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 30px 20px;
-  color: #fff;
+  color: #ffffff;
   background-color: transparent;
-  border: 4px solid #fff;
+  border: 4px solid #ffffff;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
@@ -2178,11 +2178,11 @@ button,
 }
 
 .navigation__link {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
 }
 @media (hover: hover) {
   .navigation__link:hover:not(.focus-visible) {
@@ -2224,11 +2224,11 @@ button,
 .intro h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
-  color: #fff;
+  color: #ffffff;
   max-width: 300px;
   text-align: right;
   margin-bottom: 80px;
@@ -2243,11 +2243,11 @@ button,
 .intro span {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
-  color: #fff;
+  color: #ffffff;
   font-size: 48px;
   text-transform: uppercase;
   max-width: 133px;
@@ -2337,11 +2337,11 @@ button,
       justify-self: end;
 }
 .intro__services-list li {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   line-height: 21px;
 }
@@ -2396,11 +2396,11 @@ button,
 .about h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
-  color: #fff;
+  color: #ffffff;
   font-size: 48px;
   line-height: 58px;
   margin-bottom: 25px;
@@ -2558,11 +2558,11 @@ button,
 .advantages h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
-  color: #fff;
+  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
   margin-bottom: 25px;
@@ -2580,7 +2580,7 @@ button,
 .advantages__item dt {
   margin-top: 0;
   margin-bottom: 22px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 28px;
@@ -2644,7 +2644,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   background-color: #102654;
-  color: #fff;
+  color: #ffffff;
 }
 .advantages__item[data-advantages=featured] dl {
   -ms-flex-item-align: center;
@@ -2662,7 +2662,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   font-size: 22px;
   line-height: 33px;
@@ -2675,7 +2675,7 @@ button,
 .advantages__item[data-advantages=featured] dd {
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #ffffff;
   max-width: 180px;
   text-align: center;
 }
@@ -2722,7 +2722,7 @@ button,
 .advantages__item[data-advantages=regular] dl[data-points=points] dt {
   margin-top: 0;
   margin-bottom: 22px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 28px;
@@ -2731,28 +2731,32 @@ button,
   line-height: 33px;
   margin-bottom: 20px;
   color: #102654;
-  font-size: 22px;
-  line-height: 33px;
   margin: 0;
   padding: 0;
   font-weight: 700;
   font-size: 71px;
   line-height: 71px;
   text-align: center;
+  /* stylelint-disable */
   background: -webkit-linear-gradient(92.51deg, #d10a42 30%, #0041ca 87.33%);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* stylelint-enable */
 }
 .advantages__item[data-advantages=regular] dl[data-points=points] dd {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   margin: 0;
   padding: 0;
   text-align: center;
+  /* stylelint-disable */
   background: -webkit-linear-gradient(92.51deg, #d10a42 30%, #0041ca 87.33%);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* stylelint-enable */
 }
 .advantages__item[data-advantages=regular] dl[data-points=description] {
   margin: 0;
@@ -2763,7 +2767,7 @@ button,
   padding: 0;
   margin-top: 0;
   margin-bottom: 22px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 28px;
@@ -2781,7 +2785,7 @@ button,
   width: auto;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -2840,15 +2844,15 @@ button,
 }
 
 .contact-us {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #fff));
-  background: -o-linear-gradient(left, #102654 50%, #fff 50%);
-  background: linear-gradient(90deg, #102654 50%, #fff 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff));
+  background: -o-linear-gradient(left, #102654 50%, #ffffff 50%);
+  background: linear-gradient(90deg, #102654 50%, #ffffff 50%);
 }
 @media (max-width: 1199px) {
   .contact-us {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #102654), color-stop(50%, #fff));
-    background: -o-linear-gradient(top, #102654 50%, #fff 50%);
-    background: linear-gradient(180deg, #102654 50%, #fff 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #102654), color-stop(50%, #ffffff));
+    background: -o-linear-gradient(top, #102654 50%, #ffffff 50%);
+    background: linear-gradient(180deg, #102654 50%, #ffffff 50%);
   }
 }
 @media (max-width: 1199px) and (max-width: 767px) {
@@ -2907,16 +2911,16 @@ button,
 .contact-us .contact-us__form h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
-  color: #fff;
+  color: #ffffff;
   font-size: 54px;
   font-weight: 800;
   line-height: 82px;
   margin-bottom: 25px;
-  color: #fff;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .contact-us .contact-us__form h2 {
@@ -2943,14 +2947,14 @@ button,
 }
 .contact-us .contact-us__form label {
   width: 100%;
-  color: #fff;
+  color: #ffffff;
 }
 .contact-us .contact-us__form input {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #74819C;
+  border-bottom: 1px solid #74819c;
   background-color: transparent;
-  color: #fff;
+  color: #ffffff;
 }
 .contact-us .contact-us__form button {
   grid-column: 1/-1;
@@ -2983,11 +2987,11 @@ button,
 .contact-us .contact-us__info h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
-  color: #fff;
+  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
   color: #102654;
@@ -3113,11 +3117,11 @@ button,
 .event h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
-  color: #fff;
+  color: #ffffff;
   font-size: 82px;
   line-height: 78px;
   margin-bottom: 35px;
@@ -3173,11 +3177,11 @@ button,
 }
 .event__info-wrapper dl {
   margin: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   line-height: 21px;
   display: -webkit-box;
@@ -3206,14 +3210,14 @@ button,
 .event__info-wrapper dd {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[2];
   grid-template-columns: repeat(2, auto);
   -ms-grid-rows: (auto)[2];
   grid-template-rows: repeat(2, auto);
-  border-top: 1px solid #fff;
+  border-top: 1px solid #ffffff;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -3250,11 +3254,11 @@ button,
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   line-height: 27px;
 }
@@ -3291,11 +3295,11 @@ button,
 .promotions h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
-  color: #fff;
+  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
   margin-bottom: 25px;
@@ -3340,13 +3344,12 @@ button,
   border: 7px solid;
   border-width: 7px;
   border-image-slice: 1;
-  border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
 .promotions__item h3 {
-  margin: 0 0 20px;
   margin-top: 0;
   margin-bottom: 22px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 28px;
@@ -3355,6 +3358,7 @@ button,
   line-height: 32px;
   margin-bottom: 20px;
   color: #102654;
+  margin: 0 0 20px;
 }
 .promotions__item p {
   margin: 0;
@@ -3369,11 +3373,11 @@ button,
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   color: #102654;
   font-size: 12px;
@@ -3458,11 +3462,11 @@ button,
   margin: 0;
 }
 .promotions__featured-item dt {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 44px;
-  color: #fff;
+  color: #ffffff;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -3475,11 +3479,11 @@ button,
 }
 .promotions__featured-item dd {
   margin: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 70px;
   line-height: 89px;
-  color: #fff;
+  color: #ffffff;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -3503,8 +3507,8 @@ button,
   width: -moz-max-content;
   width: max-content;
   max-width: 200px;
-  font-family: "Roboto", Arial, sans-serif;
-  color: #fff;
+  font-family: "Roboto", arial, sans-serif;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .promotions__featured-item p {
@@ -3527,18 +3531,18 @@ button,
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
   position: relative;
   z-index: 1;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ffffff;
 }
 @media (hover: hover) {
   .promotions__featured-item a:hover:not(.focus-visible) {
@@ -3602,11 +3606,11 @@ button,
 .reviews h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
-  color: #fff;
+  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
   margin-bottom: 25px;
@@ -3644,7 +3648,7 @@ button,
 .reviews__item h3 {
   margin-top: 0;
   margin-bottom: 22px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 28px;
@@ -3652,7 +3656,7 @@ button,
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 25px;
-  color: #fff;
+  color: #ffffff;
   margin: 0 0 20px;
   grid-column: 3/-1;
   -ms-grid-row: 1;
@@ -3661,11 +3665,11 @@ button,
 }
 .reviews__item p {
   margin: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   line-height: 22px;
   grid-column: 3/-1;
@@ -3693,11 +3697,11 @@ button,
 .tarifs h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
-  color: #fff;
+  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
   margin-bottom: 25px;
@@ -3750,7 +3754,7 @@ button,
 
 .tarifs__card-item {
   padding: 68px 77px;
-  border: 7px solid #fff;
+  border: 7px solid #ffffff;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3762,7 +3766,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 @media (max-width: 767px) {
   .tarifs__card-item {
@@ -3777,13 +3781,13 @@ button,
     border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   }
   .tarifs__card-item:hover:not(.focus-visible) a {
-    background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-    color: #fff;
+    background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: #ffffff;
     border: 4px solid;
     border-width: 4px;
     border-image-slice: 1;
-    border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   }
 }
 .tarifs__card-item.focus-visible:focus {
@@ -3793,18 +3797,18 @@ button,
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
 }
 .tarifs__card-item.focus-visible:focus a {
-  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  color: #fff;
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
   border: 4px solid;
   border-width: 4px;
   border-image-slice: 1;
-  border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
 .tarifs__card-item h3 {
   margin-top: 0;
   margin-bottom: 22px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 28px;
@@ -3820,7 +3824,7 @@ button,
   z-index: 2;
   margin-top: 0;
   margin-bottom: 22px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 28px;
@@ -3854,7 +3858,7 @@ button,
   margin: 0;
   margin-top: 0;
   margin-bottom: 22px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 28px;
@@ -3879,11 +3883,11 @@ button,
 .trainers h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Alumni Sans", Helvetica, sans-serif;
+  font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
-  color: #fff;
+  color: #ffffff;
   font-size: 54px;
   line-height: 65px;
   margin-bottom: 25px;
@@ -3922,7 +3926,7 @@ button,
     grid-row: 2/3;
     margin-top: 0;
     margin-bottom: 22px;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Roboto", arial, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 28px;
@@ -3930,7 +3934,7 @@ button,
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 0;
-    color: #fff;
+    color: #ffffff;
     z-index: 3;
   }
   .trainers__card:hover:not(.focus-visible) span {
@@ -3969,7 +3973,7 @@ button,
   grid-row: 2/3;
   margin-top: 0;
   margin-bottom: 22px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 28px;
@@ -3977,7 +3981,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 0;
-  color: #fff;
+  color: #ffffff;
   z-index: 3;
 }
 .trainers__card.focus-visible:focus span {
@@ -4009,7 +4013,7 @@ button,
       align-self: end;
   margin-top: 0;
   margin-bottom: 22px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 28px;
@@ -4017,7 +4021,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 0;
-  color: #fff;
+  color: #ffffff;
   z-index: 3;
   overflow-y: auto;
 }
@@ -4029,11 +4033,11 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   z-index: -1;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   line-height: 24px;
   color: #b6bdcc;
@@ -4049,18 +4053,17 @@ button,
   margin: 0;
   padding: 0;
   list-style: disc;
-  color: #fff;
+  color: #ffffff;
   z-index: -1;
-  overflow-y: scroll;
   max-height: 100%;
   overflow-y: auto;
 }
 .trainers__card li {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   line-height: 21px;
 }
@@ -4183,11 +4186,11 @@ button,
 }
 
 .footer__navigation-link {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   line-height: 16px;
 }

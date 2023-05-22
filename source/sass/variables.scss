@@ -4,12 +4,12 @@
 // Default
 
 $color-default-black: #102654;
-$color-default-white: #fff;
+$color-default-white: #ffffff;
 $color-default-grey: #e8e8e8;
 $color-background-grey: #f8f9fc;
 $color-transparent: rgba(255, 255, 255, 0);
 $color-background-red: #ed0233;
-$color-transparent-grey: #78787833;
+$color-transparent-grey: #787878;
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -19,7 +19,7 @@ $color-resolution-blue: #1c3374;
 $color-midnight-blue: #00014e;
 $color-spindle: #b6bdcc;
 $color-crimson: #d10a42;
-$color-slate-grey: #74819C;
+$color-slate-grey: #74819c;
 $color-crimson-opac: rgba(209, 10, 66, 0.2);
 
 // Gradient
@@ -33,7 +33,7 @@ $conic-gradient: conic-gradient(
 );
 
 $border-gradient: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
-$button-background-gradient: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+$button-background-gradient: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 
 // Typography
 // ---------------------------------
@@ -45,8 +45,8 @@ $fz-default: 16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble: "Rouble", "Arial", sans-serif;
 
-$ff-alumni: "Alumni Sans", Helvetica, sans-serif;
-$ff-roboto: "Roboto", Arial, sans-serif;
+$ff-alumni: "Alumni Sans", helvetica, sans-serif;
+$ff-roboto: "Roboto", arial, sans-serif;
 
 // Animation
 // ---------------------------------

@@ -34,14 +34,6 @@
   justify-content: center;
   background-color: transparent;
 
-  @include vp-1200() {
-
-  }
-
-  @include vp-767() {
-
-  }
-
   &.is-active {
     position: relative;
     opacity: 1;
@@ -50,12 +42,12 @@
     &::after {
       position: relative;
       display: block;
-      content: '';
+      content: "";
       top: 100%;
       transform: translateY(100%);
       width: 100%;
       height: 2px;
-      background-color:$color-crimson;
+      background-color: $color-crimson;
     }
   }
 }

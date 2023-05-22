@@ -31,8 +31,10 @@
 
 .footer__navigation-item--logo {
   display: none;
+
   @include vp-767() {
     display: block;
+
     @include hover-focus {
       opacity: 0.8;
       transition: opacity, 6ms, ease-in;
@@ -45,6 +47,7 @@
     opacity: 0.8;
     transition: opacity, 6ms, ease-in;
   }
+
   @include vp-767() {
     display: none;
   }
