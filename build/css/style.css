@@ -2514,6 +2514,7 @@ button,
   top: 0;
   left: 0;
   opacity: 0;
+  border: none;
 }
 @media (max-width: 1199px) {
   .about__media-player-wrapper iframe {
