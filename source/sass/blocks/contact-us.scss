@@ -1,8 +1,16 @@
 .contact-us {
-  background: linear-gradient(90deg, $color-default-black 50%, $color-default-white 50%);
+  background: linear-gradient(
+    90deg,
+    $color-default-black 50%,
+    $color-default-white 50%
+  );
 
   @include vp-1200() {
-    background: linear-gradient(180deg, $color-default-black 53%, $color-default-white 40%);
+    background: linear-gradient(
+      180deg,
+      $color-default-black 53%,
+      $color-default-white 40%
+    );
   }
 }
 
@@ -17,7 +25,8 @@
 }
 
 .contact-us__form {
-  padding: 55px 88px 60px;
+  padding-top: 55px;
+  padding-bottom: 60px;
   margin-right: auto;
 
   h2 {
@@ -66,35 +75,58 @@
   margin-left: 120px;
 
   @include vp-1200() {
-    padding: 70px 88px;
+    padding: 70px 40px;
     margin: 0;
   }
   h2 {
     @include contact-header;
-  }
-
-
-}
-
-.contact-us__info-wrapper {
-  display: flex;
-  justify-content: space-between;
-
-  dl {
-    &:nth-child(1) {
-      border-right: 1px solid $color-default-black;
-      padding-right: 60px;
+    @include vp-1200 {
+      padding-left: 48px;
     }
   }
 
-  dt {
-    margin: 0;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-  }
+  .contact-us__info-wrapper {
+    display: flex;
+    justify-content: space-between;
 
-  dd {
-    margin:0;
+    dl {
+      @include vp-1200 {
+        width: 50%;
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      &:nth-child(1) {
+        position: relative;
+        border-right: 1px solid $color-default-black;
+        padding-right: 60px;
+
+        @include vp-1200 {
+          border: none;
+
+          &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 1px;
+            background-color: $color-default-black;
+            height: 100%;
+
+            top: 0;
+            left: 100%;
+          }
+        }
+      }
+    }
+
+    dt {
+      margin: 0;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+
+    dd {
+      margin: 0;
+    }
   }
 }
