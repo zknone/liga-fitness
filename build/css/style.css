@@ -3677,7 +3677,7 @@ button,
 }
 
 .reviews__swiper-wrapper {
-  width: 660px;
+  max-width: 660px;
 }
 
 .tarifs {
