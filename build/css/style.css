@@ -3898,55 +3898,7 @@ button,
   row-gap: 15px;
   aspect-ratio: 260/294;
 }
-@media (hover: hover) {
-  .trainers__card:hover:not(.focus-visible)::after {
-    position: absolute;
-    content: "";
-    display: block;
-    background-color: rgba(16, 38, 84, 0.89);
-    width: 100%;
-    height: 100%;
-  }
-  .trainers__card:hover:not(.focus-visible) h3 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    margin-top: 0;
-    margin-bottom: 22px;
-    font-family: "Roboto", arial, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 28px;
-    color: #102654;
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 0;
-    color: #ffffff;
-    z-index: 3;
-  }
-  .trainers__card:hover:not(.focus-visible) span {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    z-index: 3;
-  }
-  .trainers__card:hover:not(.focus-visible) ul {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/5;
-    z-index: 3;
-  }
-}
-.trainers__card.focus-visible:focus::after {
+.trainers__card:hover::after {
   position: absolute;
   content: "";
   display: block;
@@ -3954,7 +3906,7 @@ button,
   width: 100%;
   height: 100%;
 }
-.trainers__card.focus-visible:focus h3 {
+.trainers__card:hover h3 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -3974,7 +3926,7 @@ button,
   color: #ffffff;
   z-index: 3;
 }
-.trainers__card.focus-visible:focus span {
+.trainers__card:hover span {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -3983,7 +3935,53 @@ button,
   grid-row: 3/4;
   z-index: 3;
 }
-.trainers__card.focus-visible:focus ul {
+.trainers__card:hover ul {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  z-index: 3;
+}
+.trainers__card:focus::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: rgba(16, 38, 84, 0.89);
+  width: 100%;
+  height: 100%;
+}
+.trainers__card:focus h3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  color: #102654;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 0;
+  color: #ffffff;
+  z-index: 3;
+}
+.trainers__card:focus span {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  z-index: 3;
+}
+.trainers__card:focus ul {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
