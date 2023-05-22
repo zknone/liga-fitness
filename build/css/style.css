@@ -2747,6 +2747,15 @@ button,
   padding-top: 55px;
   padding-bottom: 60px;
   margin-right: auto;
+  max-width: 410px;
+}
+@media (max-width: 1199px) {
+  .contact-us__form {
+    padding-left: 88px;
+    padding-right: 88px;
+    max-width: none;
+    width: 100%;
+  }
 }
 .contact-us__form h2 {
   margin-top: 0;

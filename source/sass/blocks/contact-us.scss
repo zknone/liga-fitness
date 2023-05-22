@@ -28,6 +28,15 @@
   padding-top: 55px;
   padding-bottom: 60px;
   margin-right: auto;
+  max-width: 410px;
+
+  @include vp-1200 {
+    padding-left: 88px;
+    padding-right: 88px;
+    max-width: none;
+    width: 100%;
+  }
+
 
   h2 {
     @include form-header;
