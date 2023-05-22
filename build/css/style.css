@@ -347,8 +347,8 @@ template {
   z-index: 1;
 }
 .swiper--trainers {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 29px;
+  padding-right: 29px;
 }
 .swiper--reviews {
   padding-left: 50px;
@@ -571,7 +571,7 @@ template {
 }
 
 :root {
-  --swiper-navigation-size: 44px;
+  --swiper-navigation-size: 32px;
   /*
   --swiper-navigation-color: var(--swiper-theme-color);
   */
@@ -2694,11 +2694,13 @@ button,
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    border-bottom: none;
   }
   .advantages__item[data-advantages=regular]:nth-of-type(2) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    border-bottom: none;
   }
   .advantages__item[data-advantages=regular]:nth-of-type(3) {
     -webkit-box-ordinal-group: 5;
@@ -2942,8 +2944,18 @@ button,
   line-height: 24px;
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  .contact-us .contact-us__info .contact-us__info-wrapper dt {
+    margin-bottom: 15px;
+  }
+}
 .contact-us .contact-us__info .contact-us__info-wrapper dd {
   margin: 0;
+}
+@media (max-width: 767px) {
+  .contact-us .contact-us__info .contact-us__info-wrapper dd {
+    margin-bottom: 30px;
+  }
 }
 
 .event {

@@ -31,8 +31,8 @@
   z-index: 1;
 
   &--trainers {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 29px;
+    padding-right: 29px;
   }
 
   &--reviews {
@@ -204,7 +204,7 @@
   height: var(--swiper-virtual-size);
 }
 :root {
-  --swiper-navigation-size: 44px;
+  --swiper-navigation-size: 32px;
   /*
   --swiper-navigation-color: var(--swiper-theme-color);
   */
@@ -223,6 +223,8 @@
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
+
+
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
   opacity: 0.35;
