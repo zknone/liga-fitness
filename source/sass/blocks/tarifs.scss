@@ -19,11 +19,16 @@
 
 .tarifs__background-img {
   position: absolute;
-  width: 321px;
+  width: 274px;
   height: 384px;
   top: calc(100% - 240px);
-  left: calc(100% - 320px);
+  left: calc(100% - 274px);
   z-index: 0;
+
+  @include vp-1200 {
+    width: 321px;
+    left: calc(100% - 322px);
+  }
 
   @include vp-767 {
     display: none;

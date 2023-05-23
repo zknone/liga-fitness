@@ -2719,12 +2719,11 @@ button,
   line-height: 71px;
   color: #102654;
   text-align: center;
-  /* stylelint-disable */
-  background: -webkit-linear-gradient(92.51deg, #d10a42 30%, #0041ca 87.33%);
+  background: -o-linear-gradient(357.49deg, #d10a42 30%, #0041ca 87.33%);
+  background: linear-gradient(92.51deg, #d10a42 30%, #0041ca 87.33%);
   -webkit-background-clip: text;
           background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* stylelint-enable */
+  color: transparent;
 }
 .advantages__item[data-advantages=regular] dl[data-points=points] dd {
   font-family: "Roboto", arial, sans-serif;
@@ -2733,12 +2732,11 @@ button,
   margin: 0;
   padding: 0;
   text-align: center;
-  /* stylelint-disable */
-  background: -webkit-linear-gradient(92.51deg, #d10a42 30%, #0041ca 87.33%);
+  background: -o-linear-gradient(357.49deg, #d10a42 30%, #0041ca 87.33%);
+  background: linear-gradient(92.51deg, #d10a42 30%, #0041ca 87.33%);
   -webkit-background-clip: text;
           background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* stylelint-enable */
+  color: transparent;
 }
 .advantages__item[data-advantages=regular] dl[data-points=description] {
   margin: 0;
@@ -3640,11 +3638,17 @@ button,
 
 .tarifs__background-img {
   position: absolute;
-  width: 321px;
+  width: 274px;
   height: 384px;
   top: calc(100% - 240px);
-  left: calc(100% - 320px);
+  left: calc(100% - 274px);
   z-index: 0;
+}
+@media (max-width: 1199px) {
+  .tarifs__background-img {
+    width: 321px;
+    left: calc(100% - 322px);
+  }
 }
 @media (max-width: 767px) {
   .tarifs__background-img {
