@@ -2916,10 +2916,15 @@ button,
 .contact-us .contact-us__form label {
   width: 100%;
   color: #ffffff;
+  font-size: 0;
+}
+.contact-us .contact-us__form label .input-message {
+  font-size: 14px;
 }
 .contact-us .contact-us__form input {
   width: 100%;
   border: none;
+  font-size: 14px;
   border-bottom: 1px solid #74819c;
   background-color: transparent;
   color: #ffffff;

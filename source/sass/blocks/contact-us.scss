@@ -89,11 +89,17 @@
     label {
       width: 100%;
       color: $color-default-white;
+      font-size: 0;
+
+      .input-message {
+        font-size: 14px;
+      }
     }
 
     input {
       width: 100%;
       border: none;
+      font-size: 14px;
       border-bottom: 1px solid $color-slate-grey;
       background-color: transparent;
       color: $color-default-white;

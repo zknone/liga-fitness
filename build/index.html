@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание проекта">
     <title>ProjectName</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -32,7 +32,7 @@
             <a href="#tarifs" class="intro__button btn">Купить абонемент</a>
           </div>
           <picture>
-            <source media="(min-width: 1200px)" type="image/webp" srcset="./img/intro-photo.webp 1x, ./img/intro-photo@2x.webp 2x" width="500" height="556"/>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="./img/intro-photo.webp 1x, ./img/intro-photo@2x.webp 2x" width="500" height="556">
             <img class="intro__image" src="./img/intro-photo-tab.webp" srcset="./img/intro-photo-tab@2x.webp" alt="Лучший спортивный зал в Омске" width="324" height="390">
           </picture>
         </div>
@@ -42,7 +42,8 @@
           <h2>Тренажёрный зал</h2>
           <h3>Просторный зал площадью 900 кв/м</h3>
           <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-          <p data-about="second-p">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>        </div>
+          <p data-about="second-p">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
         <div class="about__media-wrapper">
           <picture>
             <source media="(min-width: 1200px)" type="image/webp" srcset="./img/about-photo-desk.webp 1x, ./img/about-photo-desk@2x.webp 2x" width="660" height="401">
@@ -61,7 +62,6 @@
         </div>
       </section>
       <section class="tarifs" id="tarifs">
-
         <div class="tarifs__container container">
           <picture>
             <source media="(min-width: 1200px)" type="image/webp" srcset="./img/decoration-desk.webp 1x, ./img/decoration-desk@2x.webp 2x" width="289" height="345">
@@ -392,10 +392,12 @@
             <h2>Бесплатное занятие </h2>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <label data-form="name" data-validate-type="text" data-limitation="name" data-message-base="Не забудьте ввести имя" data-message-extra="Проверьте имя" data-required>
-                <input type="text" aria-label="Имя." placeholder="Имя" required>
+                <input name="name" type="text" placeholder="Имя" required>
+                Имя
               </label>
               <label data-form="phone" data-validate-type="phone" data-message-base="Не забудьте ввести телефон" data-message-extra="Проверьте телефон" data-required>
-                <input type="text" aria-label="Телефон." placeholder="+ 7 (929) 13 12">
+                <input name="phone" type="tel" placeholder="+ 7 (929) 13 12" required>
+                Телефон
               </label>
               <button class="btn" type="submit">отправить</button>
             </form>
