@@ -3643,12 +3643,12 @@ button,
   width: 321px;
   height: 384px;
   top: calc(100% - 240px);
-  left: 50%;
+  left: calc(100% - 320px);
   z-index: 0;
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .tarifs__background-img {
-    left: calc(100% - 240px);
+    display: none;
   }
 }
 
