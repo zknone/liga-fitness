@@ -189,7 +189,6 @@
       @include vp-767 {
         display: flex;
         flex-direction: column;
-        margin-bottom: 35px;
 
         margin: 0;
         padding-left: 0;
@@ -213,7 +212,6 @@
         margin: 0 0 30px;
 
         @include vp-1200 {
-          max-width: 0;
           min-width: 200px;
           max-width: 230px;
         }
@@ -221,6 +219,7 @@
         &:nth-last-of-type(odd) {
           margin: 0;
         }
+
         @include vp-767 {
           &:nth-last-of-type(odd) {
             margin-bottom: 30px;

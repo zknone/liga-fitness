@@ -11,15 +11,24 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
+
+  flex-wrap: wrap;
 }
 
 
 .navigation__link {
+  display: block;
   font-family: $ff-roboto;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
   color: $color-default-white;
+  min-width: 120px;
+
+  margin-right: 20px;
+  &:nth-last-child(n) {
+    margin-right: 0;
+  }
 
   @include hover() {
     text-decoration: underline;
@@ -31,6 +40,7 @@
 }
 
 .navigation__logo-link {
+  margin-right: 20px;
   @include hover-focus {
     opacity: 0.8;
     transition: opacity, 6ms, ease-in;
