@@ -45,6 +45,7 @@
 
 .footer__logo-link {
   align-self: center;
+
   @include hover-focus {
     opacity: 0.8;
     transition: opacity, 6ms, ease-in;

@@ -42,11 +42,11 @@
     pointer-events: none;
 
     &::before {
-      top:100%;
+      top: 100%;
       z-index: 2;
       position: absolute;
       display: block;
-      content: '';
+      content: "";
       width: 100%;
       height: 2px;
       background-color: $color-crimson;
@@ -56,12 +56,13 @@
 
 .tabs__control:nth-child(3n-2) {
   position: relative;
+
   &::after {
-    top:100%;
+    top: 100%;
     z-index: 0;
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     width: 345px;
     height: 2px;
     background-color: $color-transparent-grey;
