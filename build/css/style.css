@@ -2196,15 +2196,15 @@ button,
 .navigation__link {
   display: block;
   font-family: "Roboto", arial, sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
   color: #ffffff;
   min-width: 120px;
   margin-right: 20px;
 }
 .navigation__link:nth-last-child(n) {
-  margin-right: 0;
+  margin-right: 3px;
 }
 @media (hover: hover) {
   .navigation__link:hover:not(.focus-visible) {
@@ -2216,6 +2216,7 @@ button,
 }
 
 .navigation__logo-link {
+  margin-top: 10px;
   margin-right: 20px;
 }
 @media (hover: hover) {
@@ -2235,7 +2236,7 @@ button,
 
 .intro {
   display: block;
-  padding-top: 180px;
+  padding-top: 50px;
   padding-bottom: 50px;
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   min-height: 658px;
@@ -2254,11 +2255,11 @@ button,
 }
 .intro h2 {
   margin-top: 0;
-  margin-bottom: 80px;
+  margin-bottom: 90px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 92px;
-  line-height: 110px;
+  line-height: 92px;
   color: #ffffff;
   max-width: 300px;
   text-align: right;
@@ -2276,6 +2277,7 @@ button,
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 48px;
+  line-height: 58px;
   color: #ffffff;
   text-transform: uppercase;
   max-width: 133px;
@@ -2310,9 +2312,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 65px;
-     -moz-column-gap: 65px;
-          column-gap: 65px;
+  -webkit-column-gap: 95px;
+     -moz-column-gap: 95px;
+          column-gap: 95px;
 }
 @media (max-width: 1199px) {
   .intro__container {
@@ -2334,6 +2336,7 @@ button,
 }
 
 .intro__info-wrapper {
+  margin-top: 120px;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -2411,8 +2414,7 @@ button,
   -webkit-column-gap: 85px;
      -moz-column-gap: 85px;
           column-gap: 85px;
-  padding-top: 120px;
-  padding-bottom: 235px;
+  padding: 120px 100px 270px;
 }
 @media (max-width: 1199px) {
   .about {

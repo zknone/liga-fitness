@@ -2,7 +2,7 @@
 
 .intro {
   display: block;
-  padding-top: 180px;
+  padding-top: 50px;
   padding-bottom: 50px;
 
   background: conic-gradient(
@@ -27,12 +27,12 @@
 
   h2 {
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 
     font-family: $ff-alumni;
     font-weight: 600;
     font-size: 92px;
-    line-height: 110px;
+    line-height: 92px;
 
     color: $color-default-white;
     max-width: 300px;
@@ -51,6 +51,7 @@
     font-family: $ff-alumni;
     font-weight: 600;
     font-size: 48px;
+    line-height: 58px;
 
     color: $color-default-white;
     text-transform: uppercase;
@@ -83,7 +84,7 @@
 
 .intro__container {
   display: flex;
-  column-gap: 65px;
+  column-gap: 95px;
 
   @include vp-1200() {
     column-gap: 30px;
@@ -97,6 +98,7 @@
 }
 
 .intro__info-wrapper {
+  margin-top: 120px;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, min-content);

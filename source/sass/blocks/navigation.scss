@@ -19,16 +19,16 @@
 .navigation__link {
   display: block;
   font-family: $ff-roboto;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
   color: $color-default-white;
   min-width: 120px;
 
   margin-right: 20px;
 
   &:nth-last-child(n) {
-    margin-right: 0;
+    margin-right: 3px;
   }
 
   @include hover() {
@@ -41,6 +41,7 @@
 }
 
 .navigation__logo-link {
+  margin-top: 10px;
   margin-right: 20px;
 
   @include hover-focus {

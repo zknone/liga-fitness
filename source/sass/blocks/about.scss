@@ -2,8 +2,7 @@
   display: flex;
   column-gap: 85px;
 
-  padding-top: 120px;
-  padding-bottom: 235px;
+  padding: 120px 100px 270px;
 
   @include vp-1200() {
     flex-direction: column;
