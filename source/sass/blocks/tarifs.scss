@@ -5,9 +5,10 @@
 
   h2 {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     font-family: $ff-alumni;
+    letter-spacing: 1.5px;
     font-weight: 600;
     font-size: 54px;
     line-height: 65px;
@@ -19,10 +20,10 @@
 
 .tarifs__background-img {
   position: absolute;
-  width: 274px;
-  height: 384px;
-  top: calc(100% - 240px);
-  left: calc(100% - 274px);
+  width: 293px;
+  height: 495px;
+  top: calc(100% - 352px);
+  left: calc(100% - 293px);
   z-index: 0;
 
   @include vp-1200 {
@@ -41,12 +42,13 @@
   list-style: none;
 
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  column-gap: 40px;
-  row-gap: 40px;
+
+  column-gap: 30px;
+  row-gap: 30px;
 
   @include vp-1200() {
     display: flex;
@@ -55,12 +57,14 @@
 }
 
 .tarifs__card-item {
-  padding: 68px 77px;
+  padding: 60px 70px;
   border: 7px solid $color-default-white;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $color-default-white;
+
+  width: 100%;
 
   @include vp-767 {
     padding: 55px 42px;
@@ -86,7 +90,7 @@
 
   h3 {
     margin-top: 0;
-    margin-bottom: 22px;
+    margin-bottom: 10px;
 
     font-family: $ff-roboto;
     font-weight: 700;
@@ -99,7 +103,7 @@
   }
 
   span {
-    margin-bottom: 95px;
+    margin-bottom: 65px;
   }
 
   p {
@@ -108,7 +112,9 @@
     z-index: 2;
 
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    margin-left: -45px;
+
 
     font-family: $ff-roboto;
     font-weight: 700;
@@ -121,7 +127,7 @@
       display: block;
       position: absolute;
       top: -50px;
-      left: -33%;
+      left: -20%;
       content: attr(data-price);
       color: $color-default-grey;
       z-index: -1;
@@ -140,8 +146,10 @@
   }
 
   a {
-    margin-top: 0;
-    margin-bottom: 22px;
+    margin: 0;
+    width: 100%;
+
+    padding: 25px;
 
     font-family: $ff-roboto;
     font-weight: 700;
@@ -152,10 +160,6 @@
     color: $color-default-black;
 
     text-transform: uppercase;
-
-    @include vp-767 {
-      width: 100%;
-      justify-content: center;
-    }
+    justify-content: center;
   }
 }

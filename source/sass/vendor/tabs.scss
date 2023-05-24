@@ -26,10 +26,13 @@
 
 .tabs__control {
   cursor: pointer;
-  padding: 0 0 20px;
+  padding: 0 0 10px;
   margin: 0;
-  min-width: 80px;
+  min-width: 60px;
   width: auto;
+
+  font-size: 20px;
+  line-height: 30px;
 
   border: none;
   justify-content: center;

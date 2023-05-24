@@ -33,7 +33,11 @@ $conic-gradient: conic-gradient(
 );
 
 $border-gradient: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
-$button-background-gradient: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+$button-background-gradient: linear-gradient(
+  97.05deg,
+  #ed0233 17.6%,
+  #003eb7 95.31%
+);
 
 // Typography
 // ---------------------------------

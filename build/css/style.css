@@ -1258,10 +1258,12 @@ button.swiper-pagination-bullet {
 
 .tabs__control {
   cursor: pointer;
-  padding: 0 0 20px;
+  padding: 0 0 10px;
   margin: 0;
-  min-width: 80px;
+  min-width: 60px;
   width: auto;
+  font-size: 20px;
+  line-height: 30px;
   border: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1359,6 +1361,7 @@ button.swiper-pagination-bullet {
   src: url("../fonts/roboto-condensed-bold.woff2") format("woff2");
 }
 @font-face {
+  font-style: semibold;
   font-weight: 600;
   font-family: "Alumni Sans";
   font-display: swap;
@@ -1372,7 +1375,8 @@ button.swiper-pagination-bullet {
   src: url("../fonts/alumni-sans-bold.woff2") format("woff2");
 }
 @font-face {
-  font-weight: 600;
+  font-style: extrabold;
+  font-weight: 800;
   font-family: "Alumni Sans";
   font-display: swap;
   src: url("../fonts/alumni-sans-extrabold.woff2") format("woff2");
@@ -2254,12 +2258,16 @@ button,
   }
 }
 .intro h2 {
-  margin-top: 0;
-  margin-bottom: 90px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 50px;
   font-family: "Alumni Sans", helvetica, sans-serif;
-  font-weight: 600;
+  font-style: bold;
+  font-weight: 700;
+  letter-spacing: 5px;
   font-size: 92px;
-  line-height: 92px;
+  line-height: 110px;
+  text-transform: uppercase;
   color: #ffffff;
   max-width: 300px;
   text-align: right;
@@ -2272,8 +2280,7 @@ button,
   }
 }
 .intro span {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 50px 0 0;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 48px;
@@ -2312,9 +2319,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 95px;
-     -moz-column-gap: 95px;
-          column-gap: 95px;
+  -webkit-column-gap: 65px;
+     -moz-column-gap: 65px;
+          column-gap: 65px;
 }
 @media (max-width: 1199px) {
   .intro__container {
@@ -2336,7 +2343,7 @@ button,
 }
 
 .intro__info-wrapper {
-  margin-top: 120px;
+  margin-top: 115px;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -2362,7 +2369,7 @@ button,
 }
 
 .intro__services-list {
-  margin: 0 0 0 30px;
+  margin: 50px 0 0 20px;
   padding: 0;
   list-style: none;
   width: 115px;
@@ -2399,12 +2406,12 @@ button,
   grid-column: 1/-1;
   -ms-grid-column-align: end;
       justify-self: end;
-  min-width: 230px;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 25px 0;
-  width: 100%;
+  padding: 15px 0;
+  max-width: 230px;
 }
 
 .about {
@@ -2414,7 +2421,7 @@ button,
   -webkit-column-gap: 85px;
      -moz-column-gap: 85px;
           column-gap: 85px;
-  padding: 120px 100px 270px;
+  padding: 120px 40px 240px 100px;
 }
 @media (max-width: 1199px) {
   .about {
@@ -2434,8 +2441,9 @@ button,
   }
 }
 .about h2 {
-  margin-top: 0;
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  letter-spacing: 1.5px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 48px;
@@ -2454,6 +2462,12 @@ button,
     padding-left: 15px;
   }
 }
+.about h3 {
+  margin: 0 0 40px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
 @media (max-width: 1199px) {
   .about h3 {
     text-align: center;
@@ -2465,6 +2479,9 @@ button,
     padding-right: 15px;
     padding-left: 15px;
   }
+}
+.about p {
+  margin: 0 0 10px;
 }
 @media (max-width: 1199px) {
   .about p {
@@ -3134,7 +3151,7 @@ button,
 .event {
   display: -ms-grid;
   display: grid;
-  padding-top: 120px;
+  padding-top: 115px;
   padding-bottom: 70px;
   -ms-grid-columns: (auto)[2];
   grid-template-columns: repeat(2, auto);
@@ -3723,8 +3740,9 @@ button,
 }
 .tarifs h2 {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-family: "Alumni Sans", helvetica, sans-serif;
+  letter-spacing: 1.5px;
   font-weight: 600;
   font-size: 54px;
   line-height: 65px;
@@ -3734,10 +3752,10 @@ button,
 
 .tarifs__background-img {
   position: absolute;
-  width: 274px;
-  height: 384px;
-  top: calc(100% - 240px);
-  left: calc(100% - 274px);
+  width: 293px;
+  height: 495px;
+  top: calc(100% - 352px);
+  left: calc(100% - 293px);
   z-index: 0;
 }
 @media (max-width: 1199px) {
@@ -3758,18 +3776,18 @@ button,
   list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[3];
-  grid-template-columns: repeat(3, auto);
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
-  row-gap: 40px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
 }
 @media (max-width: 1199px) {
   .tarifs__variants-list {
@@ -3784,7 +3802,7 @@ button,
 }
 
 .tarifs__card-item {
-  padding: 68px 77px;
+  padding: 60px 70px;
   border: 7px solid #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3797,6 +3815,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .tarifs__card-item {
@@ -3837,7 +3856,7 @@ button,
 }
 .tarifs__card-item h3 {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 10px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -3846,14 +3865,15 @@ button,
   text-align: center;
 }
 .tarifs__card-item span {
-  margin-bottom: 95px;
+  margin-bottom: 65px;
 }
 .tarifs__card-item p {
   display: block;
   position: relative;
   z-index: 2;
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  margin-left: -45px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 60px;
@@ -3864,7 +3884,7 @@ button,
   display: block;
   position: absolute;
   top: -50px;
-  left: -33%;
+  left: -20%;
   content: attr(data-price);
   color: #e8e8e8;
   z-index: -1;
@@ -3879,8 +3899,9 @@ button,
   left: calc(100% + 14px);
 }
 .tarifs__card-item a {
-  margin-top: 0;
-  margin-bottom: 22px;
+  margin: 0;
+  width: 100%;
+  padding: 25px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 12px;
@@ -3888,14 +3909,9 @@ button,
   border-color: #102654;
   color: #102654;
   text-transform: uppercase;
-}
-@media (max-width: 767px) {
-  .tarifs__card-item a {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .trainers {
