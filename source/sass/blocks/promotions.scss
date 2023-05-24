@@ -134,6 +134,8 @@
     grid-column: 2/3;
     grid-row: 2/3;
     margin: 0;
+
+    word-break: break-all;
   }
 
   dt {
@@ -144,6 +146,8 @@
     color: $color-default-white;
     width: max-content;
     max-width: 200px;
+
+    word-break: break-all;
 
     @include vp-767 {
       margin: 0 auto;

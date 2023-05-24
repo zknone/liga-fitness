@@ -61,6 +61,9 @@
       margin-top: 0;
       margin-bottom: 25px;
 
+      max-width: 400px;
+      word-break: break-all;
+
       font-family: $ff-alumni;
       font-weight: 800;
       font-size: 54px;
@@ -134,6 +137,9 @@
     h2 {
       margin-top: 0;
       margin-bottom: 0;
+
+      max-width: 400px;
+      word-break: break-all;
 
       font-family: $ff-alumni;
       font-weight: 600;

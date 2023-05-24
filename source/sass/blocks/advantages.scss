@@ -133,7 +133,8 @@
     display: grid;
     grid-template-columns: auto 30px auto;
     grid-template-rows: auto 30px auto;
-
+    word-break: break-all;
+    align-items: left;
     justify-items: left;
     justify-content: start;
 
@@ -165,7 +166,6 @@
     font-size: 71px;
     line-height: 71px;
 
-    text-align: center;
     background: linear-gradient(92.51deg, #d10a42 30%, #0041ca 87.33%);
     background-clip: text;
     color: transparent;
