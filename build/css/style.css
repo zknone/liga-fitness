@@ -1267,7 +1267,6 @@ button.swiper-pagination-bullet {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: transparent;
-  top: 2px;
 }
 .tabs__control.is-active {
   z-index: 2;
@@ -3842,6 +3841,7 @@ button,
   font-size: 26px;
   line-height: 28px;
   color: #102654;
+  text-align: center;
 }
 .tarifs__card-item span {
   margin-bottom: 95px;
