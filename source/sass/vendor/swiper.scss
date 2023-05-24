@@ -21,8 +21,8 @@
   --swiper-theme-color: #a7a7a7;
 }
 .swiper {
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   position: relative;
   overflow: hidden;
   list-style: none;
@@ -31,8 +31,8 @@
   z-index: 1;
 
   &--trainers {
-    padding-left: 29px;
-    padding-right: 29px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   &--reviews {

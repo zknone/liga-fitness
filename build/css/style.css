@@ -337,8 +337,6 @@ template {
 }
 
 .swiper {
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   overflow: hidden;
   list-style: none;
@@ -347,8 +345,8 @@ template {
   z-index: 1;
 }
 .swiper--trainers {
-  padding-left: 29px;
-  padding-right: 29px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 .swiper--reviews {
   padding-left: 50px;
@@ -3923,13 +3921,29 @@ button,
   padding-bottom: 140px;
 }
 .trainers h2 {
-  margin-top: 0;
-  margin-bottom: 25px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto 45px auto;
+  padding-left: 40px;
+  padding-right: 40px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 65px;
+  letter-spacing: 1.2px;
   color: #102654;
+}
+@media (max-width: 1199px) {
+  .trainers h2 {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers h2 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .trainers__card {
@@ -3937,12 +3951,12 @@ button,
   text-align: left;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 10px -webkit-min-content -webkit-min-content 1fr 10px;
-  -ms-grid-rows: 10px min-content min-content 1fr 10px;
-  grid-template-rows: 10px -webkit-min-content -webkit-min-content 1fr 10px;
-  grid-template-rows: 10px min-content min-content 1fr 10px;
-  -ms-grid-columns: 25px 1fr 25px;
-  grid-template-columns: 25px 1fr 25px;
+  -ms-grid-rows: 40px -webkit-min-content -webkit-min-content 1fr 10px;
+  -ms-grid-rows: 40px min-content min-content 1fr 10px;
+  grid-template-rows: 40px -webkit-min-content -webkit-min-content 1fr 10px;
+  grid-template-rows: 40px min-content min-content 1fr 10px;
+  -ms-grid-columns: 50px 1fr 25px;
+  grid-template-columns: 50px 1fr 25px;
   row-gap: 15px;
   aspect-ratio: 260/294;
 }
@@ -3961,8 +3975,8 @@ button,
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin-top: 0;
-  margin-bottom: 0;
+  display: block;
+  margin: 0;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -4003,8 +4017,7 @@ button,
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -4039,8 +4052,7 @@ button,
   grid-row: 4/5;
   -ms-grid-row-align: end;
       align-self: end;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 0 0 30px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -4072,7 +4084,7 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   margin: 0;
-  padding: 0;
+  padding-left: 15px;
   list-style: disc;
   color: #ffffff;
   z-index: -1;
@@ -4084,6 +4096,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
+  margin-bottom: 10px;
 }
 .trainers__card picture {
   grid-column: 1/-1;
@@ -4100,16 +4113,14 @@ button,
 
 .trainers__buttons-wrapper {
   position: relative;
-}
-
-.trainers__swiper-container {
-  width: calc(100% - 70px);
+  margin: 0 auto;
+  width: calc(100% - 105px);
 }
 
 .trainers__button-prev {
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-50%) translateY(-5px);
+      -ms-transform: translateX(-50%) translateY(-5px);
+          transform: translateX(-50%) translateY(-5px);
 }
 
 .trainers__button-next {
