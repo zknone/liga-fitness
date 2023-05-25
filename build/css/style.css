@@ -345,8 +345,8 @@ template {
   z-index: 1;
 }
 .swiper--reviews {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .swiper-vertical > .swiper-wrapper {
@@ -3886,6 +3886,11 @@ button,
   padding-top: 40px;
   padding-bottom: 120px;
 }
+@media (max-width: 1199px) {
+  .reviews {
+    padding-top: 35px;
+  }
+}
 .reviews h2 {
   margin: 3px 0 37px 5px;
   font-family: "Alumni Sans", helvetica, sans-serif;
@@ -3895,6 +3900,14 @@ button,
   letter-spacing: 1.2px;
   color: #102654;
   text-align: center;
+}
+@media (max-width: 1199px) {
+  .reviews h2 {
+    margin: 0 0 40px 0;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1.5px;
+  }
 }
 @media (max-width: 767px) {
   .reviews {
@@ -3917,6 +3930,16 @@ button,
   -webkit-column-gap: 28px;
      -moz-column-gap: 28px;
           column-gap: 28px;
+}
+@media (max-width: 1199px) {
+  .reviews__item {
+    padding: 55px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__item {
+    padding: 41px 25px;
+  }
 }
 .reviews__item picture {
   -ms-grid-column: 1;
@@ -3951,20 +3974,18 @@ button,
   grid-column: 3/-1;
   grid-row: 2/-1;
 }
-@media (max-width: 1199px) {
-  .reviews__item {
-    padding: 62px 65px;
-  }
-}
-@media (max-width: 767px) {
-  .reviews__item {
-    padding: 41px 25px;
-  }
-}
 
 .reviews__swiper-wrapper {
   margin: 0 auto;
   max-width: 700px;
+}
+
+.reviews__left-button {
+  left: 0;
+}
+
+.reviews__right-button {
+  left: calc(100% - 20px);
 }
 
 .tarifs {
