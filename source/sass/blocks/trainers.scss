@@ -2,6 +2,10 @@
   padding-top: 35px;
   padding-bottom: 140px;
 
+  @include vp-1200 {
+    padding-bottom: 95px;
+  }
+
   h2 {
     width: 100%;
     max-width: 1240px;

@@ -3,6 +3,7 @@
   padding-bottom: 75px;
 
   @include vp-1200() {
+    padding-top: 95px;
     padding-bottom: 55px;
   }
 
@@ -21,6 +22,12 @@
 
     color: $color-default-black;
     text-align: center;
+
+    @include vp-1200 {
+      font-size: 42px;
+      line-height: 50px;
+      letter-spacing: 1.5px;
+    }
   }
 }
 
@@ -34,6 +41,8 @@
   @include vp-1200() {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
   }
 
   @include vp-767() {
@@ -50,6 +59,10 @@
   border-width: 7px;
   border-image-slice: 1;
   border-image-source: $button-background-gradient;
+
+  @include vp-1200 {
+    padding: 26px 26px 28px;
+  }
 
   h3 {
     margin: 0 0 10px;
@@ -127,6 +140,7 @@
 
   @include vp-1200 {
     grid-template-columns: 45px auto 20px auto;
+    grid-template-rows: 45px repeat(3, auto) 60px;
   }
 
   @include vp-767 {
@@ -185,6 +199,10 @@
     font-family: $ff-roboto;
     color: $color-default-white;
 
+    @include vp-1200 {
+      margin: 20px 0;
+    }
+
     @include vp-767 {
       text-align: center;
       margin: 0 auto 50px auto;
@@ -215,6 +233,10 @@
 
     @include hover-focus {
       opacity: 0.8;
+    }
+
+    @include vp-1200 {
+      padding-bottom: 3px;
     }
 
     @include vp-767 {
