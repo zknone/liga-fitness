@@ -9,8 +9,8 @@
   @include vp-1200() {
     background: linear-gradient(
       180deg,
-      $color-default-black 50%,
-      $color-default-white 50%
+      $color-default-black 48%,
+      $color-default-white 40%
     );
 
     @include vp-767 {
@@ -35,10 +35,9 @@
     width: 71%;
 
     @include vp-1200 {
-      padding-left: 88px;
-      padding-right: 88px;
+      padding: 60px 88px 30px 88px;
       max-width: none;
-      width: 100%;
+      width: 96%;
     }
 
     @include vp-767 {
@@ -73,6 +72,13 @@
 
       color: $color-default-white;
 
+      @include vp-1200 {
+        font-size: 42px;
+        line-height: 50px;
+        letter-spacing: 1.2px;
+        margin-bottom: 36px;
+      }
+
       @include vp-767 {
         margin-top: 70px;
       }
@@ -83,7 +89,11 @@
       grid-template-columns: repeat(2, auto);
       grid-template-rows: repeat(2, auto);
       row-gap: 25px;
-      column-gap: 30px;
+      column-gap: 40px;
+
+      @include vp-1200 {
+        column-gap: 55px;
+      }
 
       @include vp-767 {
         row-gap: 40px;
@@ -131,7 +141,7 @@
     margin-left: 120px;
 
     @include vp-1200() {
-      padding: 70px 40px;
+      padding: 100px 40px 54px;
       margin: 0;
     }
 
@@ -156,6 +166,10 @@
 
       @include vp-1200 {
         padding-left: 48px;
+
+        font-size: 42px;
+        line-height: 50px;
+        letter-spacing: 1.2px;
       }
 
       @include vp-767 {
@@ -187,7 +201,7 @@
         left: 235px;
 
         @include vp-1200 {
-          left: 50%;
+          left: 53%;
         }
 
         @include vp-767 {
@@ -196,8 +210,10 @@
       }
 
       @include vp-1200 {
+        grid-template-columns: 50% 37%;
         padding-left: 48px;
         padding-right: 48px;
+        max-width: none;
       }
 
       @include vp-767 {
@@ -216,7 +232,14 @@
         line-height: 24px;
         font-weight: 700;
 
+        @include vp-1200 {
+          font-size: 20px;
+          line-height: 30px;
+          margin-bottom: 5px;
+        }
+
         @include vp-767 {
+
           margin-bottom: 15px;
         }
       }
@@ -226,6 +249,8 @@
         margin: 0 0 20px;
 
         @include vp-1200 {
+          font-size: 18px;
+          line-height: 22px;
           min-width: 200px;
           max-width: 230px;
         }
