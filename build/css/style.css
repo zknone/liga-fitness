@@ -345,12 +345,12 @@ template {
   z-index: 1;
 }
 .swiper--trainers {
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .swiper--reviews {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .swiper-vertical > .swiper-wrapper {
@@ -4101,6 +4101,10 @@ button,
   .trainers h2 {
     padding-left: 45px;
     padding-right: 45px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 42px;
+    line-height: 50px;
   }
 }
 @media (max-width: 767px) {
@@ -4123,6 +4127,12 @@ button,
   grid-template-columns: 50px 1fr 25px;
   row-gap: 15px;
   aspect-ratio: 260/294;
+  height: 100%;
+}
+@media (max-width: 1199px) {
+  .trainers__card {
+    aspect-ratio: 268/294;
+  }
 }
 .trainers__card:hover::after {
   position: absolute;
@@ -4276,21 +4286,26 @@ button,
 }
 
 .trainers__buttons-wrapper {
-  position: relative;
   margin: 0 auto;
+  position: relative;
   width: calc(100% - 105px);
+}
+@media (max-width: 1199px) {
+  .trainers__buttons-wrapper {
+    width: calc(100% - 145px);
+  }
 }
 
 .trainers__button-prev {
-  -webkit-transform: translateX(-50%) translateY(-5px);
-      -ms-transform: translateX(-50%) translateY(-5px);
-          transform: translateX(-50%) translateY(-5px);
+  position: absolute;
+  top: 50%;
+  left: -25px;
 }
 
 .trainers__button-next {
-  -webkit-transform: translateX(50%);
-      -ms-transform: translateX(50%);
-          transform: translateX(50%);
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 12px);
 }
 
 .footer {
