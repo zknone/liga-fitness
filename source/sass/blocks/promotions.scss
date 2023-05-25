@@ -1,5 +1,5 @@
 .promotions {
-  padding-top: 100px;
+  padding-top: 75px;
   padding-bottom: 75px;
 
   @include vp-1200() {
@@ -12,7 +12,7 @@
 
   h2 {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 
     font-family: $ff-alumni;
     font-weight: 600;
@@ -43,36 +43,40 @@
 }
 
 .promotions__item {
-  padding: 35px;
+  display: grid;
+  grid-template-rows: repeat(2, min-content) auto;
+  padding: 26px 25px;
   border: 7px solid;
   border-width: 7px;
   border-image-slice: 1;
   border-image-source: $button-background-gradient;
 
   h3 {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     font-family: $ff-roboto;
     font-weight: 700;
     font-size: 26px;
-    line-height: 32px;
+    line-height: 26px;
 
     color: $color-default-black;
   }
 
   p {
     margin: 0;
-    min-height: 60px;
   }
 
   a {
-    display: inline-block;
-    padding-bottom: 5px;
+    align-self: flex-end;
+
+    display: block;
+    padding-bottom: 2px;
     height: fit-content;
     width: max-content;
 
     font-family: $ff-roboto;
     font-size: 12px;
     line-height: 14px;
+    letter-spacing: 1.2px;
     font-weight: 700;
     text-transform: uppercase;
     color: $color-default-black;
@@ -116,7 +120,7 @@
   display: grid;
 
   grid-template-columns: 45px auto 280px;
-  grid-template-rows: 45px repeat(4, auto) 45px;
+  grid-template-rows: 45px repeat(3, auto) 65px;
 
   background-color: $color-background-red;
   height: 100%;
@@ -127,7 +131,7 @@
 
   @include vp-767 {
     grid-template-columns: 45px auto 45px;
-    grid-template-rows: 45px repeat(4, auto) 45px;
+    grid-template-rows: 45px repeat(3, auto) 45px;
   }
 
   dl {
@@ -142,7 +146,7 @@
     font-family: $ff-roboto;
     font-weight: 700;
     font-size: 28px;
-    line-height: 44px;
+    line-height: 28px;
     color: $color-default-white;
     width: max-content;
     max-width: 200px;
@@ -160,7 +164,7 @@
     font-family: $ff-roboto;
     font-weight: 700;
     font-size: 70px;
-    line-height: 89px;
+    line-height: 70px;
     color: $color-default-white;
     width: max-content;
     max-width: 200px;
@@ -172,7 +176,7 @@
   }
 
   p {
-    margin: 0;
+    margin: 15px 0;
     grid-column: 2/3;
     grid-row: 3/4;
     width: max-content;
@@ -190,6 +194,7 @@
   a {
     grid-column: 2/3;
     grid-row: 5/6;
+    margin-bottom: 10px;
 
     display: inline-block;
     padding-bottom: 5px;
@@ -219,10 +224,10 @@
 
   picture {
     grid-column: 3/-1;
-    grid-row: 1/-1;
+    grid-row: 1/6;
 
     @include vp-767 {
-      grid-row: 7/-1;
+      grid-row: 6/-1;
       grid-column: 1/-1;
     }
   }
