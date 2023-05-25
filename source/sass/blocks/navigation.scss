@@ -27,6 +27,13 @@
 
   margin-right: 20px;
 
+  @include vp-1200 {
+    margin-top: 10px;
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: 600;
+  }
+
   &:nth-last-child(n) {
     margin-right: 3px;
   }
@@ -43,6 +50,11 @@
 .navigation__logo-link {
   margin-top: 10px;
   margin-right: 20px;
+
+  @include vp-1200 {
+    width: 82px;
+    height: 17px;
+  }
 
   @include hover-focus {
     opacity: 0.8;
