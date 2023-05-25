@@ -1243,6 +1243,11 @@ button.swiper-pagination-bullet {
           column-gap: 46px;
   row-gap: 30px;
 }
+@media (max-width: 1199px) {
+  .tabs__controls {
+    min-width: 330px;
+  }
+}
 @media (max-width: 767px) {
   .tabs__controls {
     -ms-flex-wrap: wrap;
@@ -1267,6 +1272,11 @@ button.swiper-pagination-bullet {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: transparent;
+}
+@media (max-width: 1199px) {
+  .tabs__control {
+    font-size: 18px;
+  }
 }
 .tabs__control.is-active {
   z-index: 2;
@@ -3814,6 +3824,11 @@ button,
   background-color: #f8f9fc;
   position: relative;
 }
+@media (max-width: 1199px) {
+  .tarifs {
+    padding-top: 105px;
+  }
+}
 .tarifs h2 {
   margin-top: 0;
   margin-bottom: 15px;
@@ -3824,6 +3839,14 @@ button,
   line-height: 65px;
   color: #102654;
   text-align: center;
+}
+@media (max-width: 1199px) {
+  .tarifs h2 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+  }
 }
 
 .tarifs__background-img {
@@ -3956,6 +3979,11 @@ button,
   line-height: 90px;
   color: #103aae;
 }
+@media (max-width: 1199px) {
+  .tarifs__card-item p {
+    margin-bottom: 35px;
+  }
+}
 .tarifs__card-item p::before {
   display: block;
   position: absolute;
@@ -3976,7 +4004,7 @@ button,
 }
 .tarifs__card-item a {
   margin: 0;
-  width: 100%;
+  width: 73%;
   padding: 25px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;

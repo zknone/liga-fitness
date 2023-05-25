@@ -3,6 +3,10 @@
   background-color: $color-background-grey;
   position: relative;
 
+  @include vp-1200 {
+    padding-top: 105px;
+  }
+
   h2 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -15,6 +19,13 @@
 
     color: $color-default-black;
     text-align: center;
+
+    @include vp-1200 {
+      font-size: 42px;
+      line-height: 42px;
+      margin-left: -10px;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -115,13 +126,16 @@
     margin-bottom: 30px;
     margin-left: -45px;
 
-
     font-family: $ff-roboto;
     font-weight: 700;
     font-size: 60px;
     line-height: 90px;
 
     color: $color-egyptian-blue;
+
+    @include vp-1200 {
+      margin-bottom: 35px;
+    }
 
     &::before {
       display: block;
@@ -147,8 +161,7 @@
 
   a {
     margin: 0;
-    width: 100%;
-
+    width: 73%;
     padding: 25px;
 
     font-family: $ff-roboto;
