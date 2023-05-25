@@ -1,4 +1,5 @@
 .contact-us {
+  border-top: 1px solid $color-default-black;
   background: linear-gradient(
     90deg,
     $color-default-black 50%,
@@ -124,8 +125,8 @@
   }
 
   .contact-us__info {
-    padding-top: 55px;
-    padding-bottom: 70px;
+    padding-top: 54px;
+    padding-bottom: 50px;
 
     margin-left: 120px;
 
@@ -140,7 +141,7 @@
 
     h2 {
       margin-top: 0;
-      margin-bottom: 0;
+      margin-bottom: 35px;
 
       max-width: 400px;
       word-break: break-all;
@@ -172,6 +173,8 @@
       grid-template-rows: repeat(4, auto);
       grid-auto-flow: column;
 
+      max-width: 420px;
+
       &::after {
         position: absolute;
         content: "";
@@ -181,7 +184,7 @@
         height: 100%;
 
         top: 0;
-        left: 260px;
+        left: 235px;
 
         @include vp-1200 {
           left: 50%;
@@ -220,7 +223,7 @@
 
       dd {
         max-width: 200px;
-        margin: 0 0 30px;
+        margin: 0 0 20px;
 
         @include vp-1200 {
           min-width: 200px;

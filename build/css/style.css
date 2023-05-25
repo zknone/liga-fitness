@@ -2899,6 +2899,7 @@ button,
 }
 
 .contact-us {
+  border-top: 1px solid #102654;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff));
   background: -o-linear-gradient(left, #102654 50%, #ffffff 50%);
   background: linear-gradient(90deg, #102654 50%, #ffffff 50%);
@@ -3032,8 +3033,8 @@ button,
   }
 }
 .contact-us .contact-us__info {
-  padding-top: 55px;
-  padding-bottom: 70px;
+  padding-top: 54px;
+  padding-bottom: 50px;
   margin-left: 120px;
 }
 @media (max-width: 1199px) {
@@ -3049,7 +3050,7 @@ button,
 }
 .contact-us .contact-us__info h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 35px;
   max-width: 400px;
   word-break: break-all;
   letter-spacing: 1.5px;
@@ -3085,6 +3086,7 @@ button,
   -ms-grid-rows: (auto)[4];
   grid-template-rows: repeat(4, auto);
   grid-auto-flow: column;
+  max-width: 420px;
 }
 .contact-us .contact-us__info .contact-us__info-wrapper::after {
   position: absolute;
@@ -3094,7 +3096,7 @@ button,
   background-color: #102654;
   height: 100%;
   top: 0;
-  left: 260px;
+  left: 235px;
 }
 @media (max-width: 1199px) {
   .contact-us .contact-us__info .contact-us__info-wrapper::after {
@@ -3140,7 +3142,7 @@ button,
 }
 .contact-us .contact-us__info .contact-us__info-wrapper dd {
   max-width: 200px;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
 }
 @media (max-width: 1199px) {
   .contact-us .contact-us__info .contact-us__info-wrapper dd {
