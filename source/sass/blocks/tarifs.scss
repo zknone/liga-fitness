@@ -38,8 +38,9 @@
   z-index: 0;
 
   @include vp-1200 {
-    width: 321px;
-    left: calc(100% - 322px);
+    width: 340px;
+    height: 462px;
+    left: calc(100% - 340px);
   }
 
   @include vp-767 {
