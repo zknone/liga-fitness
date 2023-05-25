@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const reviewsSwiper = new Swiper('.reviews__swiper-wrapper', {
       direction: 'horizontal',
       slidesPerView: 1,
-      spaceBetween: 50,
+      spaceBetween: 70,
       navigation: {
         nextEl: '.reviews__right-button',
         prevEl: '.reviews__left-button',
