@@ -31,7 +31,7 @@
     padding-top: 55px;
     padding-bottom: 60px;
     margin-right: auto;
-    max-width: 410px;
+    width: 71%;
 
     @include vp-1200 {
       padding-left: 88px;
@@ -59,7 +59,7 @@
 
     h2 {
       margin-top: 0;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
 
       max-width: 400px;
       word-break: break-all;
@@ -68,6 +68,7 @@
       font-weight: 800;
       font-size: 54px;
       line-height: 82px;
+      letter-spacing: 1.5px;
 
       color: $color-default-white;
 
@@ -80,7 +81,7 @@
       display: grid;
       grid-template-columns: repeat(2, auto);
       grid-template-rows: repeat(2, auto);
-      row-gap: 30px;
+      row-gap: 25px;
       column-gap: 30px;
 
       @include vp-767 {
@@ -100,6 +101,7 @@
     }
 
     input {
+      padding: 3px;
       width: 100%;
       border: none;
       font-size: 14px;
@@ -109,8 +111,10 @@
     }
 
     button {
+      justify-content: center;
       grid-column: 1/-1;
-      padding: 20px;
+      padding: 15px;
+      letter-spacing: 1.2px;
     }
 
     @include vp-1200() {
@@ -140,6 +144,7 @@
 
       max-width: 400px;
       word-break: break-all;
+      letter-spacing: 1.5px;
 
       font-family: $ff-alumni;
       font-weight: 600;

@@ -2936,7 +2936,7 @@ button,
   padding-top: 55px;
   padding-bottom: 60px;
   margin-right: auto;
-  max-width: 410px;
+  width: 71%;
 }
 @media (max-width: 1199px) {
   .contact-us .contact-us__form {
@@ -2965,13 +2965,14 @@ button,
 }
 .contact-us .contact-us__form h2 {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   max-width: 400px;
   word-break: break-all;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 800;
   font-size: 54px;
   line-height: 82px;
+  letter-spacing: 1.5px;
   color: #ffffff;
 }
 @media (max-width: 767px) {
@@ -2986,7 +2987,7 @@ button,
   grid-template-columns: repeat(2, auto);
   -ms-grid-rows: (auto)[2];
   grid-template-rows: repeat(2, auto);
-  row-gap: 30px;
+  row-gap: 25px;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
@@ -3006,6 +3007,7 @@ button,
   font-size: 14px;
 }
 .contact-us .contact-us__form input {
+  padding: 3px;
   width: 100%;
   border: none;
   font-size: 14px;
@@ -3014,8 +3016,12 @@ button,
   color: #ffffff;
 }
 .contact-us .contact-us__form button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-column: 1/-1;
-  padding: 20px;
+  padding: 15px;
+  letter-spacing: 1.2px;
 }
 @media (max-width: 1199px) {
   .contact-us .contact-us__form {
@@ -3046,6 +3052,7 @@ button,
   margin-bottom: 0;
   max-width: 400px;
   word-break: break-all;
+  letter-spacing: 1.5px;
   font-family: "Alumni Sans", helvetica, sans-serif;
   font-weight: 600;
   font-size: 54px;
