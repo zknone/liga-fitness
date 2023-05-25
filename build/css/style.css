@@ -2293,6 +2293,11 @@ button,
     padding-bottom: 80px;
   }
 }
+@media (max-width: 767px) {
+  .intro {
+    min-height: 480px;
+  }
+}
 .intro h2 {
   margin-top: 10px;
   margin-left: 10px;
@@ -2323,7 +2328,7 @@ button,
     letter-spacing: 2.2px;
     line-height: 86px;
     font-size: 72px;
-    margin: 15px 0 0;
+    margin: 15px 0 23px;
   }
 }
 .intro span {
@@ -2462,8 +2467,8 @@ button,
   .intro__services-list {
     margin: 0;
     position: absolute;
-    left: 5%;
-    top: 50%;
+    left: 0;
+    top: 40%;
   }
 }
 
@@ -2481,6 +2486,11 @@ button,
 @media (max-width: 1199px) {
   .intro__button {
     max-width: 190px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__button {
+    max-width: none;
   }
 }
 

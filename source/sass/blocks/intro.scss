@@ -21,6 +21,10 @@
     padding-bottom: 80px;
   }
 
+  @include vp-767 {
+    min-height: 480px;
+  }
+
   h2 {
     margin-top: 10px;
     margin-left: 10px;
@@ -52,7 +56,7 @@
       letter-spacing: 2.2px;
       line-height: 86px;
       font-size: 72px;
-      margin: 15px 0 0;
+      margin: 15px 0 23px;
     }
   }
 
@@ -163,8 +167,8 @@
   @include vp-767 {
     margin: 0;
     position: absolute;
-    left: 5%;
-    top: 50%;
+    left: 0;
+    top: 40%;
   }
 }
 
@@ -178,5 +182,9 @@
 
   @include vp-1200 {
     max-width: 190px;
+  }
+
+  @include vp-767 {
+    max-width: none;
   }
 }
