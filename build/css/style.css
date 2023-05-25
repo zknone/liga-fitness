@@ -4196,7 +4196,7 @@ button,
 }
 
 .footer__navigation-item {
-  padding: 5px 0;
+  padding: 2px 0;
 }
 
 .footer__navigation-item--logo {
@@ -4225,6 +4225,9 @@ button,
 }
 
 .footer__logo-link {
+  margin-top: 5px;
+  width: 88px;
+  height: 32px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
