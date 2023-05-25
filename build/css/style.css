@@ -4128,6 +4128,11 @@ button,
 @media (max-width: 1199px) {
   .trainers__card {
     aspect-ratio: 268/294;
+    -ms-grid-rows: 50px -webkit-min-content -webkit-min-content 1fr 10px;
+    -ms-grid-rows: 50px min-content min-content 1fr 10px;
+    grid-template-rows: 50px -webkit-min-content -webkit-min-content 1fr 10px;
+    grid-template-rows: 50px min-content min-content 1fr 10px;
+    row-gap: 1px;
   }
 }
 .trainers__card:hover::after {
@@ -4146,7 +4151,7 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   display: block;
-  margin: 0;
+  margin: 0 0 0 5px;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -4231,6 +4236,12 @@ button,
   z-index: 3;
   overflow-y: auto;
 }
+@media (max-width: 1199px) {
+  .trainers__card h3 {
+    line-height: 18px;
+    margin: 0 0 20px 35px;
+  }
+}
 .trainers__card span {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -4243,8 +4254,16 @@ button,
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  overflow: hidden;
   color: #b6bdcc;
   overflow-y: auto;
+  text-align: center;
+  margin-left: -30px;
+}
+@media (max-width: 1199px) {
+  .trainers__card span {
+    line-height: 16px;
+  }
 }
 .trainers__card ul {
   -ms-grid-column: 2;
@@ -4261,12 +4280,22 @@ button,
   max-height: 100%;
   overflow-y: auto;
 }
+@media (max-width: 1199px) {
+  .trainers__card ul {
+    margin-top: 35px;
+  }
+}
 .trainers__card li {
   font-family: "Roboto", arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   margin-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  .trainers__card li {
+    margin-bottom: 15px;
+  }
 }
 .trainers__card picture {
   grid-column: 1/-1;
