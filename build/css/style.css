@@ -2467,8 +2467,7 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-    padding-top: 60px;
-    padding-bottom: 185px;
+    padding: 60px 44px 185px;
   }
 }
 @media (max-width: 767px) {
@@ -2490,6 +2489,11 @@ button,
 @media (max-width: 1199px) {
   .about h2 {
     text-align: center;
+    margin-top: 42px;
+    margin-left: -10px;
+    letter-spacing: 1.2px;
+    line-height: 42px;
+    font-size: 42px;
   }
 }
 @media (max-width: 767px) {
@@ -2508,6 +2512,7 @@ button,
 @media (max-width: 1199px) {
   .about h3 {
     text-align: center;
+    margin: 0 0 35px;
   }
 }
 @media (max-width: 767px) {
@@ -2522,6 +2527,8 @@ button,
 }
 @media (max-width: 1199px) {
   .about p {
+    margin: 0 auto 40px;
+    max-width: 550px;
     text-align: center;
   }
 }
