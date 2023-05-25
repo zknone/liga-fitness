@@ -2515,8 +2515,7 @@ button,
 }
 @media (max-width: 767px) {
   .about {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 60px 0;
   }
 }
 .about h2 {
@@ -2542,8 +2541,11 @@ button,
 @media (max-width: 767px) {
   .about h2 {
     text-align: left;
-    padding-right: 15px;
     padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 0 8px 0;
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 .about h3 {
@@ -2561,8 +2563,9 @@ button,
 @media (max-width: 767px) {
   .about h3 {
     text-align: left;
-    padding-right: 15px;
+    margin: 0 0 25px;
     padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .about p {
@@ -2578,8 +2581,9 @@ button,
 @media (max-width: 767px) {
   .about p {
     text-align: left;
-    padding-right: 15px;
+    margin: 0 auto 33px;
     padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
