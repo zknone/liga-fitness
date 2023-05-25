@@ -193,7 +193,7 @@
   width: calc(100% - 105px);
 
   @include vp-1200 {
-    width: calc(100% - 145px);
+    width: calc(100% - 200px);
   }
 }
 
@@ -204,12 +204,12 @@
 .trainers__button-prev {
   position: absolute;
   top: 50%;
-  left: -25px;
+  left: -55px;
 
 }
 
 .trainers__button-next {
   position: absolute;
   top: 50%;
-  left: calc(100% + 12px);
+  left: calc(100% + 38px);
 }

@@ -344,10 +344,6 @@ template {
   /* Fix of Webkit flickering */
   z-index: 1;
 }
-.swiper--trainers {
-  padding-left: 30px;
-  padding-right: 30px;
-}
 .swiper--reviews {
   padding-left: 50px;
   padding-right: 50px;
@@ -4292,20 +4288,20 @@ button,
 }
 @media (max-width: 1199px) {
   .trainers__buttons-wrapper {
-    width: calc(100% - 145px);
+    width: calc(100% - 200px);
   }
 }
 
 .trainers__button-prev {
   position: absolute;
   top: 50%;
-  left: -25px;
+  left: -55px;
 }
 
 .trainers__button-next {
   position: absolute;
   top: 50%;
-  left: calc(100% + 12px);
+  left: calc(100% + 38px);
 }
 
 .footer {
