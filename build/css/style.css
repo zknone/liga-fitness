@@ -2714,6 +2714,7 @@ button,
 @media (max-width: 767px) {
   .advantages {
     padding-top: 70px;
+    padding-bottom: 60px;
   }
 }
 .advantages h2 {
@@ -3686,6 +3687,7 @@ button,
 }
 @media (max-width: 767px) {
   .promotions {
+    padding-top: 70px;
     padding-bottom: 40px;
   }
 }
@@ -3704,6 +3706,14 @@ button,
     font-size: 42px;
     line-height: 50px;
     letter-spacing: 1.5px;
+  }
+}
+@media (max-width: 767px) {
+  .promotions h2 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+    margin-bottom: 45px;
   }
 }
 
@@ -3857,8 +3867,8 @@ button,
   .promotions__featured-item {
     -ms-grid-columns: 45px auto 45px;
     grid-template-columns: 45px auto 45px;
-    -ms-grid-rows: 45px (auto)[3] 45px;
-    grid-template-rows: 45px repeat(3, auto) 45px;
+    -ms-grid-rows: 45px (auto)[3] 65px;
+    grid-template-rows: 45px repeat(3, auto) 65px;
   }
 }
 .promotions__featured-item dl {
@@ -3903,7 +3913,7 @@ button,
 @media (max-width: 767px) {
   .promotions__featured-item dd {
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
   }
 }
 .promotions__featured-item p {
@@ -3929,7 +3939,7 @@ button,
 @media (max-width: 767px) {
   .promotions__featured-item p {
     text-align: center;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 32px auto;
   }
 }
 .promotions__featured-item a {
@@ -3973,6 +3983,7 @@ button,
 }
 @media (max-width: 767px) {
   .promotions__featured-item a {
+    padding-bottom: 1px;
     margin: 0 auto;
   }
 }
