@@ -4689,6 +4689,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #ffffff;
+  overflow: auto;
   z-index: 3;
 }
 .trainers__card:hover span {
@@ -4730,6 +4731,7 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
+  overflow: auto;
   color: #ffffff;
   z-index: 3;
 }
@@ -4766,6 +4768,7 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
+  min-height: 20px;
   color: #ffffff;
   z-index: 3;
   overflow-y: auto;
@@ -4778,7 +4781,7 @@ button,
 }
 @media (max-width: 767px) {
   .trainers__card h3 {
-    margin: 0 0 20px 0;
+    margin: 0 0 18px 0;
   }
 }
 .trainers__card span {
