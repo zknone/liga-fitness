@@ -14,6 +14,7 @@
     );
 
     @include vp-767 {
+      border: none;
       background: none;
     }
   }
@@ -34,6 +35,7 @@
     margin-right: auto;
     width: 71%;
 
+
     @include vp-1200 {
       padding: 60px 88px 30px 88px;
       max-width: none;
@@ -44,13 +46,14 @@
       padding: 0;
       position: relative;
 
+
       &::before {
         position: absolute;
         display: block;
         content: "";
         top: 0;
         left: -15px;
-        width: calc(100% + 30px);
+        width: calc(100% + 40px);
         height: 100%;
         z-index: -1;
         background-color: $color-default-black;
@@ -80,7 +83,11 @@
       }
 
       @include vp-767 {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 600;
         margin-top: 70px;
+        margin-bottom: 38px;
       }
     }
 
@@ -96,7 +103,9 @@
       }
 
       @include vp-767 {
-        row-gap: 40px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 34px;
         margin-bottom: 70px;
       }
     }
@@ -126,6 +135,14 @@
       grid-column: 1/-1;
       padding: 15px;
       letter-spacing: 1.2px;
+
+      @include vp-767 {
+        width: 100%;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        min-width: 290px;
+      }
     }
 
     @include vp-1200() {
@@ -174,8 +191,12 @@
 
       @include vp-767 {
         padding: 0;
-        margin-top: 70px;
+        margin-top: 65px;
         margin-bottom: 50px;
+
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 600;
       }
     }
 
@@ -239,7 +260,6 @@
         }
 
         @include vp-767 {
-
           margin-bottom: 15px;
         }
       }

@@ -3142,6 +3142,7 @@ button,
 }
 @media (max-width: 1199px) and (max-width: 767px) {
   .contact-us {
+    border: none;
     background: none;
   }
 }
@@ -3186,7 +3187,7 @@ button,
     content: "";
     top: 0;
     left: -15px;
-    width: calc(100% + 30px);
+    width: calc(100% + 40px);
     height: 100%;
     z-index: -1;
     background-color: #102654;
@@ -3214,7 +3215,11 @@ button,
 }
 @media (max-width: 767px) {
   .contact-us .contact-us__form h2 {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
     margin-top: 70px;
+    margin-bottom: 38px;
   }
 }
 .contact-us .contact-us__form form {
@@ -3238,7 +3243,14 @@ button,
 }
 @media (max-width: 767px) {
   .contact-us .contact-us__form form {
-    row-gap: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 34px;
     margin-bottom: 70px;
   }
 }
@@ -3266,6 +3278,15 @@ button,
   grid-column: 1/-1;
   padding: 15px;
   letter-spacing: 1.2px;
+}
+@media (max-width: 767px) {
+  .contact-us .contact-us__form button {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    min-width: 290px;
+  }
 }
 @media (max-width: 1199px) {
   .contact-us .contact-us__form {
@@ -3314,8 +3335,11 @@ button,
 @media (max-width: 767px) {
   .contact-us .contact-us__info h2 {
     padding: 0;
-    margin-top: 70px;
+    margin-top: 65px;
     margin-bottom: 50px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
   }
 }
 .contact-us .contact-us__info .contact-us__info-wrapper {
@@ -4076,6 +4100,7 @@ button,
 @media (max-width: 767px) {
   .reviews {
     padding-top: 25px;
+    padding-bottom: 67px;
   }
 }
 .reviews h2 {
