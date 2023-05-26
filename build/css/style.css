@@ -1253,6 +1253,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 767px) {
   .tabs__controls {
+    margin: 0 auto 35px auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     min-width: 290px;
@@ -3526,7 +3527,7 @@ button,
 }
 @media (max-width: 767px) {
   .event__info-wrapper {
-    padding: 50px 44px;
+    padding: 50px 44px 48px;
     -webkit-column-gap: 35px;
        -moz-column-gap: 35px;
             column-gap: 35px;
@@ -4311,7 +4312,7 @@ button,
 @media (max-width: 767px) {
   .tarifs {
     padding-top: 63px;
-    padding-bottom: 80px;
+    padding-bottom: 75px;
   }
 }
 .tarifs h2 {
@@ -4394,7 +4395,7 @@ button,
 }
 @media (max-width: 767px) {
   .tarifs__variants-list {
-    row-gap: 53px;
+    row-gap: 36px;
   }
 }
 
@@ -4421,7 +4422,7 @@ button,
 }
 @media (max-width: 767px) {
   .tarifs__card-item {
-    padding: 36px;
+    padding: 45px 36px;
   }
 }
 @media (hover: hover) {
@@ -4613,7 +4614,7 @@ button,
   .trainers h2 {
     padding-right: 15px;
     padding-left: 15px;
-    margin-bottom: 43px;
+    margin-bottom: 44px;
     font-size: 32px;
     line-height: 32px;
   }
