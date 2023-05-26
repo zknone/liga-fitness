@@ -136,9 +136,17 @@
 }
 
 .reviews__left-button {
-  left: 0;
+  left: 10px;
+
+  &::after {
+    font-size: 20px;
+  }
 }
 
 .reviews__right-button {
-  left: calc(100% - 20px);
+  left: calc(100% - 30px);
+
+  &::after {
+    font-size: 20px;
+  }
 }
