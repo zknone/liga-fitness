@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
         },
         1200: {
           slidesPerView: 4,
-          spaceBetween: 50,
+          spaceBetween: 40,
         },
       },
       navigation: {

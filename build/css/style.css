@@ -2816,7 +2816,7 @@ button,
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   grid-row: 1/-1;
-  padding: 54px 32px 51px;
+  padding: 54px 32px;
   margin: auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2891,7 +2891,7 @@ button,
   line-height: 74px;
 }
 .advantages__item[data-advantages=featured] dd {
-  margin: 0 0 15px;
+  margin: 0 0 10px;
   padding: 0;
   color: #ffffff;
   font-size: 16px;
@@ -4259,7 +4259,12 @@ button,
 
 .reviews__swiper-wrapper {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 670px;
+}
+@media (max-width: 1199px) {
+  .reviews__swiper-wrapper {
+    max-width: 700px;
+  }
 }
 
 .reviews__left-button {
@@ -4642,7 +4647,7 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   display: block;
-  margin: 0 0 0 5px;
+  margin: 0 20px 0 0;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -4683,6 +4688,7 @@ button,
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  margin: 0 20px 0 0;
   margin: 0;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
@@ -4718,7 +4724,8 @@ button,
   grid-row: 4/5;
   -ms-grid-row-align: end;
       align-self: end;
-  margin: 0 0 0 30px;
+  margin: 2px 20px 0 0;
+  text-align: center;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -4820,7 +4827,7 @@ button,
 .trainers__buttons-wrapper {
   margin: 0 auto;
   position: relative;
-  width: calc(100% - 105px);
+  width: calc(100% - 205px);
 }
 @media (max-width: 1199px) {
   .trainers__buttons-wrapper {

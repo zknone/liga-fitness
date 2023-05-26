@@ -133,7 +133,11 @@
 
 .reviews__swiper-wrapper {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 670px;
+
+  @include vp-1200 {
+    max-width: 700px;
+  }
 }
 
 .reviews__left-button {

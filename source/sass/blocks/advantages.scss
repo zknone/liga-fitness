@@ -90,7 +90,7 @@
 .advantages__item[data-advantages="featured"] {
   grid-column: 2/3;
   grid-row: 1/-1;
-  padding: 54px 32px 51px;
+  padding: 54px 32px;
   margin: auto 0;
 
   display: flex;
@@ -149,7 +149,7 @@
   }
 
   dd {
-    margin: 0 0 15px;
+    margin: 0 0 10px;
     padding: 0;
     color: $color-default-white;
     font-size: 16px;
