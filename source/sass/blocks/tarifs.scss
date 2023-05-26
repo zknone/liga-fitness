@@ -203,7 +203,7 @@
 
   a {
     margin: 0;
-    width: 73%;
+    width: 100%;
     padding: 25px;
 
     font-family: $ff-roboto;
@@ -216,6 +216,10 @@
 
     text-transform: uppercase;
     justify-content: center;
+
+    @include vp-1200 {
+      width: 73%;
+    }
 
     @include vp-767 {
       width: 100%;
