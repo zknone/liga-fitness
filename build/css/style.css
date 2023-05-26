@@ -3201,7 +3201,7 @@ button,
     content: "";
     top: 0;
     left: -15px;
-    width: calc(100% + 40px);
+    width: calc(100% + 30px);
     height: 100%;
     z-index: -1;
     background-color: #102654;
