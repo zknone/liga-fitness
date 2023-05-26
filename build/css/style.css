@@ -1260,7 +1260,7 @@ button.swiper-pagination-bullet {
     -webkit-column-gap: 0;
        -moz-column-gap: 0;
             column-gap: 0;
-    margin-left: -2px;
+    left: -2px;
   }
 }
 
@@ -1317,6 +1317,16 @@ button.swiper-pagination-bullet {
   width: 345px;
   height: 2px;
   background-color: #787878;
+}
+@media (max-width: 1199px) {
+  .tabs__control:nth-child(3n-2)::after {
+    width: 330px;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__control:nth-child(3n-2)::after {
+    width: 290px;
+  }
 }
 
 .tabs__content {
@@ -3194,6 +3204,7 @@ button,
     padding: 0;
     position: relative;
     width: 100%;
+    z-index: 1;
   }
   .contact-us .contact-us__form::before {
     position: absolute;
