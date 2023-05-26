@@ -3416,8 +3416,11 @@ button,
 @media (max-width: 767px) {
   .event__info-wrapper {
     padding: 50px 44px;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 35px;
+       -moz-column-gap: 35px;
+            column-gap: 35px;
+    -ms-grid-columns: (auto)[2];
+    grid-template-columns: repeat(2, auto);
   }
 }
 .event__info-wrapper h2 {
@@ -3451,6 +3454,7 @@ button,
 }
 @media (max-width: 767px) {
   .event__info-wrapper h2 {
+    min-width: 105px;
     font-size: 48px;
     line-height: 46px;
     font-weight: 600;
@@ -3488,6 +3492,11 @@ button,
     grid-row: 1/2;
     min-width: 58px;
     margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .event__info-wrapper dl {
+    margin-top: 2px;
   }
 }
 .event__info-wrapper dt {
@@ -3556,6 +3565,11 @@ button,
     margin-bottom: 10px;
     font-size: 12px;
     line-height: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .event__info-wrapper dd span[data-date=year] {
+    margin-bottom: 12px;
   }
 }
 .event__info-wrapper dd[data-date=time] {
