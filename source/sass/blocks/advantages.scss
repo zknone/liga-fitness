@@ -8,6 +8,10 @@
     padding-bottom: 90px;
   }
 
+  @include vp-767 {
+    padding-top: 70px;
+  }
+
   h2 {
     margin-top: 0;
     margin-bottom: 40px;
@@ -25,6 +29,13 @@
       font-size: 42px;
       line-height: 50px;
       margin-right: 22px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 32px;
+      margin-left: 5px;
+      letter-spacing: 1.2px;
     }
   }
 }
@@ -85,8 +96,21 @@
   background-color: $color-default-black;
   color: $color-default-white;
 
-  @include vp-1200 {
+  @include vp-1200() {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    flex-direction: column;
+    justify-self: center;
+    width: 65%;
+    max-width: 440px;
     padding: 35px 32px 26px;
+  }
+
+  @include vp-767 {
+    padding: 35px;
+    max-width: none;
+    width: 100%;
+    order: 3;
   }
 
   dl {
@@ -112,6 +136,11 @@
       margin-bottom: 10px;
     }
 
+    @include vp-767 {
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+
     span {
       font-size: 74px;
       line-height: 74px;
@@ -125,23 +154,13 @@
     font-size: 16px;
     max-width: 180px;
     text-align: center;
+
+    @include vp-767 {
+      margin: 0 0 8px;
+    }
   }
 
-  @include vp-1200() {
-    grid-column: 1/-1;
-    grid-row: 2/3;
-    flex-direction: column;
-    justify-self: center;
-    width: 65%;
-    max-width: 440px;
-  }
 
-  @include vp-767 {
-    padding: 50px;
-    max-width: none;
-    width: 100%;
-    order: 3;
-  }
 }
 
 .advantages__item[data-advantages="regular"] {
@@ -157,7 +176,6 @@
     word-break: break-all;
     align-items: start;
     justify-items: left;
-
 
     @include vp-1200 {
       grid-template-columns: auto 27px auto;
@@ -220,6 +238,10 @@
       font-size: 14px;
       line-height: 15px;
     }
+
+    @include vp-767 {
+      margin-bottom: 5px;
+    }
   }
 
   dt[data-points="description"] {
@@ -238,6 +260,11 @@
     line-height: 33px;
 
     color: $color-default-black;
+
+    @include vp-767 {
+      margin-top: 1px;
+      align-self: center;
+    }
   }
 
   dd[data-points="description"] {
@@ -263,6 +290,10 @@
     @include vp-1200 {
       padding-bottom: 43px;
     }
+
+    @include vp-767 {
+      padding-bottom: 35px;
+    }
   }
 
   &:nth-of-type(2) {
@@ -272,6 +303,10 @@
 
     @include vp-1200 {
       padding-bottom: 43px;
+    }
+
+    @include vp-767 {
+      padding-bottom: 44px;
     }
   }
 
@@ -292,6 +327,10 @@
 
     @include vp-1200 {
       margin-top: 40px;
+    }
+
+    @include vp-767 {
+      margin-top: 32px;
     }
   }
 

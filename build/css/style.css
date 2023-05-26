@@ -2711,6 +2711,11 @@ button,
     padding-bottom: 90px;
   }
 }
+@media (max-width: 767px) {
+  .advantages {
+    padding-top: 70px;
+  }
+}
 .advantages h2 {
   margin-top: 0;
   margin-bottom: 40px;
@@ -2727,6 +2732,14 @@ button,
     font-size: 42px;
     line-height: 50px;
     margin-right: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-left: 5px;
+    letter-spacing: 1.2px;
   }
 }
 
@@ -2803,7 +2816,29 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages__item[data-advantages=featured] {
+    grid-column: 1/-1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 65%;
+    max-width: 440px;
     padding: 35px 32px 26px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__item[data-advantages=featured] {
+    padding: 35px;
+    max-width: none;
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 .advantages__item[data-advantages=featured] dl {
@@ -2835,6 +2870,12 @@ button,
     margin-bottom: 10px;
   }
 }
+@media (max-width: 767px) {
+  .advantages__item[data-advantages=featured] dt {
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+}
 .advantages__item[data-advantages=featured] dt span {
   font-size: 74px;
   line-height: 74px;
@@ -2847,30 +2888,9 @@ button,
   max-width: 180px;
   text-align: center;
 }
-@media (max-width: 1199px) {
-  .advantages__item[data-advantages=featured] {
-    grid-column: 1/-1;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    width: 65%;
-    max-width: 440px;
-  }
-}
 @media (max-width: 767px) {
-  .advantages__item[data-advantages=featured] {
-    padding: 50px;
-    max-width: none;
-    width: 100%;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+  .advantages__item[data-advantages=featured] dd {
+    margin: 0 0 8px;
   }
 }
 
@@ -2966,6 +2986,11 @@ button,
     line-height: 15px;
   }
 }
+@media (max-width: 767px) {
+  .advantages__item[data-advantages=regular] dd[data-points=points] {
+    margin-bottom: 5px;
+  }
+}
 .advantages__item[data-advantages=regular] dt[data-points=description] {
   grid-column: 3/-1;
   -ms-grid-row: 1;
@@ -2981,6 +3006,14 @@ button,
   font-size: 22px;
   line-height: 33px;
   color: #102654;
+}
+@media (max-width: 767px) {
+  .advantages__item[data-advantages=regular] dt[data-points=description] {
+    margin-top: 1px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 .advantages__item[data-advantages=regular] dd[data-points=description] {
   grid-column: 3/-1;
@@ -3004,6 +3037,11 @@ button,
     padding-bottom: 43px;
   }
 }
+@media (max-width: 767px) {
+  .advantages__item[data-advantages=regular]:nth-of-type(1) {
+    padding-bottom: 35px;
+  }
+}
 .advantages__item[data-advantages=regular]:nth-of-type(2) {
   padding-bottom: 55px;
   padding-top: 0;
@@ -3012,6 +3050,11 @@ button,
 @media (max-width: 1199px) {
   .advantages__item[data-advantages=regular]:nth-of-type(2) {
     padding-bottom: 43px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__item[data-advantages=regular]:nth-of-type(2) {
+    padding-bottom: 44px;
   }
 }
 .advantages__item[data-advantages=regular]:nth-of-type(3) {
@@ -3032,6 +3075,11 @@ button,
 @media (max-width: 1199px) {
   .advantages__item[data-advantages=regular]:nth-of-type(4) {
     margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__item[data-advantages=regular]:nth-of-type(4) {
+    margin-top: 32px;
   }
 }
 @media (max-width: 1199px) {
@@ -4352,6 +4400,7 @@ button,
 @media (max-width: 767px) {
   .trainers {
     padding-top: 25px;
+    padding-bottom: 65px;
   }
 }
 .trainers h2 {
