@@ -3466,8 +3466,8 @@ button,
 }
 @media (max-width: 1199px) {
   .event {
-    padding-top: 80px;
-    padding-bottom: 65px;
+    padding-top: 77px;
+    padding-bottom: 75px;
   }
 }
 @media (max-width: 767px) {
@@ -3731,6 +3731,7 @@ button,
 @media (max-width: 1199px) {
   .event__info-wrapper a {
     padding: 10px;
+    margin-left: 0;
   }
 }
 
@@ -3765,6 +3766,7 @@ button,
     font-size: 42px;
     line-height: 50px;
     letter-spacing: 1.5px;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 767px) {
@@ -3792,8 +3794,8 @@ button,
   .promotions__wrapper {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[3];
-    grid-template-rows: repeat(3, 1fr);
+    -ms-grid-rows: (auto)[3];
+    grid-template-rows: repeat(3, auto);
     row-gap: 30px;
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
@@ -3827,7 +3829,8 @@ button,
 }
 @media (max-width: 1199px) {
   .promotions__item {
-    padding: 26px 26px 28px;
+    padding: 25px;
+    min-height: 210px;
   }
 }
 @media (max-width: 767px) {
@@ -3843,6 +3846,11 @@ button,
   font-size: 26px;
   line-height: 26px;
   color: #102654;
+}
+@media (max-width: 1199px) {
+  .promotions__item h3 {
+    margin: 0 0 7px;
+  }
 }
 .promotions__item p {
   margin: 0;
@@ -4131,7 +4139,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews h2 {
-    margin: 0 0 37px 0;
+    margin: 0 0 40px 0;
     font-size: 42px;
     line-height: 50px;
     letter-spacing: 1.5px;
@@ -4553,6 +4561,7 @@ button,
 }
 @media (max-width: 1199px) {
   .trainers {
+    padding-top: 30px;
     padding-bottom: 95px;
   }
 }

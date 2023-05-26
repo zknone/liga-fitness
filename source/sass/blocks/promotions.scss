@@ -28,6 +28,7 @@
       font-size: 42px;
       line-height: 50px;
       letter-spacing: 1.5px;
+      margin-bottom: 40px;
     }
 
     @include vp-767 {
@@ -48,7 +49,7 @@
 
   @include vp-1200() {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     row-gap: 30px;
     column-gap: 30px;
   }
@@ -69,7 +70,8 @@
   border-image-source: $button-background-gradient;
 
   @include vp-1200 {
-    padding: 26px 26px 28px;
+    padding: 25px;
+    min-height: 210px;
   }
 
   @include vp-767 {
@@ -85,6 +87,10 @@
     line-height: 26px;
 
     color: $color-default-black;
+
+    @include vp-1200 {
+      margin: 0 0 7px;
+    }
   }
 
   p {
