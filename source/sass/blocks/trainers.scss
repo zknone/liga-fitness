@@ -121,7 +121,6 @@
     h3 {
       grid-column: 2/3;
       grid-row: 2/3;
-      margin: 0 33px 0 0;
 
       margin: 0;
 
@@ -169,6 +168,7 @@
       line-height: 18px;
       margin: 0 0 20px 35px;
     }
+
     @include vp-767 {
       margin: 0 0 18px 0;
     }
@@ -256,9 +256,6 @@
   @include vp-767 {
     width: calc(100% - 90px);
   }
-}
-
-.trainers__swiper-container {
 }
 
 .trainers__button-prev {
