@@ -4349,6 +4349,11 @@ button,
     padding-bottom: 95px;
   }
 }
+@media (max-width: 767px) {
+  .trainers {
+    padding-top: 25px;
+  }
+}
 .trainers h2 {
   width: 100%;
   max-width: 1240px;
@@ -4376,6 +4381,9 @@ button,
   .trainers h2 {
     padding-right: 15px;
     padding-left: 15px;
+    margin-bottom: 43px;
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 
@@ -4402,6 +4410,17 @@ button,
     grid-template-rows: 50px -webkit-min-content -webkit-min-content 1fr 10px;
     grid-template-rows: 50px min-content min-content 1fr 10px;
     row-gap: 1px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers__card {
+    aspect-ratio: 226/274;
+    -ms-grid-rows: 45px -webkit-min-content -webkit-min-content 1fr 10px;
+    -ms-grid-rows: 45px min-content min-content 1fr 10px;
+    grid-template-rows: 45px -webkit-min-content -webkit-min-content 1fr 10px;
+    grid-template-rows: 45px min-content min-content 1fr 10px;
+    -ms-grid-columns: 30px 1fr 25px;
+    grid-template-columns: 30px 1fr 25px;
   }
 }
 .trainers__card:hover::after {
@@ -4511,6 +4530,11 @@ button,
     margin: 0 0 20px 35px;
   }
 }
+@media (max-width: 767px) {
+  .trainers__card h3 {
+    margin: 0 0 20px 0;
+  }
+}
 .trainers__card span {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -4555,6 +4579,11 @@ button,
     padding-left: 20px;
   }
 }
+@media (max-width: 767px) {
+  .trainers__card ul {
+    padding-left: 20px;
+  }
+}
 .trainers__card li {
   font-family: "Roboto", arial, sans-serif;
   font-size: 14px;
@@ -4565,6 +4594,11 @@ button,
 @media (max-width: 1199px) {
   .trainers__card li {
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers__card li {
+    margin-bottom: 12px;
   }
 }
 .trainers__card picture {
@@ -4590,17 +4624,32 @@ button,
     width: calc(100% - 200px);
   }
 }
+@media (max-width: 767px) {
+  .trainers__buttons-wrapper {
+    width: calc(100% - 90px);
+  }
+}
 
 .trainers__button-prev {
   position: absolute;
   top: 50%;
   left: -55px;
 }
+@media (max-width: 767px) {
+  .trainers__button-prev {
+    left: -33px;
+  }
+}
 
 .trainers__button-next {
   position: absolute;
   top: 50%;
   left: calc(100% + 38px);
+}
+@media (max-width: 767px) {
+  .trainers__button-next {
+    left: calc(100% + 13px);
+  }
 }
 
 .footer {
