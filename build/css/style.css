@@ -3000,7 +3000,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages__item[data-advantages=regular] dd[data-points=points] {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 }
 .advantages__item[data-advantages=regular] dt[data-points=description] {
@@ -3192,6 +3192,7 @@ button,
   .contact-us .contact-us__form {
     padding: 0;
     position: relative;
+    width: 100%;
   }
   .contact-us .contact-us__form::before {
     position: absolute;
@@ -3275,7 +3276,7 @@ button,
   font-size: 14px;
 }
 .contact-us .contact-us__form input {
-  padding: 3px;
+  padding: 3px 3px 4px 5px;
   width: 100%;
   border: none;
   font-size: 14px;
@@ -3854,6 +3855,11 @@ button,
     margin: 0 0 7px;
   }
 }
+@media (max-width: 767px) {
+  .promotions__item h3 {
+    margin: 0 0 10px;
+  }
+}
 .promotions__item p {
   margin: 0;
 }
@@ -3949,8 +3955,8 @@ button,
   .promotions__featured-item {
     -ms-grid-columns: 45px auto 45px;
     grid-template-columns: 45px auto 45px;
-    -ms-grid-rows: 45px (auto)[3] 65px;
-    grid-template-rows: 45px repeat(3, auto) 65px;
+    -ms-grid-rows: 42px (auto)[3] 65px;
+    grid-template-rows: 42px repeat(3, auto) 65px;
   }
 }
 .promotions__featured-item dl {
@@ -3977,7 +3983,7 @@ button,
 }
 @media (max-width: 767px) {
   .promotions__featured-item dt {
-    margin: 0 auto;
+    margin: 0 auto 3px;
   }
 }
 .promotions__featured-item dd {
@@ -4303,8 +4309,8 @@ button,
 }
 @media (max-width: 767px) {
   .tarifs {
-    padding-top: 65px;
-    padding-bottom: 75px;
+    padding-top: 63px;
+    padding-bottom: 80px;
   }
 }
 .tarifs h2 {
@@ -4330,7 +4336,7 @@ button,
   .tarifs h2 {
     font-size: 32px;
     line-height: 38px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
   }
 }
 
@@ -4387,7 +4393,7 @@ button,
 }
 @media (max-width: 767px) {
   .tarifs__variants-list {
-    row-gap: 45px;
+    row-gap: 53px;
   }
 }
 
@@ -4409,7 +4415,7 @@ button,
 }
 @media (max-width: 767px) {
   .tarifs__card-item {
-    padding: 40px 35px;
+    padding: 36px;
   }
 }
 @media (hover: hover) {
@@ -4895,7 +4901,7 @@ button,
 @media (max-width: 767px) {
   .footer__container {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4932,12 +4938,17 @@ button,
     display: grid;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 0 50px;
+    margin: 0 0 35px;
+    row-gap: 20px;
   }
 }
 
 .footer__navigation-item {
-  padding: 2px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  max-height: 30px;
 }
 
 .footer__navigation-item--logo {

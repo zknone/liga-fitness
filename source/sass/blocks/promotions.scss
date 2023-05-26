@@ -91,6 +91,10 @@
     @include vp-1200 {
       margin: 0 0 7px;
     }
+
+    @include vp-767 {
+      margin: 0 0 10px;
+    }
   }
 
   p {
@@ -171,7 +175,7 @@
 
   @include vp-767 {
     grid-template-columns: 45px auto 45px;
-    grid-template-rows: 45px repeat(3, auto) 65px;
+    grid-template-rows: 42px repeat(3, auto) 65px;
   }
 
   dl {
@@ -194,7 +198,7 @@
     word-break: break-all;
 
     @include vp-767 {
-      margin: 0 auto;
+      margin: 0 auto 3px;
     }
   }
 
