@@ -13,6 +13,11 @@
     padding-bottom: 30px;
   }
 
+  @include vp-767 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
 }
 
 .footer__navigation-list {
@@ -34,6 +39,7 @@
   @include vp-767() {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 0 50px;
   }
 }
 
@@ -46,6 +52,8 @@
 
   @include vp-767() {
     display: block;
+    width: 68px;
+    height: 15px;
 
     @include hover-focus {
       opacity: 0.8;
@@ -95,7 +103,6 @@
     text-decoration: underline;
   }
 
-
   @include vp-767() {
     line-height: 19px;
   }
@@ -111,7 +118,6 @@
   flex-wrap: wrap;
   column-gap: 10px;
 }
-
 
 .footer__social-link {
   @include hover-focus {

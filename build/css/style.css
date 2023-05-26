@@ -3143,7 +3143,8 @@ button,
 @media (max-width: 1199px) and (max-width: 767px) {
   .contact-us {
     border: none;
-    background: none;
+    background: #ffffff;
+    margin-bottom: 42px;
   }
 }
 .contact-us .contact-us__container {
@@ -3336,7 +3337,7 @@ button,
   .contact-us .contact-us__info h2 {
     padding: 0;
     margin-top: 65px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 32px;
     line-height: 32px;
     font-weight: 600;
@@ -3417,7 +3418,7 @@ button,
 }
 @media (max-width: 767px) {
   .contact-us .contact-us__info .contact-us__info-wrapper dt {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 }
 .contact-us .contact-us__info .contact-us__info-wrapper dd {
@@ -3432,12 +3433,17 @@ button,
     max-width: 230px;
   }
 }
+@media (max-width: 767px) {
+  .contact-us .contact-us__info .contact-us__info-wrapper dd {
+    margin: 0 0 25px;
+  }
+}
 .contact-us .contact-us__info .contact-us__info-wrapper dd:nth-last-of-type(odd) {
   margin: 0;
 }
 @media (max-width: 767px) {
   .contact-us .contact-us__info .contact-us__info-wrapper dd:nth-last-of-type(odd) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 
@@ -4853,6 +4859,16 @@ button,
     padding-bottom: 30px;
   }
 }
+@media (max-width: 767px) {
+  .footer__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .footer__navigation-list {
   margin: 0 0 15px 0;
@@ -4883,6 +4899,7 @@ button,
     display: grid;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 0 50px;
   }
 }
 
@@ -4896,6 +4913,8 @@ button,
 @media (max-width: 767px) {
   .footer__navigation-item--logo {
     display: block;
+    width: 68px;
+    height: 15px;
   }
 }
 @media (max-width: 767px) and (hover: hover) {
