@@ -10,7 +10,8 @@
   padding-bottom: 20px;
 
   @include vp-1200 {
-    padding-bottom: 30px;
+    padding-top: 48px;
+    padding-bottom: 35px;
   }
 
   @include vp-767 {

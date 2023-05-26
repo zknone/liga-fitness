@@ -3316,7 +3316,7 @@ button,
 }
 @media (max-width: 1199px) {
   .contact-us .contact-us__info {
-    padding: 100px 40px 54px;
+    padding: 100px 40px 50px;
     margin: 0;
   }
 }
@@ -3443,6 +3443,7 @@ button,
     line-height: 22px;
     min-width: 200px;
     max-width: 230px;
+    margin: 0 0 23px;
   }
 }
 @media (max-width: 767px) {
@@ -3469,7 +3470,7 @@ button,
 }
 @media (max-width: 1199px) {
   .event {
-    padding-top: 75px;
+    padding-top: 78px;
     padding-bottom: 75px;
   }
 }
@@ -4413,6 +4414,11 @@ button,
   background-color: #ffffff;
   width: 100%;
 }
+@media (max-width: 1199px) {
+  .tarifs__card-item {
+    padding: 61px 70px;
+  }
+}
 @media (max-width: 767px) {
   .tarifs__card-item {
     padding: 36px;
@@ -4496,7 +4502,7 @@ button,
 }
 @media (max-width: 1199px) {
   .tarifs__card-item p {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 }
 @media (max-width: 767px) {
@@ -4554,6 +4560,7 @@ button,
 @media (max-width: 1199px) {
   .tarifs__card-item a {
     width: 73%;
+    padding: 24px;
   }
 }
 @media (max-width: 767px) {
@@ -4664,7 +4671,7 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   display: block;
-  margin: 0 20px 0 0;
+  margin: 0 33px 0 0;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -4705,7 +4712,7 @@ button,
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin: 0 20px 0 0;
+  margin: 0 33px 0 0;
   margin: 0;
   font-family: "Roboto", arial, sans-serif;
   font-weight: 700;
@@ -4895,7 +4902,8 @@ button,
 }
 @media (max-width: 1199px) {
   .footer__container {
-    padding-bottom: 30px;
+    padding-top: 48px;
+    padding-bottom: 35px;
   }
 }
 @media (max-width: 767px) {
