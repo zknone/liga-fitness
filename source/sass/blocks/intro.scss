@@ -27,14 +27,14 @@
 
   h2 {
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 0;
     margin-bottom: 50px;
+    margin-right: 10px;
 
     font-family: $ff-alumni;
-    font-style: bold;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 92px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    font-size: 98px;
     line-height: 110px;
     text-transform: uppercase;
 
@@ -64,8 +64,9 @@
     margin: 0 50px 0 0;
 
     font-family: $ff-alumni;
-    font-weight: 600;
-    font-size: 48px;
+    font-weight: 700;
+    font-size: 44px;
+    letter-spacing: 1.2px;
     line-height: 58px;
 
     color: $color-default-white;
@@ -106,7 +107,7 @@
 
 .intro__container {
   display: flex;
-  column-gap: 65px;
+  column-gap: 60px;
 
   @include vp-1200() {
     column-gap: 25px;
@@ -125,8 +126,10 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(3, min-content);
+  max-width: 400px;
 
   @include vp-1200 {
+    max-width: none;
     min-width: 330px;
   }
 
@@ -178,7 +181,7 @@
   width: 100%;
   justify-content: center;
   padding: 15px 0;
-  max-width: 230px;
+  max-width: 235px;
 
   @include vp-1200 {
     max-width: 190px;
