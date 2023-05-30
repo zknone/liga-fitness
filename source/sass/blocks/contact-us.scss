@@ -130,6 +130,10 @@
       border-bottom: 1px solid $color-slate-grey;
       background-color: transparent;
       color: $color-default-white;
+
+      &::placeholder {
+        color: $color-default-white;
+      }
     }
 
     button {
