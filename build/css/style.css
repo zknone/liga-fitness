@@ -2277,10 +2277,11 @@ button,
     line-height: 16px;
     letter-spacing: normal;
     margin-right: 30px;
+    margin-bottom: 5px;
     margin-top: 0;
   }
   .navigation__link:nth-last-of-type(n) {
-    margin-right: -6px;
+    margin-right: -8px;
   }
 }
 @media (hover: hover) {
@@ -2442,8 +2443,8 @@ button,
     font-size: 72px;
     margin: 15px 0 23px;
     position: relative;
-    left: -22px;
-    top: -20px;
+    left: -12px;
+    top: -2px;
   }
 }
 .intro__info-wrapper h3 {
@@ -2483,7 +2484,7 @@ button,
     width: 100%;
     max-width: 300px;
     position: relative;
-    left: -22px;
+    left: -12px;
   }
 }
 
@@ -2519,7 +2520,8 @@ button,
 }
 @media (max-width: 767px) {
   .intro__services-list {
-    margin: 0;
+    margin: 95px 0 auto;
+    position: relative;
     left: 0;
   }
 }
