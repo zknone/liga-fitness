@@ -2822,9 +2822,9 @@ button,
           justify-content: space-between;
   -ms-grid-rows: (1fr)[2] auto;
   grid-template-rows: repeat(2, 1fr) auto;
-  -webkit-column-gap: 6%;
-     -moz-column-gap: 6%;
-          column-gap: 6%;
+  -webkit-column-gap: 5%;
+     -moz-column-gap: 5%;
+          column-gap: 5%;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -2877,7 +2877,7 @@ button,
         justify-self: center;
     width: 65%;
     max-width: 440px;
-    padding: 35px 32px 26px;
+    padding: 32px;
   }
 }
 @media (max-width: 767px) {
@@ -3216,7 +3216,7 @@ button,
 }
 @media (max-width: 1199px) {
   .contact-us .contact-us__form {
-    padding: 60px 88px 30px 88px;
+    padding: 62px 88px 30px 88px;
     max-width: none;
     width: 96%;
   }
@@ -3310,7 +3310,7 @@ button,
   font-size: 14px;
 }
 .contact-us .contact-us__form input {
-  padding: 3px 3px 4px 5px;
+  padding: 3px;
   width: 100%;
   border: none;
   font-size: 14px;
@@ -3365,7 +3365,7 @@ button,
 }
 @media (max-width: 1199px) {
   .contact-us .contact-us__info {
-    padding: 100px 40px 50px;
+    padding: 99px 40px 50px;
     margin: 0;
   }
 }
@@ -3799,7 +3799,7 @@ button,
 }
 @media (max-width: 1199px) {
   .promotions {
-    padding-top: 95px;
+    padding-top: 90px;
     padding-bottom: 55px;
   }
 }
@@ -3825,6 +3825,7 @@ button,
     line-height: 50px;
     letter-spacing: 1.5px;
     margin-bottom: 40px;
+    margin-left: -5px;
   }
 }
 @media (max-width: 767px) {
@@ -3887,7 +3888,7 @@ button,
 }
 @media (max-width: 1199px) {
   .promotions__item {
-    padding: 25px;
+    padding: 27px;
     min-height: 210px;
   }
 }
@@ -3932,7 +3933,6 @@ button,
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: block;
-  padding-bottom: 2px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -4183,7 +4183,6 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews {
-    padding-top: 35px;
     padding-bottom: 100px;
   }
 }
@@ -4282,6 +4281,11 @@ button,
 .reviews__item img {
   margin: 10px 0 0 10px;
 }
+@media (max-width: 1199px) {
+  .reviews__item img {
+    margin: 5px 0 0 10px;
+  }
+}
 @media (max-width: 767px) {
   .reviews__item img {
     width: 68px;
@@ -4300,6 +4304,11 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+}
+@media (max-width: 1199px) {
+  .reviews__item h3 {
+    margin: 0 0 10px;
+  }
 }
 @media (max-width: 767px) {
   .reviews__item h3 {
@@ -4343,7 +4352,7 @@ button,
 .reviews__left-button {
   left: 0;
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .reviews__left-button {
     left: 10px;
   }
@@ -4355,7 +4364,7 @@ button,
 .reviews__right-button {
   left: calc(100% - 18px);
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .reviews__right-button {
     left: calc(100% - 30px);
   }
@@ -4972,7 +4981,7 @@ button,
 }
 @media (max-width: 1199px) {
   .footer__container {
-    padding-top: 48px;
+    padding-top: 49px;
     padding-bottom: 35px;
   }
 }

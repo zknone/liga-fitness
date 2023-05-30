@@ -72,7 +72,7 @@
   grid-template-columns: 32% auto 32%;
   justify-content: space-between;
   grid-template-rows: repeat(2, 1fr) auto;
-  column-gap: 6%;
+  column-gap: 5%;
   justify-self: center;
 
   @include vp-1200() {
@@ -105,7 +105,7 @@
     justify-self: center;
     width: 65%;
     max-width: 440px;
-    padding: 35px 32px 26px;
+    padding: 32px;
   }
 
   @include vp-767 {

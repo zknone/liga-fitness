@@ -38,7 +38,7 @@
 
 
     @include vp-1200 {
-      padding: 60px 88px 30px 88px;
+      padding: 62px 88px 30px 88px;
       max-width: none;
       width: 96%;
     }
@@ -123,7 +123,7 @@
     }
 
     input {
-      padding: 3px 3px 4px 5px;
+      padding: 3px;
       width: 100%;
       border: none;
       font-size: 14px;
@@ -164,7 +164,7 @@
     margin-left: 120px;
 
     @include vp-1200() {
-      padding: 100px 40px 50px;
+      padding: 99px 40px 50px;
       margin: 0;
     }
 

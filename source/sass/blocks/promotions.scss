@@ -3,7 +3,7 @@
   padding-bottom: 75px;
 
   @include vp-1200() {
-    padding-top: 95px;
+    padding-top: 90px;
     padding-bottom: 55px;
   }
 
@@ -29,6 +29,7 @@
       line-height: 50px;
       letter-spacing: 1.5px;
       margin-bottom: 40px;
+      margin-left: -5px;
     }
 
     @include vp-767 {
@@ -70,7 +71,7 @@
   border-image-source: $button-background-gradient;
 
   @include vp-1200 {
-    padding: 25px;
+    padding: 27px;
     min-height: 210px;
   }
 
@@ -115,7 +116,6 @@
     align-self: flex-end;
 
     display: block;
-    padding-bottom: 2px;
     height: fit-content;
     width: max-content;
 
