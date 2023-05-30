@@ -274,6 +274,12 @@
         max-width: 200px;
         margin: 0 0 20px;
 
+        a {
+          display: block;
+          max-width: 150px;
+          word-wrap: break-word;
+        }
+
         @include vp-1200 {
           font-size: 18px;
           line-height: 22px;

@@ -3486,6 +3486,11 @@ button,
   max-width: 200px;
   margin: 0 0 20px;
 }
+.contact-us .contact-us__info .contact-us__info-wrapper dd a {
+  display: block;
+  max-width: 150px;
+  word-wrap: break-word;
+}
 @media (max-width: 1199px) {
   .contact-us .contact-us__info .contact-us__info-wrapper dd {
     font-size: 18px;
