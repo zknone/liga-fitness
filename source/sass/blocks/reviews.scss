@@ -140,17 +140,25 @@
 }
 
 .reviews__left-button {
-  left: 10px;
+  left: 0;
 
-  &::after {
-    font-size: 20px;
+  @include vp-1200 {
+    left: 10px;
+    &::after {
+      font-size: 20px;
+    }
   }
+
+
 }
 
 .reviews__right-button {
-  left: calc(100% - 30px);
+  left: calc(100% - 18px);
 
-  &::after {
-    font-size: 20px;
+  @include vp-1200 {
+    left: calc(100% - 30px);
+    &::after {
+      font-size: 20px;
+    }
   }
 }

@@ -4341,17 +4341,27 @@ button,
 }
 
 .reviews__left-button {
-  left: 10px;
+  left: 0;
 }
-.reviews__left-button::after {
-  font-size: 20px;
+@media (max-width: 1199px) {
+  .reviews__left-button {
+    left: 10px;
+  }
+  .reviews__left-button::after {
+    font-size: 20px;
+  }
 }
 
 .reviews__right-button {
-  left: calc(100% - 30px);
+  left: calc(100% - 18px);
 }
-.reviews__right-button::after {
-  font-size: 20px;
+@media (max-width: 1199px) {
+  .reviews__right-button {
+    left: calc(100% - 30px);
+  }
+  .reviews__right-button::after {
+    font-size: 20px;
+  }
 }
 
 .tarifs {
@@ -4957,7 +4967,7 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 42px;
   padding-bottom: 20px;
 }
 @media (max-width: 1199px) {
@@ -4989,6 +4999,7 @@ button,
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
+  row-gap: 30px;
   max-width: 500px;
 }
 @media (max-width: 1199px) {
