@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './vendor/init-tabs';
+import {resizeObject} from './utils/bear-overflow';
 
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
@@ -18,6 +19,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
+    const navigationList = document.querySelector('[data-navigation-list]');
+    resizeObject.observe(navigationList);
 
     // eslint-disable-next-line no-unused-vars, no-undef
     const trainersSwiper = new Swiper('.trainers__swiper-container', {

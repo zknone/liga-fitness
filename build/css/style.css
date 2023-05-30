@@ -2237,6 +2237,24 @@ button,
   }
 }
 
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__item {
+  margin-right: 20px;
+}
+.navigation__item:nth-last-child(n) {
+  margin-right: 3px;
+}
+@media (max-width: 1199px) {
+  .navigation__item {
+    margin-top: 10px;
+  }
+}
+
 .navigation__link {
   display: block;
   font-family: "Roboto", arial, sans-serif;
@@ -2245,28 +2263,23 @@ button,
   font-weight: 600;
   color: #ffffff;
   min-width: 120px;
-  margin-right: 20px;
 }
 @media (max-width: 1199px) {
   .navigation__link {
-    margin-top: 10px;
     font-size: 19px;
     line-height: 19px;
     font-weight: 600;
   }
-}
-.navigation__link:nth-last-child(n) {
-  margin-right: 3px;
 }
 @media (max-width: 767px) {
   .navigation__link {
     font-size: 16px;
     line-height: 16px;
     letter-spacing: normal;
-    margin-right: 0;
+    margin-right: 30px;
     margin-top: 0;
   }
-  .navigation__link:nth-last-child(n) {
+  .navigation__link:nth-last-of-type(n) {
     margin-right: -6px;
   }
 }
