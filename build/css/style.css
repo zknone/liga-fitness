@@ -2544,7 +2544,9 @@ button,
 }
 @media (max-width: 767px) {
   .intro__button {
-    max-width: none;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    max-width: 97%;
   }
 }
 
@@ -3267,8 +3269,8 @@ button,
     font-size: 32px;
     line-height: 32px;
     font-weight: 600;
-    margin-top: 70px;
-    margin-bottom: 38px;
+    margin-top: 67px;
+    margin-bottom: 40px;
   }
 }
 .contact-us .contact-us__form form {
@@ -3350,6 +3352,7 @@ button,
     line-height: 16px;
     letter-spacing: 1px;
     min-width: 290px;
+    padding: 16px;
   }
 }
 @media (max-width: 1199px) {
@@ -3926,7 +3929,7 @@ button,
 }
 @media (max-width: 767px) {
   .promotions__item p {
-    max-width: 153px;
+    max-width: 170px;
     text-align: center;
     margin-bottom: 22px;
   }
@@ -4249,7 +4252,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews__item {
-    padding: 41px 25px;
+    padding: 41px 25px 38px;
     -webkit-column-gap: 10px;
        -moz-column-gap: 10px;
             column-gap: 10px;
@@ -4319,6 +4322,7 @@ button,
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     margin-top: 8px;
+    margin-bottom: 20px;
     max-width: 40px;
     font-size: 20px;
     line-height: 26px;
