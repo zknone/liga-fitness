@@ -99,6 +99,9 @@
 
   p {
     margin: 0;
+    max-height: 100px;
+    margin-bottom: 20px;
+    overflow-y: auto;
 
     @include vp-767 {
       max-width: 153px;

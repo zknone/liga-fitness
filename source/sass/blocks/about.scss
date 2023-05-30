@@ -119,11 +119,12 @@
   height: 228px;
 
   position: absolute;
-  top: 100%;
+  top: 400px;
   transform: translateY(-50%);
   left: -63px;
 
   @include vp-1200 {
+    top: 100%;
     transform: translateY(-50%) translateX(-50%);
     left: 50%;
 

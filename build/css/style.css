@@ -2532,7 +2532,7 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 15px 0;
+  padding: 15px;
   max-width: 235px;
 }
 @media (max-width: 1199px) {
@@ -2676,7 +2676,7 @@ button,
   width: 364px;
   height: 228px;
   position: absolute;
-  top: 100%;
+  top: 400px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -2684,6 +2684,7 @@ button,
 }
 @media (max-width: 1199px) {
   .about__media-player-wrapper {
+    top: 100%;
     -webkit-transform: translateY(-50%) translateX(-50%);
         -ms-transform: translateY(-50%) translateX(-50%);
             transform: translateY(-50%) translateX(-50%);
@@ -3911,6 +3912,9 @@ button,
 }
 .promotions__item p {
   margin: 0;
+  max-height: 100px;
+  margin-bottom: 20px;
+  overflow-y: auto;
 }
 @media (max-width: 767px) {
   .promotions__item p {
@@ -4723,6 +4727,7 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
+  max-height: 50px;
   color: #ffffff;
   overflow: auto;
   z-index: 3;
@@ -4766,6 +4771,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   overflow: auto;
+  max-height: 50px;
   color: #ffffff;
   z-index: 3;
 }

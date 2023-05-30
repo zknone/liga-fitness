@@ -89,6 +89,7 @@
       font-weight: 700;
       font-size: 18px;
       line-height: 27px;
+      max-height: 50px;
 
       color: $color-default-white;
       overflow: auto;
@@ -129,6 +130,7 @@
       font-size: 18px;
       line-height: 27px;
       overflow: auto;
+      max-height: 50px;
 
       color: $color-default-white;
       z-index: 3;
